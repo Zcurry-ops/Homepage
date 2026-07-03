@@ -1,87 +1,364 @@
 {
-  "updated": "2026-07-03T00:00:00Z",
+  "updated": "2026-07-03T09:21:02Z",
   "source": "arXiv",
-  "generated_by": "seed",
-  "topics": ["LLM Evaluation", "Human-Centered AI", "LLM User Simulation", "AI-Assisted Creativity"],
-  "count": 6,
+  "generated_by": "ai",
+  "topics": [
+    "LLM Evaluation",
+    "Human-Centered AI",
+    "LLM User Simulation",
+    "AI-Assisted Creativity"
+  ],
+  "count": 16,
   "papers": [
     {
-      "id": "2606.05697",
-      "title": "PerceptUI: LLM Agents as Human-Aligned Synthetic Users for UI/UX Evaluation",
-      "authors": [],
-      "published": "2026-06",
+      "id": "2607.02325v1",
+      "title": "Personality Without Persons? A Psychometric Critique of Big Five Testing in Large Language Models",
+      "authors": [
+        "Kim Zierahn",
+        "Cristina Cachero",
+        "Anna Korhonen",
+        "Nuria Oliver"
+      ],
+      "published": "2026-07-02",
       "source": "arXiv",
-      "topic": "LLM User Simulation",
-      "url": "https://arxiv.org/abs/2606.05697",
-      "pdf": "https://arxiv.org/pdf/2606.05697",
-      "categories": ["cs.HC"],
-      "summary": "Proposes LLM agents that act as human-aligned synthetic users to evaluate UI/UX, aiming to approximate real user perception during interface testing.",
-      "summary_zh": "提出将 LLM 智能体作为与人对齐的合成用户来评估 UI/UX，力图在界面测试中逼近真实用户的感知。"
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2607.02325v1",
+      "pdf": "https://arxiv.org/pdf/2607.02325v1",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "Human personality inventories are increasingly used to characterize large language models (LLMs), compare systems, and inform downstream governance claims. Yet, these inventories were developed and validated for humans, and it remains unclear whether they apply to LLMs. We present a systematic psychometric evaluation of Big Five personality measurements in LLMs. We ask three research questions: Do Big Five inventories a) appropriately describe LLMs, b) capture inter-individual differences across models, and c) reflect internal factors consistent with human personality. We assess content validity of five candidate Big Five inventories and administer the winning inventory to N = 244 different models spanning 49 model families. First, we found that Big Five items adapted for LLMs can reach sufficient content validity, while original human-developed items did not. Second, Big Five inventories did not capture meaningful differences between LLMs: We found low variability between models, accounting for only 3% of total score variance. Third, LLMs responses did not recover the Big Five five-factor structure with four of the Big Five facets collapsing into one (r >= .92). Direct comparisons between base and instruction-tuned model variants suggested that alignment training systematically shifted Big Five scores toward socially desirable traits. These findings demonstrate that Big Five scores do not measure a construct equivalent to human personality in LLMs. Applying human personality frameworks to LLMs produces misleading characterizations used to benchmark, compare, and govern LLMs. We highlight the need for evaluation frameworks that are developed for LLMs, rather than adopting human constructs without validation.",
+      "summary": "Human personality inventories are increasingly used to characterize large language models (LLMs), compare systems, and inform downstream governance claims. Yet, these inventories were developed and validated for humans, and it remains unclear whether they apply to LLMs. We presen…",
+      "summary_zh": ""
     },
     {
-      "id": "2604.09581",
-      "title": "Avenir-UX: Automated UX Evaluation via Simulated Human Web Interaction with GUI Grounding",
-      "authors": [],
-      "published": "2026-04",
+      "id": "2607.02049v1",
+      "title": "SPLIT: Cross-Lingual Empathy and Cultural Grounding in English and Ukrainian LLM Responses",
+      "authors": [
+        "Anna Chorna"
+      ],
+      "published": "2026-07-02",
       "source": "arXiv",
-      "topic": "LLM User Simulation",
-      "url": "https://arxiv.org/abs/2604.09581",
-      "pdf": "https://arxiv.org/pdf/2604.09581",
-      "categories": ["cs.HC"],
-      "summary": "Automates UX evaluation by simulating human web interaction with GUI grounding, letting LLM agents operate real interfaces to surface usability issues.",
-      "summary_zh": "通过带 GUI 定位的模拟人类网页交互实现 UX 自动评估，让 LLM 智能体在真实界面中操作以发现可用性问题。"
+      "topic": "Human-Centered AI",
+      "url": "https://arxiv.org/abs/2607.02049v1",
+      "pdf": "https://arxiv.org/pdf/2607.02049v1",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "abstract": "Large Language Models are increasingly deployed in emotional-support contexts and crisis-related situations. Nevertheless, their cross-lingual abilities in these circumstances remain underexplored. Existing benchmarks emphasize multilingual performance but rarely examine crisis-related empathy and cultural grounding in low-to-mid-resource languages. We introduce SPLIT, a 500-prompt benchmark designed to evaluate LLM consistency in generating emotionally grounded responses across five categories: Stress, Panic, Loneliness, Internal Displacement, and Tension. We evaluate three technically diverse LLMs across three dimensions: Empathetic Accuracy, Linguistic Naturalness, and Contextual & Cultural Grounding. The framework aims to assess and compare the quality of LLM responses in both English and Ukrainian languages, as well as to explore the reliability of the LLM-as-a-jury paradigm. Our findings reveal that Gemini-2.5-Flash and LLaMA-3.3-70B-Instruct degrade when transitioning to Ukrainian, while DeepSeek-V3 remains comparatively stable within our benchmark. We additionally find that human and AI evaluators agree weakly on empathy and naturalness but diverge on cultural grounding. We further argue that producing Ukrainian text is not equivalent to producing Ukrainian emotional support. Our findings may assist in the future development of more culturally tailored benchmark designs, as well as encourage a stronger emphasis on human-centered evaluation.",
+      "summary": "Large Language Models are increasingly deployed in emotional-support contexts and crisis-related situations. Nevertheless, their cross-lingual abilities in these circumstances remain underexplored. Existing benchmarks emphasize multilingual performance but rarely examine crisis-r…",
+      "summary_zh": ""
     },
     {
-      "id": "2602.06197",
-      "title": "Personagram: Bridging Personas and Product Design for Creative Ideation with Multimodal LLMs",
-      "authors": [],
-      "published": "2026-02",
+      "id": "2607.01692v1",
+      "title": "From Answer Generators to Reasoning Facilitators: Designing AI Tutors for Mathematical Reasoning in High-Stakes Environments",
+      "authors": [
+        "Yuming Feng",
+        "Yuan Tian",
+        "Erica Zhao"
+      ],
+      "published": "2026-07-02",
+      "source": "arXiv",
+      "topic": "LLM User Simulation",
+      "url": "https://arxiv.org/abs/2607.01692v1",
+      "pdf": "https://arxiv.org/pdf/2607.01692v1",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "The rapid integration of Large Language Models (LLMs) into educational technology threatens to reduce mathematical learning to mere answer generation. This paper presents a generative study, usability study, and 12-participant field deployment of AITutor, an interactive system that translates theoretical pedagogical mechanisms into concrete user interface features. We explore how junior-high students preparing for high-stakes exams (Zhongkao) interact with AI tutoring. Through mixed-methods triangulation (7,379 telemetry events, 8 contextual observations, 10 interviews), we reveal that students actively resist traditional Socratic dialogue under time pressure, repurposing \"answer-first\" shortcuts as vital diagnostic checkpoints. We demonstrate how features like layered worked examples, step-linked visual grounding, and metacognitive scaffolding lower the interaction cost of reasoning repair. We contribute a \"Reasoning-Centered Product Loop,\" offering actionable implications for designing AI that structurally supports the inspection, local repair, curriculum verification, and delayed retrieval of mathematical reasoning in the wild.",
+      "summary": "The rapid integration of Large Language Models (LLMs) into educational technology threatens to reduce mathematical learning to mere answer generation. This paper presents a generative study, usability study, and 12-participant field deployment of AITutor, an interactive system th…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2607.00968v1",
+      "title": "Quantifying the Affective Gap: A Zero-Shot Evaluation of LLMs on Fine-Grained Emotion Taxonomies",
+      "authors": [
+        "Lawrence Obiuwevwi",
+        "Krzysztof J. Rechowicz",
+        "Jessica M. Johnson",
+        "Vikas Ashok",
+        "Sachin Shetty",
+        "Sampath Jayarathna"
+      ],
+      "published": "2026-07-01",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2607.00968v1",
+      "pdf": "https://arxiv.org/pdf/2607.00968v1",
+      "categories": [
+        "cs.CL",
+        "cs.HC"
+      ],
+      "abstract": "Emotion recognition in natural language is a foundational challenge in affective computing, with critical implications for human-computer interaction, mental health support, and conversational AI. This paper presents a rigorous, unified zero-shot evaluation of three leading commercial large language models: Claude (claude-sonnet-4-6), ChatGPT (GPT-5.4), and Gemini (gemini-2.5-flash). The models were queried through their respective production APIs as of April 2026 on a fine-grained 13-class emotion classification task. Using a stratified 1,000-sentence sample from the boltuix/emotions dataset, which comprises 131,306 sentences across 13 categories, a single uniform prompt with no exemplars was applied identically across all models. Gemini achieves the highest accuracy (39.9%) and macro-F1 score (0.363), followed by GPT-5.4 (38.8%, macro-F1 = 0.291) and Claude (38.0%, macro-F1 = 0.159). All models excel on sarcasm and desire while consistently failing on love, confusion, and shame. McNemar tests reveal no statistically significant pairwise differences (p > 0.10), suggesting convergence at a shared zero-shot ceiling. Claude's markedly lower macro-F1 score exposes a class-imbalance prediction bias. These findings highlight the current limitations of frontier AI systems in zero-shot fine-grained emotion classification.",
+      "summary": "Emotion recognition in natural language is a foundational challenge in affective computing, with critical implications for human-computer interaction, mental health support, and conversational AI. This paper presents a rigorous, unified zero-shot evaluation of three leading comme…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2607.00445v1",
+      "title": "Gaze-Informed Proactive AI Assistance for Children's Picture Exploration",
+      "authors": [
+        "Zekun Wu",
+        "Man Su",
+        "Huiyong Li",
+        "Tomohiro Nagashima",
+        "Anna Maria Feit"
+      ],
+      "published": "2026-07-01",
       "source": "arXiv",
       "topic": "AI-Assisted Creativity",
-      "url": "https://arxiv.org/abs/2602.06197",
-      "pdf": "https://arxiv.org/pdf/2602.06197",
-      "categories": ["cs.HC"],
-      "summary": "Bridges user personas and product design for creative ideation using multimodal LLMs.",
-      "summary_zh": "借助多模态大模型，将用户画像与产品设计连接起来以支持创意构思。"
+      "url": "https://arxiv.org/abs/2607.00445v1",
+      "pdf": "https://arxiv.org/pdf/2607.00445v1",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "Proactive assistance with large language models (LLMs) has received growing attention in the human computer interaction (HCI) community. However, most past work on proactive LLMs' assistance has focused on adult users and task-oriented settings, leaving open how such systems could support children, whose interests and needs are often expressed through gaze and other nonverbal behaviors rather than explicit requests. In this study, we focus on two key challenges of proactive assistance in children's picture exploration: when to provide assistance and what assistance to provide based on children's nonverbal behaviors. To address these challenges, we introduce Ollie, a gaze-informed proactive artificial intelligence (AI) assistant that offers short narrative descriptions based on where a child is looking. Ollie uses children's gaze to estimate their attention, identify their current visual focus, and select a related picture region for the LLM to verbally describe. In a within-subject experiment, we compared gaze-informed assistance with random assistance. Results show that gaze-informed assistance kept children's attention on their current focus for a longer period of time, and guided them more effectively to related picture regions. Children, parents, and a participating kindergarten teacher viewed Ollie positively and consider that it better matched children's interests when compared with the random assistance. This work shows the feasibility of using gaze as an implicit input for proactive AI assistance for children and provides design implications for future child-centered AI systems.",
+      "summary": "Proactive assistance with large language models (LLMs) has received growing attention in the human computer interaction (HCI) community. However, most past work on proactive LLMs' assistance has focused on adult users and task-oriented settings, leaving open how such systems coul…",
+      "summary_zh": ""
     },
     {
-      "id": "2601.17087",
-      "title": "Lost in Simulation: LLM-Simulated Users are Unreliable Proxies for Human Users in Agentic Evaluations",
-      "authors": [],
-      "published": "2026-01",
+      "id": "2606.31012v1",
+      "title": "Evaluating Interactivity: Toward Automated Assessment of AI-Generated Explorable Explanations",
+      "authors": [
+        "Xiaozao Wang",
+        "Zhewei Wang",
+        "Hongyi Wen"
+      ],
+      "published": "2026-06-30",
       "source": "arXiv",
       "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2601.17087",
-      "pdf": "https://arxiv.org/pdf/2601.17087",
-      "categories": ["cs.HC", "cs.AI"],
-      "summary": "Argues that LLM-simulated users can be unreliable proxies for real humans in agentic evaluations, cautioning against over-trusting simulated user studies.",
-      "summary_zh": "指出在智能体评估中，LLM 模拟用户可能并不能可靠地替代真实用户，提醒不要过度信任模拟用户研究。"
+      "url": "https://arxiv.org/abs/2606.31012v1",
+      "pdf": "https://arxiv.org/pdf/2606.31012v1",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "While large language models now enable rapid generation of interactive learning materials, evaluating the interaction quality of these explorable explanations remains an open challenge. Existing benchmarks largely focus on code executability or visual fidelity, providing limited insight into dynamic interaction behaviors such as learner-controlled state transitions and context-sensitive system responses, which are factors that critically shape learners' conceptual understanding. We present EE-Eval, an automated evaluation framework that formalizes interactivity as a finite space of learner-controllable states and transitions, represented as a Finite State Machine (FSM). By extracting FSMs from AI-generated explorable explanations, EE-Eval externalizes implicit interaction logic into an explicit, machine-interpretable graph. Evaluation is performed by comparing each generated FSM to an ideal FSM that encodes pedagogical intent, using a combination of graph-based metrics and embedding-based comparison of states, actions, and feedback to measure their structural and semantic similarity. Across thousands of generated explorable explanations spanning 127 concepts and produced by 6 AI models, EE-Eval consistently differentiates interaction quality beyond surface-level criteria such as functional correctness or visual quality, and exhibits substantially stronger alignment with human judgments of interactivity and pedagogical effectiveness than existing baselines. By framing interactivity as testable behavioral models rather than an emergent byproduct of LLM generation, EE-Eval transforms evaluation into a reflective diagnostic tool, enabling pedagogically grounded and actionable human-AI collaboration in creating interactive educational content.",
+      "summary": "While large language models now enable rapid generation of interactive learning materials, evaluating the interaction quality of these explorable explanations remains an open challenge. Existing benchmarks largely focus on code executability or visual fidelity, providing limited…",
+      "summary_zh": ""
     },
     {
-      "id": "2509.11206",
-      "title": "Evalet: Evaluating Large Language Models through Functional Fragmentation",
-      "authors": [],
-      "published": "2025-09",
+      "id": "2606.29808v1",
+      "title": "Making Multimodal LLMs Reliable Chart Data Extractors: A Benchmark and Training Framework",
+      "authors": [
+        "Yuchen He",
+        "Peizhi Ying",
+        "Liqi Cheng",
+        "Kuilin Peng",
+        "Yuan Tian",
+        "Dazhen Deng",
+        "Yingcai Wu"
+      ],
+      "published": "2026-06-29",
       "source": "arXiv",
       "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2509.11206",
-      "pdf": "https://arxiv.org/pdf/2509.11206",
-      "categories": ["cs.CL"],
-      "summary": "Proposes evaluating LLMs by functionally fragmenting their behavior to give a more fine-grained view of capability.",
-      "summary_zh": "提出通过“功能碎片化”来评估大模型，从而更细粒度地刻画其能力。"
+      "url": "https://arxiv.org/abs/2606.29808v1",
+      "pdf": "https://arxiv.org/pdf/2606.29808v1",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "abstract": "Chart data extraction, which reverse-engineers data tables from chart images, is essential for reproducibility, analysis, retrieval, and redesign. Existing interactive tools are reliable but tedious, and mixed-initiative systems, while more efficient, lack generalizability. Recent multimodal large language models (MLLMs) offer a unified interface for chart interpretation, yet their ability to extract accurate data tables, especially without visible labels, remains unclear. We build a benchmark featuring diverse real-world charts without data labels to evaluate this capability. Results show that, while current MLLMs reliably reconstruct table structures, they struggle with precise value recovery. To address this, we revisit chart data extraction from a human-centered perspective and argue that extraction should follow a progressive learning process similar to how people read charts. Our training framework substantially improves numerical accuracy, achieving state-of-the-art performance with a 7B-parameter model. A user study further shows that our model effectively supports mixed-initiative workflows for reliable chart data extraction.",
+      "summary": "Chart data extraction, which reverse-engineers data tables from chart images, is essential for reproducibility, analysis, retrieval, and redesign. Existing interactive tools are reliable but tedious, and mixed-initiative systems, while more efficient, lack generalizability. Recen…",
+      "summary_zh": ""
     },
     {
-      "id": "2504.09407",
-      "title": "UXAgent: A System for Simulating Usability Testing of Web Design with LLM Agents",
-      "authors": [],
-      "published": "2025-04",
+      "id": "2606.29437v1",
+      "title": "LLMography: Transforming Human-AI Conversations into Traceability, Oversight, and Auditability Indicators",
+      "authors": [
+        "Mohammed Bousmah"
+      ],
+      "published": "2026-06-28",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2606.29437v1",
+      "pdf": "https://arxiv.org/pdf/2606.29437v1",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "abstract": "The growing use of Large Language Models (LLMs) in education, software engineering, academic writing, and technical documentation raises a key question: how can we evaluate not only AI-assisted outputs, but also the interaction process that produced them? Current debates often focus on detecting whether a final artifact was generated by AI, while overlooking the conversation history that reveals human direction, AI contribution, corrections, validation, and traceability. This paper introduces LLMography, a framework for transforming Human-AI conversations into measurable indicators of provenance, human contribution, AI dependency, reproducibility, and auditability. By analogy with bibliography and webography, LLMography documents the dynamic trajectory of interaction between a human and a Large Language Model as a structured trace of Human-AI co-production. We present a prototype that analyzes Human-AI conversation traces and generates KPI reports including Prompt Quality Score, Human Direction Score, AI Dependency Level, Auditability Score, Final Output Traceability, Privacy Risk Level, and a recommended LLMography label. A preliminary exploratory evaluation was conducted on 19 anonymized audit reports from engineering students. Most interactions were classified as Human-AI co-produced, with average scores of 86.8/100 for Human Direction, 81.9/100 for Prompt Quality, 72.8/100 for Auditability, and 77.1/100 for Final Output Traceability. The paper also applies LLMography to its own writing process, classified as human-originated, human-directed, AI-assisted co-production. The findings suggest that AI transparency should move beyond output detection toward documenting the history of interaction.",
+      "summary": "The growing use of Large Language Models (LLMs) in education, software engineering, academic writing, and technical documentation raises a key question: how can we evaluate not only AI-assisted outputs, but also the interaction process that produced them? Current debates often fo…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2606.29548v1",
+      "title": "VISTA-DZ: Visual Semantic Trajectory Adaptation for Personalized Dilemma Zone Prediction",
+      "authors": [
+        "Chuheng Wei",
+        "Ziye Qin",
+        "Ziran Wang",
+        "Guoyuan Wu"
+      ],
+      "published": "2026-06-28",
+      "source": "arXiv",
+      "topic": "Human-Centered AI",
+      "url": "https://arxiv.org/abs/2606.29548v1",
+      "pdf": "https://arxiv.org/pdf/2606.29548v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DB",
+        "cs.HC"
+      ],
+      "abstract": "Driver decision making in the dilemma zone at signalized intersections is safety critical, as vehicles approaching a yellow signal must decide whether to stop or proceed within limited time and distance margins. Accurate prediction of both stop-go decisions and decision timing is important for adaptive signal control, advanced driver assistance systems, and human-centered intelligent transportation applications. However, dilemma zone behavior is strongly driver dependent. Similar approach trajectories may lead to different decisions across drivers because of differences in risk preference, braking habit, and decision threshold. Existing personalized models often rely on handcrafted scalar descriptors, which provide useful but limited summaries of individual behavior. This paper proposes VISTA-DZ, a semantic-profile-conditioned framework for personalized stop-go and decision-time prediction. Historical trajectories are converted into visual representations, interpreted by a vision-language model to generate behavioral profiles, and encoded as semantic embeddings to condition a dual-output prediction network. The final model combines a bidirectional GRU encoder, driver-conditioned multi-head cross-attention, and Feature-wise Linear Modulation for temporal evidence selection and feature adaptation. Experiments on the SDZ dataset and a newly collected FDZ dataset show that VISTA-DZ outperforms trajectory-only and handcrafted personalization baselines, achieving 93.26% in-domain simulation accuracy and 90.22% mean accuracy across 20 held-out simulation drivers. Cross-domain results further show feasible zero-shot simulation-to-real transfer and better real-world generalization when simulation data are combined with limited field data.",
+      "summary": "Driver decision making in the dilemma zone at signalized intersections is safety critical, as vehicles approaching a yellow signal must decide whether to stop or proceed within limited time and distance margins. Accurate prediction of both stop-go decisions and decision timing is…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2606.28517v2",
+      "title": "Drag, Infer, Reproject: Grounding LLMs through Spatial Interaction for Image Clustering",
+      "authors": [
+        "Yang Liu",
+        "Xuxin Tang",
+        "Jiahao Xu",
+        "Chris North"
+      ],
+      "published": "2026-06-26",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2606.28517v2",
+      "pdf": "https://arxiv.org/pdf/2606.28517v2",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "Dimension reduction and semantic interaction support image clustering by making similarity structure visible and manipulable. Existing semantic interaction methods encode users' clustering criterion (a user-interpretable semantic dimension, e.g., action, location, or mood) from direct manipulation to steer reprojection, giving users direct control over the resulting layout. Yet they typically depend on learned embeddings or a predefined criterion. In practice, users' clustering criterion often emerges gradually and becomes refined through interaction rather than being fully clear at the outset. In this work, we present CriterionSI (Criterion-guided Semantic Interaction), a method that translates incremental drag interactions into criterion-guided reprojection. CriterionSI uses large language models to infer and refine the clustering criterion from sequential user drags, while grounding semantic interpretation in human-provided feedback rather than fixed prior assumptions. CriterionSI combines the inferred criterion with local drags to guide global reprojection. The simulation-based evaluation and usage scenario demonstrate that CriterionSI can discover and refine the target criterion from sequential interactions and progressively produce criterion-aligned clustering layouts. Our code and data are available at: https://github.com/4C79/CriterionSI.",
+      "summary": "Dimension reduction and semantic interaction support image clustering by making similarity structure visible and manipulable. Existing semantic interaction methods encode users' clustering criterion (a user-interpretable semantic dimension, e.g., action, location, or mood) from d…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2606.26937v1",
+      "title": "Continuous Behavioral Synthesis for Adaptive Health Dashboards: An LLM-Mediated Architecture Integrating Explicit Preference, Spatial Reorganization, and Attention Allocation Signals",
+      "authors": [
+        "Tiziano Santilli",
+        "Mina Alipour",
+        "Mahyar T. Moghaddam"
+      ],
+      "published": "2026-06-25",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2606.26937v1",
+      "pdf": "https://arxiv.org/pdf/2606.26937v1",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "The engineering of adaptive user interfaces has traditionally relied on either rule-based systems encoding designer intuitions about user needs or machine learning approaches requiring substantial historical data before achieving effective personalization. We present a technical architecture that leverages Large Language Models as behavioral synthesis engines to enable immediate adaptation from sparse, heterogeneous user signals. Our system integrates three distinct behavioral channels, i) explicit micro-feedback on individual interface elements, ii) spatial priority inferred from manual widget reorganization through drag-and-drop interaction, iii) and attentional investment measured through dwell time during hover events, within a structured prompt engineering framework that continuously regenerates dashboard layouts while maintaining explanatory coherence. The architecture addresses the technical challenge of translating low-level interaction patterns into high-level design decisions through a layered prompt construction methodology that separates temporal context determination, behavioral signal extraction, explicit preference enforcement, and user profile synthesis. The approach combines manually specified behavioral interpretations and temporal heuristics with LLM-mediated synthesis, enabling the reconciliation of multiple simultaneous signals that would be difficult to encode through explicit rules alone. We demonstrate the system through an instantiation in the personal health monitoring domain, including an analytical evaluation of adaptation behavior across multiple scenarios and a working implementation managing fourteen distinct health metrics across seven widget visualization modalities. The evaluation compares profile-driven initialization, multi-signal behavioral adaptation, and presents the resulting interfaces through representative post-adaptation screenshots.",
+      "summary": "The engineering of adaptive user interfaces has traditionally relied on either rule-based systems encoding designer intuitions about user needs or machine learning approaches requiring substantial historical data before achieving effective personalization. We present a technical…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2606.26654v1",
+      "title": "SocialPersona: Benchmarking Personalized Profiling and Response with Multimodal Social-Media Context",
+      "authors": [
+        "Qinkai Zhang",
+        "Yanyan Zhao",
+        "Xin Lu",
+        "Yulin Hu",
+        "Pengtao Han",
+        "Bing Qin"
+      ],
+      "published": "2026-06-25",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2606.26654v1",
+      "pdf": "https://arxiv.org/pdf/2606.26654v1",
+      "categories": [
+        "cs.CL",
+        "cs.HC",
+        "cs.IR"
+      ],
+      "abstract": "Personalized language-model assistants are often evaluated through a memory lens: can a model recall preferences users have explicitly stated in dialogue? More comprehensive personalization demands a harder capability -- inferring what users care about from the multimodal traces they naturally leave behind. We introduce SocialPersona, a benchmark for evaluating whether multimodal large language models (MLLMs) can recover revealed preferences from longitudinal social-media timelines and use them in dialogue. Built from longitudinal timelines of 171 everyday, non-promotional social-media users, SocialPersona contains text, images, timestamps, and 2,597 human-verified preference tags across seven interest domains, separating stable interests from recent interests. It supports two tasks: constructing structured user profiles from multimodal context and generating responses aligned with inferred profiles. Experiments with proprietary and open-weight MLLMs show that models can identify broad interest domains, yet their performance drops on fine-grained and recent interests and degrades further when inferred profiles must be used to personalize dialogue. Together with evidence that text and images provide complementary preference signals, these results indicate that robust cross-modal, long-horizon user modeling remains a key challenge, and that SocialPersona can help measure and advance progress toward assistants that infer and act on revealed preferences.",
+      "summary": "Personalized language-model assistants are often evaluated through a memory lens: can a model recall preferences users have explicitly stated in dialogue? More comprehensive personalization demands a harder capability -- inferring what users care about from the multimodal traces…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2606.26641v1",
+      "title": "Invisible Impact of Empathy on Behavioral Change: Isolating the Effect of Empathy in Long-term Physical Activity Coaching Chatbot Interactions",
+      "authors": [
+        "Li Siyan",
+        "Kai-Hui Liang",
+        "Shopnil Shahriar",
+        "Yilin Ye",
+        "Shiyoh Goetsu",
+        "Wei-Wei Du",
+        "Masahiro Yoshida",
+        "Tsunayuki Ohwa"
+      ],
+      "published": "2026-06-25",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2606.26641v1",
+      "pdf": "https://arxiv.org/pdf/2606.26641v1",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "Current dialogue systems, powered by large language models, often treat empathy as essential without assessing its true impact, especially in behavior change, where motivation and adherence often depend on subtle user-chatbot dynamics. We examine this assumption by building three WhatsApp physical-activity (PA) coaching chatbots that differ only in empathy level and evaluating them in a six-week within-subject study (N = 13). Participants struggled to distinguish between the empathy conditions, and the non-empathetic version was often rated as more engaging and useful. However, higher-empathy variants were still associated with a larger overall average increase in step counts and faster improvement in intention to follow advice. These results suggest empathy's role is nuanced: it may be hard for lay users to identify explicitly, but it can still shape motivation and trust that support sustained change. We interpret this pattern through the Elaboration Likelihood Model's peripheral route. We highlight design implications for building next-generation PA coaching chatbots that balance effectiveness with human-like connection.",
+      "summary": "Current dialogue systems, powered by large language models, often treat empathy as essential without assessing its true impact, especially in behavior change, where motivation and adherence often depend on subtle user-chatbot dynamics. We examine this assumption by building three…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2606.26614v1",
+      "title": "HiLSVA: Design and Evaluation of a Human-in-the-Loop Agentic System for Scientific Visualization",
+      "authors": [
+        "Kuangshi Ai",
+        "Patrick Phuoc Do",
+        "Chaoli Wang"
+      ],
+      "published": "2026-06-25",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2606.26614v1",
+      "pdf": "https://arxiv.org/pdf/2606.26614v1",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.GR"
+      ],
+      "abstract": "Large language model (LLM) agents enable natural language interaction for scientific visualization (SciVis). Still, prior systems have essentially prioritized autonomy over human analytical control, thereby limiting transparency and human oversight. We present HiLSVA, a human-in-the-loop agentic system that supports mixed-initiative SciVis workflows. HiLSVA integrates a plan-first multi-agent architecture with explicit human oversight, stepwise provenance tracking, and learn-at-test-time adaptation from user feedback. The system supports fluid handoff between humans and agents through both natural language and direct manipulation of visualizations, while sandboxed execution ensures safe, reproducible workflows. In doing so, HiLSVA reframes agentic SciVis as a collaborative process that augments, rather than replaces, human analytical reasoning. We evaluate HiLSVA through representative case studies and a controlled user study with twelve participants of varying expertise across multiple autonomy settings. Results show that mixed-initiative interaction improves task completion, user control, and workflow transparency across different levels of user expertise, while revealing a tradeoff between execution efficiency and human oversight. These findings highlight the importance of human-centered design in agentic SciVis and guide the development of future collaborative visualization systems. We encourage readers to explore our demo video, case studies, and source code at https://hilsva.github.io/.",
+      "summary": "Large language model (LLM) agents enable natural language interaction for scientific visualization (SciVis). Still, prior systems have essentially prioritized autonomy over human analytical control, thereby limiting transparency and human oversight. We present HiLSVA, a human-in-…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2606.25809v1",
+      "title": "Designing Trustworthy LLM-based Wellbeing Recommendation through Controllable Interaction",
+      "authors": [
+        "Alan Said",
+        "Alexandra Weilenmann"
+      ],
+      "published": "2026-06-24",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2606.25809v1",
+      "pdf": "https://arxiv.org/pdf/2606.25809v1",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly used to generate personalized guidance in wellbeing contexts such as physical activity, stress management, and mental health support, enabling fluent and context-aware interaction but relying on largely implicit mechanisms that shape how recommendations are expressed and adapted. We argue that this reliance on implicit adaptation through prompting and alignment limits control over guidance, responsibility framing, and user influence, which is particularly problematic in wellbeing settings where recommendations affect users' actions and long-term outcomes. We propose a system-level perspective in which conversational behavior is structured through explicit interaction constraints, including guidance strategies, explanation styles, degrees of directness, and mechanisms for user control. Building on prior work on tangible recommendations, we show how these constraints address key challenges in wellbeing-oriented recommendation, namely trust calibration, intent alignment, and consequence awareness. We outline a modular architecture for controllable LLM-based recommendation and discuss how different configurations can be systematically designed and evaluated in relation to user-centered outcomes such as self-efficacy, perceived agency, and appropriate reliance. This paper contributes a system-level framework for designing LLM-based recommender systems that are adaptive while remaining transparent, controllable, and aligned with human wellbeing.",
+      "summary": "Large language models (LLMs) are increasingly used to generate personalized guidance in wellbeing contexts such as physical activity, stress management, and mental health support, enabling fluent and context-aware interaction but relying on largely implicit mechanisms that shape…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2606.25941v1",
+      "title": "Explainable Control Framework (XCF) based on Fuzzy Model-Agnostic Explanation and LLM Agent-Supported Interface",
+      "authors": [
+        "Faliang Yin",
+        "Hak-Keung Lam",
+        "David Watson"
+      ],
+      "published": "2026-06-24",
       "source": "arXiv",
       "topic": "LLM User Simulation",
-      "url": "https://arxiv.org/abs/2504.09407",
-      "pdf": "https://arxiv.org/pdf/2504.09407",
-      "categories": ["cs.HC"],
-      "summary": "A system that simulates usability testing of web designs with LLM agents, generating usability findings before recruiting human participants.",
-      "summary_zh": "一个用 LLM 智能体模拟网页设计可用性测试的系统，在招募真实被试前就生成可用性发现。"
+      "url": "https://arxiv.org/abs/2606.25941v1",
+      "pdf": "https://arxiv.org/pdf/2606.25941v1",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "eess.SY"
+      ],
+      "abstract": "Increasing demand for precise and reliable control in complex scenarios has led to the development of increasingly sophisticated controllers, including data-driven approaches employing closed box models and mathematically rigorous yet complex designs. This complexity highlights the needs for explainable control that can provide human-understandable insights into controller behavior. In this paper, an explainable control framework (XCF) along with supporting algorithms and user interface are proposed to explain how controllers determine their control actions and their underlying working mechanism. The novel contributions of this work are threefold: First, the XCF is designed to provide model-agnostic explanations for controllers in closed-loop systems and can optionally refine local explanations by system response dynamics. Second, a novel explanation method, hierarchical fuzzy model-agnostic explanation for control systems (HFMAE-C), is proposed based on the designed framework. The HFMAE-C employs a fuzzy logic system to approximate the controller's behavior and system dynamics, providing sample, local, domain and universe level explanations via IF-THEN rules revealing the controller's decision logic and salience values quantifying the contribution of system states to control actions. Third, a large language model agent-supported user interface is developed to automatically analyze user requirements, select appropriate algorithms, interpret the generated explanations to a natural language report, and provide interactive consultation. Case studies on inverted pendulum system and Turtlebot obstacle avoidance demonstrate the effectiveness of the proposed method through simulated user experiments and quantitative comparisons with mainstream explainable control approaches.",
+      "summary": "Increasing demand for precise and reliable control in complex scenarios has led to the development of increasingly sophisticated controllers, including data-driven approaches employing closed box models and mathematically rigorous yet complex designs. This complexity highlights t…",
+      "summary_zh": ""
     }
   ]
 }
