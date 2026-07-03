@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hanfei Zhu (朱晗飞) — PhD Candidate, Zhejiang University</title>
+<meta name="description" content="Hanfei Zhu (朱晗飞) — PhD candidate in Design at Zhejiang University. Research on LLM capability evaluation, human-centered AI, intelligent interface evaluation, and AI-assisted creativity." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+<style>
+  :root{
+    --bg:#f7f5f0;
+    --surface:#ffffff;
+    --surface-2:#fbfaf7;
+    --ink:#1c1b19;
+    --muted:#6b6860;
+    --faint:#9a968c;
+    --line:#e7e3d9;
+    --accent:#8a2b1e;      /* deep terracotta / ink-red */
+    --accent-soft:#f0e4e0;
+    --link:#8a2b1e;
+    --badge:#efece4;
+    --shadow:0 1px 2px rgba(28,27,25,.05),0 8px 30px rgba(28,27,25,.06);
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue","PingFang SC","Microsoft YaHei",Arial,sans-serif;
+    --maxw:960px;
+  }
+  html[data-theme="dark"]{
+    --bg:#16150f;
+    --surface:#1e1d16;
+    --surface-2:#211f18;
+    --ink:#ece9df;
+    --muted:#a6a293;
+    --faint:#797566;
+    --line:#33312a;
+    --accent:#e2917f;
+    --accent-soft:#33231f;
+    --link:#e2917f;
+    --badge:#2a2820;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 34px rgba(0,0,0,.4);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:var(--sans);line-height:1.65;
+    -webkit-font-smoothing:antialiased;font-size:16.5px;
+    transition:background .3s ease,color .3s ease;
+  }
+  a{color:var(--link);text-decoration:none}
+  a:hover{text-decoration:underline;text-underline-offset:2px}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+  /* ===== top nav ===== */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:color-mix(in srgb,var(--bg) 82%,transparent);
+    backdrop-filter:saturate(1.4) blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{max-width:var(--maxw);margin:0 auto;padding:11px 24px;display:flex;align-items:center;gap:18px}
+  .brand{font-family:var(--serif);font-weight:600;font-size:1.05rem;letter-spacing:.2px}
+  .brand .zh-name{color:var(--muted);font-weight:400;font-size:.95em}
+  .nav-links{margin-left:auto;display:flex;gap:20px;align-items:center}
+  .nav-links a{color:var(--muted);font-size:.9rem;font-weight:500}
+  .nav-links a:hover{color:var(--accent);text-decoration:none}
+  .ctrls{display:flex;gap:8px;align-items:center}
+  .btn-ico{
+    border:1px solid var(--line);background:var(--surface);color:var(--muted);
+    width:36px;height:32px;border-radius:8px;cursor:pointer;font-size:.8rem;font-weight:600;
+    display:inline-flex;align-items:center;justify-content:center;transition:all .2s;
+    font-family:var(--sans);
+  }
+  .btn-ico:hover{border-color:var(--accent);color:var(--accent)}
+  @media(max-width:820px){.nav-links a.jump{display:none}}
+
+  /* ===== hero ===== */
+  .hero{padding:64px 0 30px}
+  .hero-grid{display:flex;gap:44px;align-items:center;flex-wrap:wrap}
+  .photo-col{flex:0 0 auto}
+  .photo{
+    width:190px;height:190px;border-radius:20px;object-fit:cover;
+    box-shadow:var(--shadow);border:4px solid var(--surface);
+  }
+  .intro{flex:1;min-width:280px}
+  .eyebrow{color:var(--accent);font-weight:600;font-size:.82rem;letter-spacing:.13em;text-transform:uppercase;margin-bottom:10px}
+  h1.name{font-family:var(--serif);font-size:2.7rem;line-height:1.05;margin:0 0 6px;font-weight:600;letter-spacing:-.5px}
+  h1.name .cn{font-size:.5em;color:var(--muted);font-weight:400;margin-left:12px;letter-spacing:normal}
+  .role{font-size:1.12rem;color:var(--ink);margin:0 0 4px;font-weight:500}
+  .affil{color:var(--muted);font-size:.98rem;margin:0 0 18px}
+  .affil a{color:var(--muted);border-bottom:1px dotted var(--faint)}
+  .affil a:hover{color:var(--accent);text-decoration:none}
+  .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+  .chip{
+    display:inline-flex;align-items:center;gap:7px;padding:7px 14px;border-radius:999px;
+    background:var(--surface);border:1px solid var(--line);color:var(--ink);
+    font-size:.88rem;font-weight:500;box-shadow:var(--shadow);transition:all .2s;cursor:pointer;
+  }
+  .chip:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;transform:translateY(-1px)}
+  .chip svg{width:15px;height:15px;fill:currentColor;opacity:.8}
+
+  /* ===== sections ===== */
+  section{padding:36px 0;border-top:1px solid var(--line)}
+  section:first-of-type{border-top:none}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:22px;flex-wrap:wrap}
+  h2{font-family:var(--serif);font-size:1.5rem;margin:0;font-weight:600;letter-spacing:-.2px}
+  h2 .idx{color:var(--accent);font-size:.72em;font-family:var(--sans);font-weight:700;letter-spacing:.05em}
+  .sec-note{color:var(--faint);font-size:.85rem}
+  .lead{font-size:1.05rem;color:var(--ink)}
+  .lead p{margin:0 0 14px}
+  .muted{color:var(--muted)}
+
+  /* interests */
+  .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+  .tag{background:var(--accent-soft);color:var(--accent);padding:6px 13px;border-radius:8px;font-size:.9rem;font-weight:500}
+  .interest-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:8px}
+  .icard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 18px;box-shadow:var(--shadow)}
+  .icard h3{margin:0 0 6px;font-size:1rem;font-family:var(--sans);font-weight:650}
+  .icard .em{font-size:1.4rem;display:block;margin-bottom:8px}
+  .icard p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.55}
+
+  /* publications */
+  .pub{border-top:1px solid var(--line);padding:4px 0}
+  .pub:first-child{border-top:none}
+  .pub-main{display:flex;gap:20px;padding:20px 0;cursor:pointer;align-items:flex-start}
+  .pub-main:hover .pub-title{color:var(--accent)}
+  .pub-badge{flex:0 0 96px}
+  .venue{
+    display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.03em;
+    padding:5px 10px;border-radius:7px;background:var(--accent);color:#fff;white-space:nowrap;
+  }
+  .venue.review{background:var(--badge);color:var(--muted)}
+  .venue.journal{background:#2f5d50;color:#fff}
+  html[data-theme="dark"] .venue.journal{background:#4c8574}
+  .pub-year{display:block;margin-top:7px;color:var(--faint);font-size:.78rem;font-weight:600;letter-spacing:.03em}
+  .status-dot{display:inline-flex;align-items:center;gap:5px;margin-top:8px;font-size:.72rem;font-weight:600;color:#2f8f5b}
+  .status-dot.rev{color:var(--faint)}
+  .status-dot::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+  .pub-body{flex:1;min-width:0}
+  .pub-title{font-size:1.08rem;font-weight:650;margin:0 0 5px;line-height:1.35;font-family:var(--serif);transition:color .2s}
+  .authors{font-size:.92rem;color:var(--muted);margin:0 0 3px}
+  .authors .me{color:var(--ink);font-weight:700;border-bottom:2px solid var(--accent-soft)}
+  .venue-line{font-size:.88rem;color:var(--faint);font-style:italic;margin:0 0 9px}
+  .pub-tags{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+  .ptag{font-size:.76rem;color:var(--muted);background:var(--badge);padding:3px 9px;border-radius:6px}
+  .role-tag{font-size:.76rem;font-weight:700;color:var(--accent);background:var(--accent-soft);padding:3px 9px;border-radius:6px}
+  .expand-hint{margin-left:auto;font-size:.8rem;color:var(--accent);font-weight:600;white-space:nowrap;display:inline-flex;align-items:center;gap:5px}
+  .expand-hint .car{transition:transform .3s}
+  .pub.open .expand-hint .car{transform:rotate(180deg)}
+  @media(max-width:560px){.expand-hint{margin-left:0;margin-top:4px}}
+  .pub-more{max-height:0;overflow:hidden;transition:max-height .45s ease}
+  .pub.open .pub-more{max-height:1200px}
+  .more-inner{padding:6px 0 26px;margin-left:116px}
+  @media(max-width:560px){.more-inner{margin-left:0}}
+  .more-inner .block-label{font-size:.74rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 7px}
+  .abstract{font-size:.94rem;color:var(--muted);line-height:1.62;margin:0 0 18px;padding:14px 16px;background:var(--surface-2);border-left:3px solid var(--accent-soft);border-radius:0 8px 8px 0}
+  .hl{list-style:none;padding:0;margin:0 0 18px}
+  .hl li{position:relative;padding:5px 0 5px 22px;font-size:.92rem;color:var(--ink)}
+  .hl li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700}
+  .paper-links{display:flex;flex-wrap:wrap;gap:10px}
+  .plink{display:inline-flex;align-items:center;gap:6px;font-size:.84rem;font-weight:600;padding:8px 14px;border-radius:8px;background:var(--accent);color:#fff;transition:all .2s}
+  .plink:hover{text-decoration:none;filter:brightness(1.08);transform:translateY(-1px)}
+  .plink.ghost{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+  .plink.ghost:hover{border-color:var(--accent);color:var(--accent)}
+  .plink svg{width:14px;height:14px;fill:currentColor}
+  .review-note{font-size:.85rem;color:var(--faint);font-style:italic;display:flex;align-items:center;gap:8px}
+  .review-note::before{content:"🔒"}
+
+  /* ===== research radar ===== */
+  .radar-bar{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-bottom:20px;font-size:.85rem;color:var(--muted)}
+  .radar-meta{display:inline-flex;align-items:center;gap:7px}
+  .live-dot{width:8px;height:8px;border-radius:50%;background:#2f8f5b;box-shadow:0 0 0 0 rgba(47,143,91,.5);animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,143,91,.45)}70%{box-shadow:0 0 0 7px rgba(47,143,91,0)}100%{box-shadow:0 0 0 0 rgba(47,143,91,0)}}
+  .seed-flag{font-size:.72rem;font-weight:600;color:var(--accent);background:var(--accent-soft);padding:3px 9px;border-radius:6px}
+  .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+  .rchip{font-size:.8rem;font-weight:600;padding:6px 13px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;transition:all .2s}
+  .rchip:hover{border-color:var(--accent);color:var(--accent)}
+  .rchip.active{background:var(--accent);border-color:var(--accent);color:#fff}
+  .radar-list{display:grid;gap:12px}
+  .rcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow);transition:border-color .2s,transform .2s}
+  .rcard:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .rcard-top{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:9px;font-size:.74rem}
+  .rc-topic{font-weight:700;color:var(--accent);background:var(--accent-soft);padding:3px 9px;border-radius:6px}
+  .rc-src{color:var(--muted);background:var(--badge);padding:3px 9px;border-radius:6px;font-weight:600}
+  .rc-date{color:var(--faint);margin-left:auto;font-weight:600}
+  .rcard h3{margin:0 0 6px;font-size:1.03rem;line-height:1.35;font-family:var(--serif);font-weight:650}
+  .rcard h3 a{color:var(--ink)}
+  .rcard h3 a:hover{color:var(--accent)}
+  .rc-authors{font-size:.84rem;color:var(--faint);margin:0 0 8px}
+  .rc-sum{font-size:.92rem;color:var(--muted);line-height:1.58;margin:0 0 10px}
+  .rc-links{display:flex;gap:14px;font-size:.82rem;font-weight:600}
+  .radar-status{color:var(--faint);font-size:.92rem;padding:24px 0;text-align:center}
+  .radar-help{background:var(--surface-2);border:1px dashed var(--line);border-radius:12px;padding:18px 20px;font-size:.88rem;color:var(--muted);line-height:1.6}
+
+  /* beyond the lab */
+  .fun-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:14px}
+  .fcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow);transition:transform .2s,border-color .2s}
+  .fcard:hover{transform:translateY(-2px);border-color:var(--accent)}
+  .fcard .fem{font-size:1.7rem;line-height:1;display:block;margin-bottom:10px}
+  .fcard h3{margin:0 0 5px;font-size:.98rem;font-weight:650;font-family:var(--sans)}
+  .fcard p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.5}
+
+  /* two-col meta (education / honors) */
+  .row{display:flex;gap:16px;padding:15px 0;border-top:1px solid var(--line);align-items:baseline}
+  .row:first-child{border-top:none}
+  .row .when{flex:0 0 150px;color:var(--faint);font-size:.85rem;font-weight:600}
+  .row .what{flex:1}
+  .row .what strong{font-weight:650}
+  .row .what .sub{color:var(--muted);font-size:.92rem}
+
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+  @media(max-width:680px){.cols{grid-template-columns:1fr;gap:0}}
+  .mini-h{font-family:var(--sans);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 12px}
+  ul.clean{list-style:none;padding:0;margin:0}
+  ul.clean li{padding:7px 0 7px 22px;position:relative;font-size:.94rem;border-top:1px solid var(--line)}
+  ul.clean li:first-child{border-top:none}
+  ul.clean li::before{content:"";position:absolute;left:2px;top:15px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+  ul.clean li .s{color:var(--muted);font-size:.87rem}
+
+  /* contact */
+  .contact-box{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:var(--shadow);text-align:center}
+  .contact-box p{margin:0 0 16px;color:var(--muted)}
+  .contact-box .email{font-family:var(--serif);font-size:1.35rem;color:var(--accent);font-weight:600}
+
+  footer{padding:34px 0 50px;color:var(--faint);font-size:.85rem;text-align:center;border-top:1px solid var(--line)}
+
+  /* i18n visibility */
+  html[data-lang="en"] .zh{display:none}
+  html[data-lang="zh"] .en{display:none}
+  html[data-lang="zh"] body{font-size:16px}
+
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.pub-more{transition:none}.live-dot{animation:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand">Hanfei Zhu <span class="zh-name">朱晗飞</span></div>
+    <nav class="nav-links">
+      <a class="jump" href="#about"><span class="en">About</span><span class="zh">简介</span></a>
+      <a class="jump" href="#publications"><span class="en">Publications</span><span class="zh">论文</span></a>
+      <a class="jump" href="#radar"><span class="en">Radar</span><span class="zh">前沿追踪</span></a>
+      <a class="jump" href="#beyond"><span class="en">Beyond</span><span class="zh">趣事</span></a>
+      <a class="jump" href="#contact"><span class="en">Contact</span><span class="zh">联系</span></a>
+      <div class="ctrls">
+        <button class="btn-ico" id="langBtn" title="切换语言 / Switch language">中</button>
+        <button class="btn-ico" id="themeBtn" title="Toggle theme" aria-label="Toggle theme">☾</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" style="border:none">
+    <div class="hero-grid">
+      <div class="photo-col">
+        <img class="photo" src="assets/profile.jpg" alt="Hanfei Zhu / 朱晗飞" />
+      </div>
+      <div class="intro">
+        <div class="eyebrow"><span class="en">PhD Candidate · Human-Centered AI</span><span class="zh">博士研究生 · 以人为本的人工智能</span></div>
+        <h1 class="name">Hanfei Zhu <span class="cn">朱晗飞</span></h1>
+        <p class="role"><span class="en">PhD Candidate in Design</span><span class="zh">设计学博士研究生</span></p>
+        <p class="affil">
+          <span class="en">International Design Institute · College of Computer Science and Technology,<br><a href="https://www.zju.edu.cn/english/" target="_blank" rel="noopener">Zhejiang University</a></span>
+          <span class="zh">浙江大学 · 国际设计研究院 / 计算机科学与技术学院</span>
+        </p>
+        <div class="links">
+          <a class="chip" href="mailto:zhf1102@zju.edu.cn">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+            zhf1102@zju.edu.cn
+          </a>
+          <a class="chip" href="#publications">
+            <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8 1.5V8h4.5L14 3.5zM8 12h8v1.6H8V12zm0 3.4h8V17H8v-1.6z"/></svg>
+            <span class="en">Publications</span><span class="zh">论文成果</span>
+          </a>
+          <a class="chip" href="https://scholar.google.com/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v3.3c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5v-3.3l-7 3.8-7-3.8z"/></svg>
+            Google Scholar
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="reveal">
+    <div class="sec-head"><h2><span class="idx">01 / </span><span class="en">About</span><span class="zh">个人简介</span></h2></div>
+    <div class="lead">
+      <div class="en">
+        <p>I am a PhD candidate in Design at <strong>Zhejiang University</strong>, advised by Prof. <strong>Lingyun Sun</strong> and Prof. <strong>Wei Xiang</strong>. My research sits at the intersection of <strong>large language models</strong> and <strong>human-centered design</strong>, asking how far AI can go in serving real people — and where humans remain indispensable.</p>
+        <p>I build methods and tools that <em>evaluate</em> what LLMs can and cannot do in creative and design work, that <em>simulate diverse users</em> to surface usability problems earlier, and that <em>translate research knowledge into design inspiration</em>. My work spans LLM capability evaluation and high-quality data construction, intelligent interface evaluation, and AI-assisted creativity, with publications at CHI, UIST, and top-tier journals.</p>
+      </div>
+      <div class="zh">
+        <p>我是<strong>浙江大学</strong>设计学博士研究生，师从<strong>孙凌云</strong>教授与<strong>向为</strong>研究员。我的研究处在<strong>大语言模型</strong>与<strong>以人为本的设计</strong>的交叉点上，关注人工智能究竟能在多大程度上真正服务于人，以及人在其中不可替代的价值。</p>
+        <p>我构建方法与工具来<em>评估</em>大模型在创意与设计任务中的能力边界，通过<em>模拟多样化用户</em>更早地发现可用性问题，并将<em>学术知识转化为设计启发</em>。研究方向涵盖大模型能力评测与高质量数据构建、界面智能评估、大模型辅助创意生成，成果发表于 CHI、UIST 及一区顶级期刊。</p>
+      </div>
+    </div>
+    <div class="interest-grid" style="margin-top:24px">
+      <div class="icard"><span class="em">📐</span><h3><span class="en">LLM Capability Evaluation</span><span class="zh">大模型能力评测</span></h3><p><span class="en">Frameworks &amp; high-quality data measuring where LLMs match — and miss — human designers.</span><span class="zh">构建评测框架与高质量数据，衡量大模型与人类设计师的能力差距。</span></p></div>
+      <div class="icard"><span class="em">🧭</span><h3><span class="en">Human-Centered AI</span><span class="zh">以人为本的 AI</span></h3><p><span class="en">Keeping AI outputs responsive to real people, contexts, and the diversity they demand.</span><span class="zh">让 AI 的输出真正回应真实用户、情境及其所要求的多样性。</span></p></div>
+      <div class="icard"><span class="em">🖥️</span><h3><span class="en">Intelligent Interface Evaluation</span><span class="zh">界面智能评估</span></h3><p><span class="en">LLM agents that simulate users to generate usability feedback before costly tests.</span><span class="zh">用大模型智能体模拟用户，在昂贵的用户测试之前生成可用性反馈。</span></p></div>
+      <div class="icard"><span class="em">💡</span><h3><span class="en">AI-Assisted Creativity</span><span class="zh">大模型辅助创意</span></h3><p><span class="en">Tools that turn fragmented research knowledge into actionable design implications.</span><span class="zh">将碎片化的学术知识转化为可操作的设计启示。</span></p></div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="reveal">
+    <div class="sec-head"><h2><span class="idx">02 / </span><span class="en">Education</span><span class="zh">教育背景</span></h2></div>
+    <div class="row">
+      <div class="when">2022 — <span class="en">Present</span><span class="zh">至今</span></div>
+      <div class="what">
+        <strong><span class="en">Ph.D. in Design</span><span class="zh">设计学 · 博士</span></strong><br>
+        <span class="sub"><span class="en">Zhejiang University · College of Computer Science and Technology</span><span class="zh">浙江大学 · 计算机科学与技术学院</span></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="when">2018 — 2022</div>
+      <div class="what">
+        <strong><span class="en">B.Eng. in Industrial Design</span><span class="zh">工业设计 · 本科</span></strong> <span class="sub">· GPA 3.95 / 4.0</span><br>
+        <span class="sub"><span class="en">Zhejiang University · Outstanding Graduate, Second-Class Scholarship</span><span class="zh">浙江大学 · 校级优秀毕业生、二等奖学金</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PUBLICATIONS ===== -->
+  <section id="publications" class="reveal">
+    <div class="sec-head">
+      <h2><span class="idx">03 / </span><span class="en">Publications</span><span class="zh">论文成果</span></h2>
+      <span class="sec-note"><span class="en">Click any paper to expand details ↓</span><span class="zh">点击任意论文展开详情 ↓</span></span>
+    </div>
+
+    <!-- SimUser -->
+    <article class="pub" data-pub>
+      <div class="pub-main" data-toggle>
+        <div class="pub-badge"><span class="venue">CHI 2024</span><span class="pub-year">2024</span><span class="status-dot"><span class="en">Published</span><span class="zh">已发表</span></span></div>
+        <div class="pub-body">
+          <h3 class="pub-title">SimUser: Generating Usability Feedback by Simulating Various Users Interacting with Mobile Applications</h3>
+          <p class="authors">Wei Xiang, <span class="me">Hanfei Zhu</span>, Suqi Lou, Xinli Chen, Zhenghua Pan, Yuping Jin, Shi Chen, Lingyun Sun</p>
+          <p class="venue-line"><span class="en">Proc. ACM CHI Conference on Human Factors in Computing Systems, 2024 · CCF-A</span><span class="zh">ACM CHI 人机交互顶级会议, 2024 · CCF-A</span></p>
+          <div class="pub-tags">
+            <span class="role-tag"><span class="en">Student first author</span><span class="zh">学生一作</span></span>
+            <span class="ptag">User Simulation</span><span class="ptag">Usability</span><span class="ptag">LLM Agents</span>
+            <span class="expand-hint"><span class="en">Details</span><span class="zh">查看详情</span> <span class="car">▾</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="pub-more">
+        <div class="more-inner">
+          <p class="block-label"><span class="en">Abstract</span><span class="zh">摘要</span></p>
+          <p class="abstract"><span class="en">The conflict between the rapid iteration demand of prototyping and the time-consuming nature of user tests has led researchers to adopt AI methods to identify usability issues — yet these often overlook specified user characteristics and usage contexts. SimUser is an LLM-based tool with a Chain-of-Thought structure and user-modeling method that generates usability feedback by simulating interactions between users and applications, shaped by user characteristics and contextual factors. An empirical study (48 users, 21 designers) validated that, for a smartwatch interface, SimUser generates heuristic usability feedback with similarity ranging 35.7%–100% across user groups and usability categories.</span><span class="zh">原型快速迭代的需求与用户测试的耗时之间的矛盾，促使研究者用 AI 方法识别可用性问题——但这些方法往往忽略了特定的用户特征与使用情境。SimUser 是一款基于大模型、结合思维链（CoT）结构与用户建模方法的工具，通过模拟受用户特征与情境因素影响的“用户—应用”交互来生成可用性反馈。一项实证研究（48 名用户、21 名设计师）验证：在智能手表界面上，SimUser 生成的启发式可用性反馈相似度在不同用户群组与可用性类别下达 35.7%–100%。</span></p>
+          <p class="block-label"><span class="en">Highlights</span><span class="zh">研究亮点</span></p>
+          <ul class="hl">
+            <li><span class="en">Combines LLMs, Chain-of-Thought reasoning, and explicit user modeling to simulate <em>different personas</em> — not just a generic user.</span><span class="zh">融合大模型、思维链推理与显式用户建模，模拟<em>不同画像</em>的用户，而非泛化的单一用户。</span></li>
+            <li><span class="en">Validated with 48 real users and 21 designers; feedback similarity reached 35.7%–100% across groups.</span><span class="zh">经 48 名真实用户与 21 名设计师验证，各群组反馈相似度达 35.7%–100%。</span></li>
+            <li><span class="en">Grew into an automated interface-evaluation system (~80% coverage) and an industry collaboration with ByteDance.</span><span class="zh">进一步发展为覆盖率约 80% 的界面可用性自动评测系统，并推动了与字节跳动的产业合作。</span></li>
+          </ul>
+          <div class="paper-links">
+            <a class="plink" href="https://doi.org/10.1145/3613904.3642481" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.6l-9.8 9.8 1.4 1.4L19 6.4V10h2V3h-7zM5 5h5V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5h-2v5H5V5z"/></svg><span class="en">ACM Digital Library</span><span class="zh">ACM 数字图书馆</span></a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- FITEE -->
+    <article class="pub" data-pub>
+      <div class="pub-main" data-toggle>
+        <div class="pub-badge"><span class="venue journal">FITEE</span><span class="pub-year">2026</span><span class="status-dot"><span class="en">Published</span><span class="zh">已发表</span></span></div>
+        <div class="pub-body">
+          <h3 class="pub-title">Leveraging peripheral interactions to improve drivers' situation awareness and NDRT efficiency</h3>
+          <p class="authors"><span class="me">Hanfei Zhu</span>, Wei Xiang, Yifu Zhang, Ziyue Lei, Lingyun Sun</p>
+          <p class="venue-line"><span class="en">Frontiers of Information Technology &amp; Electronic Engineering, 2026, 27(3) · CCF-T1 · SCI</span><span class="zh">信息与电子工程前沿 (FITEE), 2026, 27(3) · CCF-T1 · SCI</span></p>
+          <div class="pub-tags">
+            <span class="role-tag"><span class="en">First author</span><span class="zh">第一作者</span></span>
+            <span class="ptag">Automated Driving</span><span class="ptag">Situation Awareness</span><span class="ptag">Peripheral Interaction</span>
+            <span class="expand-hint"><span class="en">Details</span><span class="zh">查看详情</span> <span class="car">▾</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="pub-more">
+        <div class="more-inner">
+          <p class="block-label"><span class="en">Abstract</span><span class="zh">摘要</span></p>
+          <p class="abstract"><span class="en">L3 automated driving lets drivers engage in non-driving-related tasks (NDRTs) but challenges the reconstruction of situation awareness (SA). Two driving-simulator studies investigated two peripheral interactions — airflow conveying vehicles' intended behavior, and surround sound conveying road-user information. Study 1 (n=21) explored airflow, surround sound, and their integration; Study 2 (n=30) tested the integrated interaction across NDRT difficulties. Airflow and surround sound each significantly improved SA, integration performed best, and the benefit was greater during hard NDRTs — while also reducing workload and improving user experience.</span><span class="zh">L3 自动驾驶让驾驶员得以从事非驾驶任务（NDRT），却对情境意识（SA）的重建提出挑战。两项驾驶模拟实验研究了两种外围交互——用气流传达车辆意图、用环绕声传达道路使用者信息。研究一（n=21）探究气流、环绕声及其融合；研究二（n=30）测试融合交互在不同 NDRT 难度下的表现。结果表明气流与环绕声单独使用均能显著提升 SA，二者融合效果最佳，且在困难 NDRT 下收益更大——同时降低了负荷、改善了用户体验。</span></p>
+          <p class="block-label"><span class="en">Highlights</span><span class="zh">研究亮点</span></p>
+          <ul class="hl">
+            <li><span class="en">Two consecutive driving-simulator studies (n=21 and n=30).</span><span class="zh">两项连续的驾驶模拟实验（n=21、n=30）。</span></li>
+            <li><span class="en">Airflow encodes vehicle intent; surround sound encodes road-user information — each with distinct advantages.</span><span class="zh">气流编码车辆意图、环绕声编码道路使用者信息，各具独特优势。</span></li>
+            <li><span class="en">Integrated interaction gives the best SA, cuts perceived workload, and raises trust in the automated system.</span><span class="zh">融合交互带来最佳情境意识，降低主观负荷，并提升对自动系统的信任。</span></li>
+          </ul>
+          <div class="paper-links">
+            <a class="plink" href="https://doi.org/10.1631/ENG.ITEE.2025.0159" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.6l-9.8 9.8 1.4 1.4L19 6.4V10h2V3h-7zM5 5h5V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5h-2v5H5V5z"/></svg><span class="en">View Paper (DOI)</span><span class="zh">查看论文 (DOI)</span></a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- NHB (under review) -->
+    <article class="pub" data-pub>
+      <div class="pub-main" data-toggle>
+        <div class="pub-badge"><span class="venue review"><span class="en">Under Review</span><span class="zh">审稿中</span></span><span class="pub-year">2025</span><span class="status-dot rev"><span class="en">In review</span><span class="zh">审稿中</span></span></div>
+        <div class="pub-body">
+          <h3 class="pub-title">Large language models approach human creativity but overlook the people they are meant to serve</h3>
+          <p class="authors">Wei Xiang<sup>†</sup>, <span class="me">Hanfei Zhu<sup>†</sup></span>, Jie Yan, Bangyi Yan, Yilin Hu, Zhenhua Tan, Lingyun Sun</p>
+          <p class="venue-line"><span class="en">Under review at a top-tier journal · <sup>†</sup>Equal contribution (co-first author)</span><span class="zh">投稿至一区 TOP 期刊 · <sup>†</sup>共同第一作者</span></p>
+          <div class="pub-tags">
+            <span class="role-tag"><span class="en">Co-first author</span><span class="zh">共同一作</span></span>
+            <span class="ptag">LLM Evaluation</span><span class="ptag">Human-Centeredness</span><span class="ptag">Fine-tuning</span>
+            <span class="expand-hint"><span class="en">Abstract</span><span class="zh">查看摘要</span> <span class="car">▾</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="pub-more">
+        <div class="more-inner">
+          <p class="block-label"><span class="en">Abstract</span><span class="zh">摘要</span></p>
+          <p class="abstract"><span class="en">As LLMs increasingly generate outputs tailored to specific users, are those outputs genuinely shaped by users or merely articulating user-relevance? Using design as a testbed, we collected concepts across 20 tasks from human designers (n=200), GPT-4o, two open-weight models, and their fine-tuned variants, evaluated by experts (n=1,863). Base LLMs matched humans on usefulness and novelty but scored lower on human-centeredness and produced more similar outputs. Distilling 12,743 HCI papers to fine-tune the open-weight models improved all dimensions — most in human-centeredness — and reduced within-task similarity, yet the models still fell short of human-level diversity.</span><span class="zh">当大模型越来越多地生成“为特定用户量身定制”的输出时，这些输出究竟是真正由用户塑造，还是仅仅在陈述“与用户相关”？我们以设计为试验场，在 20 项任务上收集人类设计师（n=200）、GPT-4o、两个开源模型及其微调版本的方案，并由专家（n=1,863）评分。基础大模型在有用性与新颖性上比肩人类，却在以人为本上得分更低、输出更趋同。蒸馏 12,743 篇 HCI 论文对开源模型微调后，各维度均有提升——以人为本提升最大——任务内相似度下降，但仍未达到人类水平的多样性。</span></p>
+          <p class="review-note"><span class="en">Manuscript under review — full text not yet publicly available.</span><span class="zh">论文正在审稿中，全文暂未公开。</span></p>
+        </div>
+      </div>
+    </article>
+
+    <!-- ImpliSpark (under review) -->
+    <article class="pub" data-pub>
+      <div class="pub-main" data-toggle>
+        <div class="pub-badge"><span class="venue review"><span class="en">Under Review</span><span class="zh">审稿中</span></span><span class="pub-year">2025</span><span class="status-dot rev"><span class="en">In review</span><span class="zh">审稿中</span></span></div>
+        <div class="pub-body">
+          <h3 class="pub-title">ImpliSpark: An LLM-Based Tool for Translating Artifact Knowledge into Design Implications</h3>
+          <p class="authors"><span class="me">Hanfei Zhu</span>, Wei Xiang, Lingyun Sun, et al.</p>
+          <p class="venue-line"><span class="en">Under review · Project lead</span><span class="zh">审稿中 · 项目负责人</span></p>
+          <div class="pub-tags">
+            <span class="role-tag"><span class="en">First author</span><span class="zh">第一作者</span></span>
+            <span class="ptag">Knowledge Translation</span><span class="ptag">Creativity Support</span><span class="ptag">RAG</span>
+            <span class="expand-hint"><span class="en">Abstract</span><span class="zh">查看摘要</span> <span class="car">▾</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="pub-more">
+        <div class="more-inner">
+          <p class="block-label"><span class="en">Abstract</span><span class="zh">摘要</span></p>
+          <p class="abstract"><span class="en">LLMs open opportunities to leverage HCI studies in design practice, but designers struggle to extract usable information from papers and to synthesize fragmented cross-domain knowledge. ImpliSpark is a web-based tool that formalizes an artifact's design rationale into a unified Context–Function–Technology–Result representation (90.8% extraction accuracy), then coordinates two specialized LLM modules in a practice–academic–practice workflow to synthesize cross-paper knowledge into context-specific design implications. Two studies (n=21, n=20) found its implications more valid, original, inspiring, and actionable than GPT-4o's, helping participants produce more novel and feasible concepts.</span><span class="zh">大模型为将 HCI 研究用于设计实践创造了机会，但设计师难以从论文中提取可用信息、也难以综合碎片化的跨领域知识。ImpliSpark 是一款 web 工具，将学术制品的设计逻辑形式化为统一的“情境—功能—技术—结果”结构（提取准确率 90.8%），并在“实践—学术—实践”工作流中协调两个专门的大模型模块，跨论文综合出情境化的设计启示。两项用户实验（n=21、n=20）表明，其启示在有效性、新颖性、启发性与可操作性上均优于 GPT-4o，并帮助参与者产出更新颖、更可行的方案。</span></p>
+          <p class="review-note"><span class="en">Manuscript under review — full text not yet publicly available.</span><span class="zh">论文正在审稿中，全文暂未公开。</span></p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ===== RESEARCH RADAR ===== -->
+  <section id="radar" class="reveal">
+    <div class="sec-head">
+      <h2><span class="idx">04 / </span><span class="en">Research Radar</span><span class="zh">前沿论文追踪</span></h2>
+      <span class="sec-note"><span class="en">Recent papers in my areas, auto-tracked from arXiv &amp; refreshed weekly</span><span class="zh">自动从 arXiv 追踪我方向相关的最新论文 · 每周刷新</span></span>
+    </div>
+    <div class="radar-bar">
+      <span class="radar-meta"><span class="live-dot"></span><span class="en">Source: arXiv</span><span class="zh">来源：arXiv</span></span>
+      <span class="radar-meta"><span class="en">Updated</span><span class="zh">最近更新</span>：<span id="radar-updated">—</span></span>
+      <span id="radar-seedflag" class="seed-flag" hidden><span class="en">sample data</span><span class="zh">示例数据</span></span>
+    </div>
+    <div class="filters" id="radar-filters"></div>
+    <div class="radar-list" id="radar-list">
+      <div class="radar-status"><span class="en">Loading recent papers…</span><span class="zh">正在加载最新论文…</span></div>
+    </div>
+  </section>
+
+  <!-- ===== BEYOND THE LAB ===== -->
+  <section id="beyond" class="reveal">
+    <div class="sec-head">
+      <h2><span class="idx">05 / </span><span class="en">Beyond the Lab</span><span class="zh">实验室之外</span></h2>
+      <span class="sec-note"><span class="en">A slightly more human introduction</span><span class="zh">一份稍微“有点温度”的自我介绍</span></span>
+    </div>
+    <div class="fun-grid">
+      <div class="fcard"><span class="fem">🏸</span><h3><span class="en">Badminton</span><span class="zh">羽毛球</span></h3><p><span class="en">My go-to way to reset after a long day of writing — fast rallies, no thinking required.</span><span class="zh">写了一天论文后最好的放空方式——快节奏的多拍来回，什么都不用想。</span></p></div>
+      <div class="fcard"><span class="fem">🏀</span><h3><span class="en">Basketball</span><span class="zh">篮球</span></h3><p><span class="en">Pickup games with the lab — I care more about the assists than the score.</span><span class="zh">和实验室的伙伴打野球——比起得分，我更享受助攻。</span></p></div>
+      <div class="fcard"><span class="fem">✈️</span><h3><span class="en">Travel</span><span class="zh">旅行</span></h3><p><span class="en">New cities, new interfaces, new ways people do everyday things — fieldwork in disguise.</span><span class="zh">新的城市、新的界面、人们做日常小事的不同方式——某种意义上的“田野调查”。</span></p></div>
+      <div class="fcard"><span class="fem">📷</span><h3><span class="en">Photography</span><span class="zh">摄影</span></h3><p><span class="en">I frame the world the way I frame a study — looking for the detail everyone else walks past.</span><span class="zh">我用取景框看世界，就像做研究一样——去发现别人擦肩而过的细节。</span></p></div>
+      <div class="fcard"><span class="fem">🎧</span><h3><span class="en">Music &amp; Live Shows</span><span class="zh">听歌 · 看演唱会</span></h3><p><span class="en">Music powers my writing sprints, and a live concert is my favorite reason to buy a train ticket.</span><span class="zh">音乐是我赶论文的动力，而一场演唱会，是我买高铁票最好的理由。</span></p></div>
+      <div class="fcard"><span class="fem">⚡</span><h3><span class="en">Vibe-coding believer</span><span class="zh">Vibe Coding 信徒</span></h3><p><span class="en">Give me an idea in the morning and I'll have a rough prototype by lunch. Building beats debating.</span><span class="zh">早上给我一个想法，午饭前就能有个粗略原型。动手做，胜过空谈。</span></p></div>
+    </div>
+  </section>
+
+  <!-- ===== HONORS + SKILLS ===== -->
+  <section id="more" class="reveal">
+    <div class="cols">
+      <div>
+        <p class="mini-h"><span class="en">Honors &amp; Awards</span><span class="zh">荣誉奖项</span></p>
+        <ul class="clean">
+          <li><span class="en">Outstanding Graduate Student, Zhejiang University</span><span class="zh">浙江大学优秀研究生</span></li>
+          <li><span class="en">First-Class Academic Scholarship</span><span class="zh">一等学业优秀奖学金</span></li>
+          <li><span class="en">"Five-Good" Graduate Student</span><span class="zh">五好研究生</span></li>
+          <li><span class="en">Second-Class Scholarship &amp; Outstanding Graduate (Undergraduate)</span><span class="zh">二等奖学金、校级优秀毕业生（本科）</span></li>
+          <li><span class="en">Invention patent — user-state assessment &amp; interaction system based on multimodal physiological signals <span class="s">(first inventor)</span></span><span class="zh">发明专利 — 一种基于多模态生理信号的用户状态评估及信息交互系统 <span class="s">（第一发明人）</span></span></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mini-h"><span class="en">Skills</span><span class="zh">专业技能</span></p>
+        <div class="tags">
+          <span class="tag">Prompt Engineering</span>
+          <span class="tag">LLM Agents</span>
+          <span class="tag">RAG</span>
+          <span class="tag">Fine-tuning · LoRA</span>
+          <span class="tag">SFT / DPO</span>
+          <span class="tag">GPT · Claude</span>
+          <span class="tag">Open-weight LLMs</span>
+          <span class="tag">Rapid Prototyping</span>
+          <span class="tag">User Studies</span>
+        </div>
+        <ul class="clean" style="margin-top:16px">
+          <li><span class="en">Hands-on with GPT, Claude &amp; open-weight models; rapid prototyping via "Vibe Coding".</span><span class="zh">熟练使用 GPT、Claude 及主流开源模型；擅长通过 “Vibe Coding” 快速完成原型与测试。</span></li>
+          <li><span class="en">Fluent academic English — CET-6: 619; lead author on funded national research proposals.</span><span class="zh">熟练阅读与撰写英文论文（CET-6: 619）；作为主要撰写人参与国家自然科学基金等项目申报并获批。</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="reveal">
+    <div class="sec-head"><h2><span class="idx">06 / </span><span class="en">Get in Touch</span><span class="zh">联系我</span></h2></div>
+    <div class="contact-box">
+      <p><span class="en">Interested in human-centered AI, LLM evaluation, or design research? I'd love to hear from you.</span><span class="zh">对以人为本的 AI、大模型评测或设计研究感兴趣？欢迎与我联系。</span></p>
+      <a class="email" href="mailto:zhf1102@zju.edu.cn">zhf1102@zju.edu.cn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    © <span id="yr"></span> Hanfei Zhu · 朱晗飞 &nbsp;·&nbsp; <span class="en">Zhejiang University, Hangzhou, China</span><span class="zh">浙江大学 · 中国杭州</span>
+  </div>
+</footer>
+
+<!-- Offline fallback for the Research Radar (used when opened as a local file, before the
+     data/papers.json pipeline runs). The deployed site fetches the latest data/papers.json. -->
+<script id="radar-seed" type="application/json">
+{
+  "updated": "2026-07-03T00:00:00Z",
+  "source": "arXiv",
+  "generated_by": "seed",
+  "topics": ["LLM Evaluation", "Human-Centered AI", "LLM User Simulation", "AI-Assisted Creativity"],
+  "papers": [
+    {"title":"PerceptUI: LLM Agents as Human-Aligned Synthetic Users for UI/UX Evaluation","published":"2026-06","source":"arXiv","topic":"LLM User Simulation","url":"https://arxiv.org/abs/2606.05697","pdf":"https://arxiv.org/pdf/2606.05697","authors":[],"summary":"Proposes LLM agents that act as human-aligned synthetic users to evaluate UI/UX, aiming to approximate real user perception during interface testing.","summary_zh":"提出将 LLM 智能体作为与人对齐的合成用户来评估 UI/UX，力图在界面测试中逼近真实用户的感知。"},
+    {"title":"Avenir-UX: Automated UX Evaluation via Simulated Human Web Interaction with GUI Grounding","published":"2026-04","source":"arXiv","topic":"LLM User Simulation","url":"https://arxiv.org/abs/2604.09581","pdf":"https://arxiv.org/pdf/2604.09581","authors":[],"summary":"Automates UX evaluation by simulating human web interaction with GUI grounding, letting LLM agents operate real interfaces to surface usability issues.","summary_zh":"通过带 GUI 定位的模拟人类网页交互实现 UX 自动评估，让 LLM 智能体在真实界面中操作以发现可用性问题。"},
+    {"title":"Personagram: Bridging Personas and Product Design for Creative Ideation with Multimodal LLMs","published":"2026-02","source":"arXiv","topic":"AI-Assisted Creativity","url":"https://arxiv.org/abs/2602.06197","pdf":"https://arxiv.org/pdf/2602.06197","authors":[],"summary":"Bridges user personas and product design for creative ideation using multimodal LLMs.","summary_zh":"借助多模态大模型，将用户画像与产品设计连接起来以支持创意构思。"},
+    {"title":"Lost in Simulation: LLM-Simulated Users are Unreliable Proxies for Human Users in Agentic Evaluations","published":"2026-01","source":"arXiv","topic":"LLM Evaluation","url":"https://arxiv.org/abs/2601.17087","pdf":"https://arxiv.org/pdf/2601.17087","authors":[],"summary":"Argues that LLM-simulated users can be unreliable proxies for real humans in agentic evaluations, cautioning against over-trusting simulated user studies.","summary_zh":"指出在智能体评估中，LLM 模拟用户可能并不能可靠地替代真实用户，提醒不要过度信任模拟用户研究。"},
+    {"title":"Evalet: Evaluating Large Language Models through Functional Fragmentation","published":"2025-09","source":"arXiv","topic":"LLM Evaluation","url":"https://arxiv.org/abs/2509.11206","pdf":"https://arxiv.org/pdf/2509.11206","authors":[],"summary":"Proposes evaluating LLMs by functionally fragmenting their behavior to give a more fine-grained view of capability.","summary_zh":"提出通过“功能碎片化”来评估大模型，从而更细粒度地刻画其能力。"},
+    {"title":"UXAgent: A System for Simulating Usability Testing of Web Design with LLM Agents","published":"2025-04","source":"arXiv","topic":"LLM User Simulation","url":"https://arxiv.org/abs/2504.09407","pdf":"https://arxiv.org/pdf/2504.09407","authors":[],"summary":"A system that simulates usability testing of web designs with LLM agents, generating usability findings before recruiting human participants.","summary_zh":"一个用 LLM 智能体模拟网页设计可用性测试的系统，在招募真实被试前就生成可用性发现。"}
+  ]
+}
+</script>
+
+<script>
+  const root=document.documentElement;
+  // ---- theme ----
+  const themeBtn=document.getElementById('themeBtn');
+  const prefDark=window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  function setTheme(t){root.setAttribute('data-theme',t);themeBtn.textContent=t==='dark'?'☀':'☾';try{localStorage.setItem('hz-theme',t)}catch(e){}}
+  setTheme((()=>{try{return localStorage.getItem('hz-theme')}catch(e){return null}})()||(prefDark?'dark':'light'));
+  themeBtn.onclick=()=>setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark');
+
+  // ---- language ----
+  const langBtn=document.getElementById('langBtn');
+  function setLang(l){
+    root.setAttribute('data-lang',l);
+    root.setAttribute('lang',l==='zh'?'zh-CN':'en');
+    langBtn.textContent=l==='zh'?'EN':'中';
+    try{localStorage.setItem('hz-lang',l)}catch(e){}
+  }
+  setLang((()=>{try{return localStorage.getItem('hz-lang')}catch(e){return null}})()||'en');
+  langBtn.onclick=()=>setLang(root.getAttribute('data-lang')==='zh'?'en':'zh');
+
+  // ---- year ----
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  // ---- expandable publications ----
+  document.querySelectorAll('[data-pub]').forEach(pub=>{
+    pub.querySelector('[data-toggle]').addEventListener('click',(e)=>{
+      if(e.target.closest('a')) return;
+      pub.classList.toggle('open');
+    });
+  });
+
+  // ---- research radar ----
+  (function(){
+    const listEl=document.getElementById('radar-list');
+    const filtersEl=document.getElementById('radar-filters');
+    const updatedEl=document.getElementById('radar-updated');
+    const seedFlag=document.getElementById('radar-seedflag');
+    const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    let all=[], active='All';
+
+    function seedData(){
+      try{return JSON.parse(document.getElementById('radar-seed').textContent);}catch(e){return null;}
+    }
+    function render(){
+      const items=active==='All'?all:all.filter(p=>p.topic===active);
+      if(!items.length){
+        listEl.innerHTML='<div class="radar-help"><span class="en">No tracked papers yet. Once the weekly updater runs, fresh papers appear here automatically.</span><span class="zh">暂无追踪到的论文。每周自动更新任务运行后，最新论文会自动出现在这里。</span></div>';
+        return;
+      }
+      listEl.innerHTML=items.map(p=>{
+        const authors=(p.authors&&p.authors.length)?`<p class="rc-authors">${esc(p.authors.slice(0,5).join(', '))}${p.authors.length>5?' et al.':''}</p>`:'';
+        const pdf=p.pdf?`<a href="${esc(p.pdf)}" target="_blank" rel="noopener">PDF</a>`:'';
+        const zh=p.summary_zh||p.summary;
+        return `<article class="rcard">
+          <div class="rcard-top">
+            <span class="rc-topic">${esc(p.topic||'Paper')}</span>
+            <span class="rc-src">${esc(p.source||'arXiv')}</span>
+            <span class="rc-date">${esc(p.published||'')}</span>
+          </div>
+          <h3><a href="${esc(p.url||'#')}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>
+          ${authors}
+          <p class="rc-sum"><span class="en">${esc(p.summary)}</span><span class="zh">${esc(zh)}</span></p>
+          <div class="rc-links"><a href="${esc(p.url||'#')}" target="_blank" rel="noopener">arXiv ↗</a>${pdf}</div>
+        </article>`;
+      }).join('');
+    }
+    function buildFilters(topics){
+      const set=['All',...topics.filter(t=>all.some(p=>p.topic===t))];
+      filtersEl.innerHTML=set.map(t=>{
+        const label=t==='All'?'<span class="en">All</span><span class="zh">全部</span>':esc(t);
+        return `<button class="rchip${t===active?' active':''}" data-t="${esc(t)}">${label}</button>`;
+      }).join('');
+      filtersEl.querySelectorAll('.rchip').forEach(b=>b.onclick=()=>{
+        active=b.dataset.t;
+        filtersEl.querySelectorAll('.rchip').forEach(x=>x.classList.toggle('active',x===b));
+        render();
+      });
+    }
+    function apply(data){
+      if(!data||!Array.isArray(data.papers)) return;
+      all=data.papers;
+      updatedEl.textContent=(data.updated||'').slice(0,10)||'—';
+      seedFlag.hidden = data.generated_by!=='seed';
+      buildFilters(data.topics||[]);
+      render();
+    }
+    // Try live JSON first (works when served over http/https); fall back to embedded seed.
+    fetch('data/papers.json',{cache:'no-store'})
+      .then(r=>{if(!r.ok)throw 0;return r.json();})
+      .then(apply)
+      .catch(()=>apply(seedData()));
+  })();
+
+  // ---- reveal on scroll ----
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

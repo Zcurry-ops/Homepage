@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Editor / tooling
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# Claude Code local preview config
+.claude/
