@@ -1,38 +1,27 @@
 name: Research Radar
 
-# Auto-updates data/papers.json with recent papers related to Hanfei's research.
-# Runs weekly (and can be triggered manually from the Actions tab).
-
 on:
   schedule:
-    - cron: "0 1 * * 1"      # every Monday 01:00 UTC
-  workflow_dispatch: {}       # manual "Run workflow" button
+    - cron: "0 1 * * 1"      # 每周一 01:00 UTC 自动运行
+  workflow_dispatch: {}       # 允许手动点击运行
 
 permissions:
-  contents: write             # allow committing the refreshed JSON
+  contents: write
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Fetch & summarize recent papers
         env:
-          # Optional: add ONE key as a repo secret to get AI summaries.
-          # Settings -> Secrets and variables -> Actions -> New repository secret
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          # Optional: for third-party / proxy keys, also set these (as secrets or vars).
-          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
-          ANTHROPIC_BASE_URL: ${{ vars.ANTHROPIC_BASE_URL }}
-          RADAR_MODEL: ${{ vars.RADAR_MODEL }}
+          OPENAI_BASE_URL: https://poloai.top/v1
+          RADAR_MODEL: gpt-4o-mini
         run: python3 scripts/update_radar.py
-
       - name: Commit if changed
         run: |
           git config user.name  "research-radar-bot"
