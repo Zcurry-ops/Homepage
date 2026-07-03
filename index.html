@@ -171,6 +171,15 @@
   .live-dot{width:8px;height:8px;border-radius:50%;background:#2f8f5b;box-shadow:0 0 0 0 rgba(47,143,91,.5);animation:pulse 2s infinite}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,143,91,.45)}70%{box-shadow:0 0 0 7px rgba(47,143,91,0)}100%{box-shadow:0 0 0 0 rgba(47,143,91,0)}}
   .seed-flag{font-size:.72rem;font-weight:600;color:var(--accent);background:var(--accent-soft);padding:3px 9px;border-radius:6px}
+  .live-flag{font-size:.72rem;font-weight:600;color:#2f8f5b;background:rgba(47,143,91,.12);padding:3px 9px;border-radius:6px}
+  .radar-refresh{margin-left:auto;display:inline-flex;align-items:center;gap:7px;font-family:var(--sans);font-size:.82rem;font-weight:600;color:#fff;background:var(--accent);border:none;border-radius:999px;padding:7px 15px;cursor:pointer;transition:all .2s}
+  .radar-refresh:hover:not(:disabled){filter:brightness(1.08);transform:translateY(-1px)}
+  .radar-refresh:disabled{opacity:.6;cursor:progress}
+  .radar-refresh .spin{display:inline-block}
+  .radar-refresh.loading .spin{animation:rot 1s linear infinite}
+  @keyframes rot{to{transform:rotate(360deg)}}
+  .radar-toast{font-size:.82rem;color:var(--faint);margin:-8px 0 14px}
+  @media(max-width:560px){.radar-refresh{margin-left:0}}
   .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
   .rchip{font-size:.8rem;font-weight:600;padding:6px 13px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;transition:all .2s}
   .rchip:hover{border-color:var(--accent);color:var(--accent)}
@@ -456,7 +465,10 @@
       <span class="radar-meta"><span class="live-dot"></span><span class="en">Source: arXiv</span><span class="zh">来源：arXiv</span></span>
       <span class="radar-meta"><span class="en">Updated</span><span class="zh">最近更新</span>：<span id="radar-updated">—</span></span>
       <span id="radar-seedflag" class="seed-flag" hidden><span class="en">sample data</span><span class="zh">示例数据</span></span>
+      <span id="radar-liveflag" class="live-flag" hidden><span class="en">live</span><span class="zh">实时</span></span>
+      <button id="radar-refresh" class="radar-refresh" title="从 Semantic Scholar 实时拉取"><span class="spin">🔄</span><span class="en">Live refresh</span><span class="zh">实时刷新</span></button>
     </div>
+    <div id="radar-toast" class="radar-toast" hidden></div>
     <div class="filters" id="radar-filters"></div>
     <div class="radar-list" id="radar-list">
       <div class="radar-status"><span class="en">Loading recent papers…</span><span class="zh">正在加载最新论文…</span></div>
@@ -627,19 +639,75 @@
         render();
       });
     }
+    const liveFlag=document.getElementById('radar-liveflag');
+    const STD_TOPICS=['LLM Evaluation','Human-Centered AI','LLM User Simulation','AI-Assisted Creativity'];
     function apply(data){
       if(!data||!Array.isArray(data.papers)) return;
       all=data.papers;
       updatedEl.textContent=(data.updated||'').slice(0,10)||'—';
       seedFlag.hidden = data.generated_by!=='seed';
+      liveFlag.hidden = data.generated_by!=='live';
       buildFilters(data.topics||[]);
       render();
     }
     // Try live JSON first (works when served over http/https); fall back to embedded seed.
-    fetch('data/papers.json',{cache:'no-store'})
-      .then(r=>{if(!r.ok)throw 0;return r.json();})
-      .then(apply)
-      .catch(()=>apply(seedData()));
+    function loadWeekly(){
+      return fetch('data/papers.json',{cache:'no-store'})
+        .then(r=>{if(!r.ok)throw 0;return r.json();})
+        .then(apply)
+        .catch(()=>apply(seedData()));
+    }
+    loadWeekly();
+
+    // ---- live refresh via Semantic Scholar (only CORS-friendly free source) ----
+    function guessTopic(t){
+      t=(t||'').toLowerCase();
+      if(/human[-\s]?cent/.test(t)) return 'Human-Centered AI';
+      if(/usab|user simulat|persona|ux|ui\b|interface/.test(t)) return 'LLM User Simulation';
+      if(/creativ|ideation|design implication|brainstorm|inspir/.test(t)) return 'AI-Assisted Creativity';
+      return 'LLM Evaluation';
+    }
+    function toast(msg){
+      const el=document.getElementById('radar-toast');
+      el.innerHTML=msg; el.hidden=!msg;
+    }
+    const refreshBtn=document.getElementById('radar-refresh');
+    const L=()=>root.getAttribute('data-lang')==='zh';
+    async function liveRefresh(){
+      refreshBtn.disabled=true; refreshBtn.classList.add('loading');
+      toast(L()?'正在从 Semantic Scholar 实时抓取…':'Fetching live from Semantic Scholar…');
+      const q=encodeURIComponent('("large language model" | LLM) + (usability | "human-centered" | "creativity support" | evaluation | "user simulation" | design)');
+      const url='https://api.semanticscholar.org/graph/v1/paper/search/bulk?query='+q+
+                '&sort=publicationDate:desc&limit=20&fields=title,authors,year,url,abstract,publicationDate';
+      const ctrl=new AbortController(); const timer=setTimeout(()=>ctrl.abort(),12000);
+      try{
+        const r=await fetch(url,{signal:ctrl.signal});
+        if(r.status===429) throw new Error('rate');
+        if(!r.ok) throw new Error('http'+r.status);
+        const j=await r.json();
+        const rows=(j.data||[]).filter(p=>p.title&&(p.publicationDate||p.year)).map(p=>({
+          title:p.title,
+          url:p.url||('https://www.semanticscholar.org/paper/'+p.paperId),
+          authors:(p.authors||[]).map(a=>a.name),
+          published:(p.publicationDate||String(p.year||'')).slice(0,10),
+          source:'Semantic Scholar',
+          topic:guessTopic(p.title+' '+(p.abstract||'')),
+          summary:(p.abstract||'').slice(0,280).trim()+((p.abstract||'').length>280?'…':''),
+          summary_zh:''
+        })).slice(0,15);
+        if(!rows.length) throw new Error('empty');
+        active='All';
+        apply({updated:new Date().toISOString(), source:'Semantic Scholar', generated_by:'live', topics:STD_TOPICS, papers:rows});
+        toast(L()?'已更新为实时结果（来源：Semantic Scholar）。':'Updated with live results (source: Semantic Scholar).');
+      }catch(e){
+        toast(L()?'实时源暂时繁忙，已保留每周更新的数据。请稍后再试。':'Live source is busy right now — keeping the weekly data. Try again shortly.');
+        loadWeekly();
+      }finally{
+        clearTimeout(timer);
+        refreshBtn.disabled=false; refreshBtn.classList.remove('loading');
+      }
+    }
+    refreshBtn.addEventListener('click',liveRefresh);
   })();
 
   // ---- reveal on scroll ----

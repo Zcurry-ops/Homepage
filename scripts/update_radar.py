@@ -11,6 +11,11 @@ Usage:
     ANTHROPIC_API_KEY=sk-... python3 scripts/update_radar.py   # + AI summaries (Claude)
     OPENAI_API_KEY=sk-...   python3 scripts/update_radar.py   # + AI summaries (GPT)
 
+Third-party / proxy API keys are supported (any OpenAI- or Anthropic-compatible
+endpoint). Point the base URL at your provider and, if needed, override the model:
+    OPENAI_API_KEY=xxx OPENAI_BASE_URL=https://your-proxy.com/v1 RADAR_MODEL=gpt-4o-mini python3 scripts/update_radar.py
+    ANTHROPIC_API_KEY=xxx ANTHROPIC_BASE_URL=https://your-proxy.com RADAR_MODEL=claude-sonnet-5 python3 scripts/update_radar.py
+
 Designed to run in GitHub Actions on a weekly cron (see .github/workflows/radar.yml).
 Only depends on the Python standard library unless AI summaries are enabled.
 """
@@ -151,13 +156,15 @@ def _extract_json(text):
 
 
 def _call_anthropic(key, prompt):
+    base = os.environ.get("ANTHROPIC_BASE_URL", "https://api.anthropic.com").rstrip("/")
+    model = os.environ.get("RADAR_MODEL", "claude-sonnet-5")
     body = json.dumps({
-        "model": "claude-sonnet-5",
+        "model": model,
         "max_tokens": 400,
         "messages": [{"role": "user", "content": prompt}],
     }).encode()
     req = urllib.request.Request(
-        "https://api.anthropic.com/v1/messages", data=body,
+        f"{base}/v1/messages", data=body,
         headers={"x-api-key": key, "anthropic-version": "2023-06-01",
                  "content-type": "application/json"})
     with urllib.request.urlopen(req, timeout=40) as r:
@@ -166,13 +173,15 @@ def _call_anthropic(key, prompt):
 
 
 def _call_openai(key, prompt):
+    base = os.environ.get("OPENAI_BASE_URL", os.environ.get("OPENAI_API_BASE", "https://api.openai.com/v1")).rstrip("/")
+    model = os.environ.get("RADAR_MODEL", "gpt-4o-mini")
     body = json.dumps({
-        "model": "gpt-4o-mini",
+        "model": model,
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0.3,
     }).encode()
     req = urllib.request.Request(
-        "https://api.openai.com/v1/chat/completions", data=body,
+        f"{base}/chat/completions", data=body,
         headers={"Authorization": f"Bearer {key}", "content-type": "application/json"})
     with urllib.request.urlopen(req, timeout=40) as r:
         data = json.loads(r.read())
