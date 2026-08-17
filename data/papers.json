@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10T03:09:59Z",
+  "updated": "2026-08-17T02:18:00Z",
   "source": "arXiv",
   "generated_by": "ai",
   "topics": [
@@ -10,6 +10,126 @@
   ],
   "count": 16,
   "papers": [
+    {
+      "id": "2608.14132v1",
+      "title": "Act2Intention: A Benchmark For Developing Active Mobile Agents Through Inferring User Intention from GUI Actions",
+      "authors": [
+        "Xiaokai Yan",
+        "Jingtao Ding",
+        "Yong Li",
+        "Zhiwen Yu"
+      ],
+      "published": "2026-08-14",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2608.14132v1",
+      "pdf": "https://arxiv.org/pdf/2608.14132v1",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "abstract": "Mobile GUI Agents powered by multimodal large language models (MLLMs) show promise in human-computer intelligence. However, current research primarily focuses on reactive task execution while lacking a comprehensive understanding-prediction-execution process for user intentions, which are the core requirements of active agents. In this paper, we propose the Act2Intention framework that builds an active mobile agent by integrating understanding, predicting user intentions, and executing decisions. First, we construct the Act2Intention Bench through data collection and validated generation, comprising 72,511 intentions and over 700,000 actions across 52 apps, thereby establishing the first benchmark for evaluating proactive agents via continuous intention-action trajectories. We further develop the Act2Intention Agent, achieving proactive services through Proactive-oriented Intention Understanding, Personalized Proactive Intention Prediction, and Experience-guided Intention Execution. Experimental results show that supervised fine-tuning on Act2Intention Bench yields absolute improvements of +32.0 Acc-S, +10.25 Acc-S, and +6.9 SSR points over non-fine-tuned counterparts under the same agent framework for intention understanding, prediction, and execution, respectively. This success underscores the necessity and value of the Act2Intention Bench, which establishes a standardized platform for developing and evaluating proactive agents and consequently paves the way for research on intention-driven human-computer interaction.",
+      "summary": "Mobile GUI Agents powered by multimodal large language models (MLLMs) show promise in human-computer intelligence. However, current research primarily focuses on reactive task execution while lacking a comprehensive understanding-prediction-execution process for user intentions,…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2608.12138v1",
+      "title": "A corpus-specific clinical RAG system matches or outperforms newer frontier LLMs on HealthBench",
+      "authors": [
+        "Praveen Reddy",
+        "Charuta Mandke",
+        "Suvrankar Datta",
+        "Sarah Khan",
+        "Siddharth Reddy Anthireddy",
+        "Shitij Arora",
+        "Vishal Singh"
+      ],
+      "published": "2026-08-12",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2608.12138v1",
+      "pdf": "https://arxiv.org/pdf/2608.12138v1",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.HC",
+        "cs.IR"
+      ],
+      "abstract": "General-purpose large language models (LLMs) have recently been reported to match or exceed specialized clinical AI tools on medical benchmarks, but such comparisons draw on a narrow set of systems and on benchmarks developed largely in high-income settings. We evaluate VITA, a retrieval-augmented generation (RAG) system purpose-built for contextual knowledge retrieval in India and other low- and middle-income (LMIC) settings. VITA retrieves from a curated corpus of disease-specific guidelines, India-specific antimicrobial resistance data, national formulary constraints, and resource-limited care protocols; its architecture and corpus are proprietary, but the benchmark, the physician-written rubrics, and our full response and scoring outputs are public for independent verification. On 4,023 English-language HealthBench questions (80.5% of the benchmark), scored with a GPT-4.1 judge, VITA ranked first with 51.9% of possible rubric points, ahead of GPT-5.4 (46.1%), o4-mini (44.3%), Gemini 3.1 Pro (42.6%), and Claude Sonnet 4.6 (37.3%), and scored highest on 45.4% of questions. To test robustness to newer models and judge lineage, a 500-question subset was re-run against current-generation models (GPT-5.5, Claude Opus 4.8, Gemini 3.5 Pro, Grok 4.3) and graded by a neutral open-weight judge (DeepSeek-V4-Pro) sharing no lineage with any system tested. Here the gap narrowed to parity: VITA and GPT-5.5 were statistically indistinguishable on mean per-question score, while VITA led on points-weighted score and won the most questions. VITA's advantages in accuracy and completeness persisted under the neutral judge; its communication scores were lower. These results indicate that a purpose-built clinical RAG system remains competitive with frontier LLMs on an open benchmark, consistent with corpus specificity as a design variable that improves grounding at some cost to communication polish.",
+      "summary": "General-purpose large language models (LLMs) have recently been reported to match or exceed specialized clinical AI tools on medical benchmarks, but such comparisons draw on a narrow set of systems and on benchmarks developed largely in high-income settings. We evaluate VITA, a r…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2608.10276v1",
+      "title": "Fine-Tuning Large Language Models for Codebook-Guided Coding of Students' Mathematics Metaphor Responses",
+      "authors": [
+        "Liang Zhang",
+        "Stephen Hwang",
+        "Yue Ma",
+        "Jinfa Cai"
+      ],
+      "published": "2026-08-10",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2608.10276v1",
+      "pdf": "https://arxiv.org/pdf/2608.10276v1",
+      "categories": [
+        "cs.HC",
+        "cs.CY"
+      ],
+      "abstract": "Student-generated metaphors about mathematics can reveal students' attitudes, beliefs, identities, and experiences, but human expert coding of these thematically and semantically complex open-ended responses is time-intensive and difficult to scale. This study examines whether LoRA-based supervised fine-tuning of large language models (LLMs) can improve their performance on codebook-guided coding tasks for student mathematics metaphors. We used a human-coded corpus of 2,265 Grade 6-8 responses to food- and animal-based metaphor prompts and instructed the LLMs to perform two coding tasks: valence-intensity coding to capture the direction and strength of students' affective orientations toward mathematics, and thematic coding to capture students' framings of mathematics as expressed through their metaphors. We compared two proprietary models, GPT-4o mini and GPT-5 mini, under prompt-only conditions with two open-weight models, DeepSeek-R1 1.5B and Mistral 7B, evaluated before and after fine-tuning. Results show that fine-tuning substantially improved the performance and run-to-run reliability of the open-weight models across both tasks relative to their base versions. The fine-tuned compact open-weight models became competitive with, and often outperformed, the proprietary prompt-only models. These findings suggest that compact open-weight LLMs can support scalable, locally controllable, and privacy-conscious AI-assisted measurement of students' metaphor responses in mathematics education.",
+      "summary": "Student-generated metaphors about mathematics can reveal students' attitudes, beliefs, identities, and experiences, but human expert coding of these thematically and semantically complex open-ended responses is time-intensive and difficult to scale. This study examines whether Lo…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2608.09294v1",
+      "title": "Graphing the Everyday: A Neurosymbolic Approach to Eliciting Routines for Just-In-Time Adaptive Interventions",
+      "authors": [
+        "Shakyani Jayasiriwardene",
+        "Blake Mountford",
+        "Meican Ma",
+        "Niels van Berkel",
+        "Nicholas Koemel",
+        "Matthew Ahmadi",
+        "Jorge Goncalves",
+        "Emmanuel Stamatakis"
+      ],
+      "published": "2026-08-10",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2608.09294v1",
+      "pdf": "https://arxiv.org/pdf/2608.09294v1",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "Just-In-Time Adaptive Interventions (JITAIs) increasingly rely on conversational agents to elicit user routines, yet translating fluid human dialogue into rigid schedule data remains a significant challenge. We conducted a qualitative investigation of a neurosymbolic pipeline, combining Large Language Models (LLMs) with a Neo4j knowledge graph, to map unstructured verbal narratives into actionable interventions. Through human-centric evaluation using natural-language playbacks, we identified a critical \"mental-model gap,\" where the linear extraction of LLMs clashes with hierarchical, non-linear human storytelling, causing severe entity fragmentation. Furthermore, we articulate an \"ecological mismatch,\" demonstrating that algorithmic schedule availability frequently ignores the user's fluctuating psychological receptivity and physical energy levels. To resolve these tensions, we propose actionable design heuristics, including routine piggybacking, adaptive negotiation, and scalable transparency. Ultimately, these guidelines provide a foundational framework for evolving rigid schedule-trackers into empathetic, context-aware proactive agents capable of supporting long-term health behavior change.",
+      "summary": "Just-In-Time Adaptive Interventions (JITAIs) increasingly rely on conversational agents to elicit user routines, yet translating fluid human dialogue into rigid schedule data remains a significant challenge. We conducted a qualitative investigation of a neurosymbolic pipeline, co…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2608.09080v1",
+      "title": "When Confidence Fails: Overconfidence in LLMs under Uncertainty and Missing Clinical Information",
+      "authors": [
+        "Maryam Tahermazandarani",
+        "Adnan Mahmood",
+        "Fahmida Islam",
+        "Quan Z. Sheng"
+      ],
+      "published": "2026-08-10",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2608.09080v1",
+      "pdf": "https://arxiv.org/pdf/2608.09080v1",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "abstract": "Large Language Models (LLMs) have achieved strong performance in medical question answering and clinical reasoning tasks. However, their reliability under uncertainty remains poorly understood which raises critical concerns for deployment in high-stakes clinical settings. In such environments, incorrect predictions are inherently risky, but confident incorrect predictions can be particularly harmful as they may mislead clinical decision-making. In this paper, we conduct a systematic behavioral analysis of LLMs under clinical information uncertainty. We propose an evaluation framework based on the MedMCQA dataset consisting of two complementary uncertainty settings. First, we introduce linguistic uncertainty cues through prompt modifications to simulate ambiguous clinical contexts. Second, we construct an answer removal setting, wherein the correct option is deliberately excluded mandating the model to recognize insufficient information and abstain. We analyze both model accuracy and confidence behavior using multiple calibration metrics including calibration gap, Expected Calibration Error (ECE), and Unsafe Confident Error Rate (UCER) across 500 medical questions. Our results reveal a consistent failure mode, i.e., although accuracy degrades under increasing uncertainty, model confidence remains misaligned with accuracy. This leads to a substantial increase in unsafe confident errors, indicating that model confidence remains largely insensitive to clinically meaningful information loss. Furthermore, we observe significant variation across models in their ability to abstain when the correct answer is unavailable, with some models persistently producing high confidence hallucinated answers. These findings expose critical limitations in the epistemic reliability of current LLMs and highlight the need for uncertainty aware evaluation methods prior to their deployment in clinical workflows.",
+      "summary": "Large Language Models (LLMs) have achieved strong performance in medical question answering and clinical reasoning tasks. However, their reliability under uncertainty remains poorly understood which raises critical concerns for deployment in high-stakes clinical settings. In such…",
+      "summary_zh": ""
+    },
     {
       "id": "2608.07091v1",
       "title": "Human-Centered Explainable AI for TinyML Edge Devices: A Pareto-Based Selection Framework with LLM-Guided Design",
@@ -176,58 +296,6 @@
       "summary_zh": ""
     },
     {
-      "id": "2608.03464v1",
-      "title": "ChartAnno: Evaluating MLLMs for Chart Annotation Generation",
-      "authors": [
-        "Zhenghan Chen",
-        "Zekai Shao",
-        "Lidan Tan",
-        "Xin Lin",
-        "Xingchen Zeng",
-        "Yi Shan",
-        "Ziyue Lin",
-        "Xiaoliang Fu"
-      ],
-      "published": "2026-08-04",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2608.03464v1",
-      "pdf": "https://arxiv.org/pdf/2608.03464v1",
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.HC"
-      ],
-      "abstract": "Multimodal large language models (MLLMs) have made significant progress in chart understanding, generation, and editing, but their ability to annotate existing charts remains underexplored. Annotating charts is a common yet challenging communicative task, requiring models to infer intended messages, interpret chart semantics, and place appropriate textual or graphical elements. To address this gap, we introduce ChartAnno, a benchmark for evaluating MLLMs on chart annotation generation. It contains 1,200 real-world charts with paired code and annotation instructions across three levels of instruction specificity. We evaluate 10 representative MLLMs under two primary input settings: (1) chart code alone and (2) both chart code and chart image, and further include a chart image-only ablation study. Results show that proprietary models remain stronger overall, although large-scale open-source models narrow the gap. More specific instructions improve annotation quality, while inferring abstract intent remains most difficult for current MLLMs. Providing chart images brings limited overall gains, with improvements mainly appearing in design-related metrics. These findings highlight chart annotation generation as a challenging task requiring semantic grounding and effective annotation design. Code and data will be released in a future version.",
-      "summary": "Multimodal large language models (MLLMs) have made significant progress in chart understanding, generation, and editing, but their ability to annotate existing charts remains underexplored. Annotating charts is a common yet challenging communicative task, requiring models to infe…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2608.01724v1",
-      "title": "TIDES: A Longitudinal Bilingual Dataset for Modeling Multi-Party Social Dynamics",
-      "authors": [
-        "Heechan Lee",
-        "Jeonggyu Kang",
-        "Junho Myung",
-        "Jaywoong Jeong",
-        "Juho Kim",
-        "Joseph Seering"
-      ],
-      "published": "2026-08-03",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2608.01724v1",
-      "pdf": "https://arxiv.org/pdf/2608.01724v1",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.HC"
-      ],
-      "abstract": "Group conversations are fundamental to human collaboration, yet standard large language models (LLMs) still struggle with the complexities of multi-party interaction. This challenge persists in part because existing group conversation datasets are often limited to short-term lab settings with contrived tasks, failing to capture the long-term social dynamics of real-world teams. To bridge this gap, we introduce TIDES, a high-resolution longitudinal dataset tracking 12 university project teams over a full semester. Comprising 75,971 utterances in both English and Korean from in-person meetings, TIDES provides a naturalistic record of teams working on self-managed projects. Our socio-structural annotations-covering interaction types, emergent roles, and development stages-allow for modeling of team evolution over months. Experiments show that fine-tuning on TIDES improves next-speaker prediction by 13.8 percentage points over a bigram baseline (64.53%) and yields performance comparable to strong proprietary zero-shot models. The model also comes within 2.1 percentage points of the published state of the art on the AMI Meeting Corpus while using approximately 42% less training data. However, human evaluations suggest that better next-speaker prediction does not necessarily yield more natural or coherent utterances, as fine-tuned models were generally less preferred than vanilla models. This potential mismatch motivates further study of how structural modeling can support natural multi-party generation.",
-      "summary": "Group conversations are fundamental to human collaboration, yet standard large language models (LLMs) still struggle with the complexities of multi-party interaction. This challenge persists in part because existing group conversation datasets are often limited to short-term lab…",
-      "summary_zh": ""
-    },
-    {
       "id": "2608.01705v1",
       "title": "Rethinking Generative AI Literacy: An Integrative, Developmental, and Dialectical Framework for K-12 Teacher Education",
       "authors": [
@@ -242,7 +310,7 @@
       ],
       "published": "2026-08-03",
       "source": "arXiv",
-      "topic": "LLM Evaluation",
+      "topic": "Human-Centered AI",
       "url": "https://arxiv.org/abs/2608.01705v1",
       "pdf": "https://arxiv.org/pdf/2608.01705v1",
       "categories": [
@@ -253,31 +321,6 @@
       ],
       "abstract": "Generative artificial intelligence (GenAI) has entered classrooms faster than teachers have been prepared to use it well, producing a GenAI literacy lag in which technological diffusion outpaces educators' conceptual, pedagogical, and ethical readiness. Established AI literacy frameworks predate the widespread adoption of large language models and, while acknowledging ethics, position it as a discrete competency rather than a constitutive commitment, with equity and agency as supplementary design principles. Recent GenAI-specific efforts address isolated features but remain fragmented. We introduce the Responsible AI Literacy in Education (RAIL-Ed) framework, developed through a systematic review and qualitative framework analysis of 67 studies (2023-2025), grounded in critical, pragmatist, sociocultural, and human-centered traditions (Freire, Dewey, Vygotsky, Shneiderman). RAIL-Ed specifies six interdependent pillars: Technical Fluency, Critical Evaluation, Human-AI Collaboration, Contextual Awareness, Ethical Reasoning, and Empowered Agency, marked by three commitments. It is integrative: the absence of any pillar produces a characteristic pedagogical failure. It is developmental: a three-level rubric (Emerging, Competent, Advanced) specifies how each pillar matures across the K-12 teacher-preparation continuum. It is dialectical: the same generative affordance can deepen or displace learning depending on the literacy a teacher brings to it, making the cultivation of that literacy, not the adoption of the tool, the object of design. By treating ethics, equity, and agency as constitutive, RAIL-Ed offers a theoretically grounded basis for curriculum design, teacher education, and policy, aligned with the UNESCO AI Competency Framework for Teachers and the OECD/European Commission AILit Framework. The framework is conceptual, advancing falsifiable propositions for empirical validation.",
       "summary": "Generative artificial intelligence (GenAI) has entered classrooms faster than teachers have been prepared to use it well, producing a GenAI literacy lag in which technological diffusion outpaces educators' conceptual, pedagogical, and ethical readiness. Established AI literacy fr…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2608.00357v1",
-      "title": "Dynamic Surveys: Using LLMs to Blend Qualitative Depth,Quantitative Structure, and Collaborative Interaction",
-      "authors": [
-        "Kehua Lei",
-        "Aidan Ladenburg",
-        "Zahra Petiwala",
-        "Zili Wang",
-        "Dishita Jhawar",
-        "Ipsita Bisht",
-        "Ansh Kumar",
-        "David T. Lee"
-      ],
-      "published": "2026-08-01",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2608.00357v1",
-      "pdf": "https://arxiv.org/pdf/2608.00357v1",
-      "categories": [
-        "cs.HC"
-      ],
-      "abstract": "Surveys are a powerful tool for collecting data and eliciting insights on social phenomena, and are critical in product design, marketing, scientific research. However, traditional open-ended and closed-ended question formats limit researchers' ability to capture data that combines both the richness of qualitative insights and the analytical rigor of quantitative data. To address these problems, we propose Dynamic Surveys, a survey platform that uses Large Language Models (LLMs) to dynamically cluster qualitative responses in real time and to elicit quantitative ratings and rankings on those clusters and qualitative reflections on how their views compare to broader respondent trends, especially helpful in early-stage or exploratory research settings. This process generates a report showing survey creators and respondents the clustered responses as well as each cluster's rank, rating distribution, and follow-up reflections. To evaluate Dynamic Surveys, we conducted two field studies with 93 participants over a 2-month period. In the first study, 52 students provided input for a career workshop, while in the second, 41 students gave feedback on gaps in their academic curriculum. Of these, 44 respondents filled out a survey on their experience using Dynamic Surveys. We also shared the generated report with 4 individuals who were interested in the insights for their work, and interviewed them to understand their perspectives on the results and any contextual risks they saw in the platform design. Our findings suggest that Dynamic Surveys not only provide richer and deeper insights into responses compared with traditional survey tools, but also increase engagement and foster a sense of community. We discuss broader implications for the design of survey platforms that blend qualitative depth with quantitative structure, facilitating richer insights and offering more collaborative interactions.",
-      "summary": "Surveys are a powerful tool for collecting data and eliciting insights on social phenomena, and are critical in product design, marketing, scientific research. However, traditional open-ended and closed-ended question formats limit researchers' ability to capture data that combin…",
       "summary_zh": ""
     },
     {
@@ -304,29 +347,6 @@
       ],
       "abstract": "Security Operations Centers (SOCs) process large volumes of security events, requiring analysts to accurately detect and assess ongoing cyberattacks under time pressure. Recent advances in Large Language Models (LLMs) suggest potential benefits for security operations, yet their practical suitability for real-world SOC workflows remains poorly understood. To address this gap, we conducted 25 semi-structured interviews with SOC practitioners who had prior experience with LLMs, complemented by interactive scenarios to anticipate challenges and identify opportunities for the responsible integration of LLM-based tools into SOC workflows. We identified 15 LLM use cases grouped into six functional categories. While LLMs are valued for automating repetitive, low-level tasks such as report automation, practitioners rate high-impact tasks such as incident analysis as not yet feasible, reporting limitations in technical depth, context awareness, and organization-specific knowledge. They locate these limitations less in the models than in the readiness of their SOCs and human factors driving over-reliance. Despite concerns, practitioners express a strong willingness to adopt LLMs, describing competitive pressure that leaves few alternatives. This work contributes an empirical, practitioner-driven analysis of LLM use across SOC roles and organizations and derives concrete design and integration requirements for human-centered, operationally safe LLM-assisted security operations.",
       "summary": "Security Operations Centers (SOCs) process large volumes of security events, requiring analysts to accurately detect and assess ongoing cyberattacks under time pressure. Recent advances in Large Language Models (LLMs) suggest potential benefits for security operations, yet their…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2608.00299v2",
-      "title": "ReVoicer: Conversational Voice Annotation for Human-Centered, LLM-Assisted Peer Review",
-      "authors": [
-        "Matt Gottsacker",
-        "Ahinya Alwin",
-        "Hiroshi Furuya",
-        "Robert W. Lindeman",
-        "Gerd Bruder",
-        "Gregory F. Welch"
-      ],
-      "published": "2026-07-31",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2608.00299v2",
-      "pdf": "https://arxiv.org/pdf/2608.00299v2",
-      "categories": [
-        "cs.HC"
-      ],
-      "abstract": "We present ReVoicer, a prototype system that supports peer reviewers by letting them converse with a paper as they read it. The reviewer highlights a passage and speaks (or types) a train-of-thought comment. A large language model then cleans the comment using the surrounding prose as context, tags it by comment type, and anchors it to the passage. After the reviewer finishes reading, ReVoicer checks the accumulated notes against a venue-specific rubric and reports coverage gaps to assist with further reflection. Then ReVoicer drafts a review composed from the reviewer's comments, written to a style guide distilled from the reviewer's past reviews. We describe the system's design rationale and implementation, and we outline plans for future evaluations.",
-      "summary": "We present ReVoicer, a prototype system that supports peer reviewers by letting them converse with a paper as they read it. The reviewer highlights a passage and speaks (or types) a train-of-thought comment. A large language model then cleans the comment using the surrounding pro…",
       "summary_zh": ""
     },
     {
@@ -366,28 +386,6 @@
       ],
       "abstract": "Immersive environments, e.g., virtual reality (VR), offer a unique approach to exploring complex 3D datasets, where data is often heavily occluded and exploration incurs a high cognitive load. We propose DP-LENS, a density-aware polyfocal fisheye lens equipped with topology-driven auto-routing. While preserving peripheral context through geometric deformation and 3D perspective techniques, it enables users to explore 3D data with a lower cognitive load. To facilitate hands-free macro-navigation, we integrate a Large Language Model (LLM) to serve as a supplementary voice-based target selection tool that initiates the auto-routing algorithm. Two user studies with 34 participants investigate the potential benefits of this system. Our first study (N=18) compared the manual DP-LENS against two industry-standard baselines (i.e., World-in-Miniature and volumetric slicing) in heavily occluded 3D datasets. The results show that DP-LENS significantly reduced cognitive load, decreased completion time, and improved user preference. The second study (N=16) compared the topology-driven auto-routing system (initiated via voice commands) with a fully manual DP-LENS. The results show that the auto-routing system improved task efficiency, further reduced cognitive load, and garnered higher user preference. Furthermore, the auto-routing partially decoupled exploration efficiency from the physical dimensions of the data and mitigated physical fatigue to some extent. Based on the findings, we proposed design implications to inform the development of more spatially scalable and low-fatigue interactions for future 3D visual analytics systems.",
       "summary": "Immersive environments, e.g., virtual reality (VR), offer a unique approach to exploring complex 3D datasets, where data is often heavily occluded and exploration incurs a high cognitive load. We propose DP-LENS, a density-aware polyfocal fisheye lens equipped with topology-drive…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2607.26526v1",
-      "title": "A Design Study on Voice-based Interaction for Immersive Network Visualization and Analysis",
-      "authors": [
-        "Sam Yu-Te Lee",
-        "Hsin-Ai Chen",
-        "Sarah Yuniar",
-        "David Bauer",
-        "Kwan-Liu Ma"
-      ],
-      "published": "2026-07-29",
-      "source": "arXiv",
-      "topic": "LLM User Simulation",
-      "url": "https://arxiv.org/abs/2607.26526v1",
-      "pdf": "https://arxiv.org/pdf/2607.26526v1",
-      "categories": [
-        "cs.HC"
-      ],
-      "abstract": "Visual network analysis leverages network visualization authoring techniques to facilitate sensemaking, serendipitous discovery, and hypothesis verification on network data. However, transferring the same paradigm to immersive environments is non-trivial due to insufficient UI affordance for authoring operations. Researchers have studied combining multiple modalities for interactions, but the high learning curve of such input systems limits their adoption by typical data analysts, let alone for network analytics. In this work, we investigate the advantages and limitations of voice as the primary input modality with a research-through-design (RtD) study, in which we design a system that supports voice-based interactions for immersive network visualization facilitated by Large Language Models (LLMs). Through a user study on social network data analysis with participants from social science and computer science backgrounds, we find that voice interactions can improve perceived usability relative to controller-based interaction and lower the cognitive effort of formulating commands, since users can express intent in natural language rather than compressing it into terse instructions. We discuss design implications for immersive visualizations, highlighting how usability limits adoption while simplified interactions and voice-based controls enhance fluidity and support complex, multi-parameter operations.",
-      "summary": "Visual network analysis leverages network visualization authoring techniques to facilitate sensemaking, serendipitous discovery, and hypothesis verification on network data. However, transferring the same paradigm to immersive environments is non-trivial due to insufficient UI af…",
       "summary_zh": ""
     }
   ]
