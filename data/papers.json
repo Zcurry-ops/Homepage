@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T05:39:41Z",
+  "updated": "2026-10-05T06:31:51Z",
   "source": "arXiv",
   "generated_by": "ai",
   "topics": [
@@ -11,359 +11,369 @@
   "count": 16,
   "papers": [
     {
-      "id": "2609.02719v2",
-      "title": "Large Language Model-Driven Context-Aware Eco-Feedback Generation and Evaluation",
+      "id": "2610.01158v1",
+      "title": "Understanding Student Use of Large Language Models Across Computer Science Subfields",
       "authors": [
-        "Wooyoung Jung",
-        "Prosper Babon-Ayeng"
+        "Sehrish Basir Nizamani",
+        "Yoonje Lee",
+        "Nikitha Donekal Chandrashekar",
+        "Margaret Ellis",
+        "Naren Ramakrishnan"
       ],
-      "published": "2026-09-02",
+      "published": "2026-10-01",
       "source": "arXiv",
       "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2609.02719v2",
-      "pdf": "https://arxiv.org/pdf/2609.02719v2",
-      "categories": [
-        "cs.HC"
-      ],
-      "abstract": "The objective of this study is to demonstrate the potential of generating context-aware eco-feedback - eco-feedback that reflects a household's contextual characteristics alongside its energy use patterns - through a large language model-integrated framework. Previous studies have introduced personalized eco-feedback, mostly relying on household energy use patterns; however, they frequently did not reflect distinct household characteristics, including their persona or non-negotiable routines, leaving eco-feedback ineffective and sometimes superficial. To address these limitations, we introduce a contextual engineering framework that generates eco-feedback using a self-consistency with chain-of-thought prompt, leveraging household energy analysis data, utility rate structures, and household characteristic information. We conducted a rigorous empirical validation and a combinatorial evaluation analysis to assess this framework systematically. The former tested the framework's ability to generate accurate and contextually grounded eco-feedback for three households by comparing its output against reference interventions independently derived from the same household data. The latter examined the framework's adaptability across 400 scenarios spanning 50 households, two utility rate structures, and four behavioral personas. Our framework generated eco-feedback that aligned with reference interventions at a mean rate of 92.0% and grounded its recommendations in the provided household data with 95.7% citation accuracy. It also proved highly adaptive, shifting both the appliances targeted and the energy-saving strategies recommended in response to rate structure and household context. Ultimately, this study contributes to realizing the next level of context-aware interactions between occupants and buildings which paves the way for higher occupant living quality and sustainability.",
-      "summary": "The objective of this study is to demonstrate the potential of generating context-aware eco-feedback - eco-feedback that reflects a household's contextual characteristics alongside its energy use patterns - through a large language model-integrated framework. Previous studies hav…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2609.02611v1",
-      "title": "Beyond Problem Solving: Large Language Models for Emotional and Reflective Support in Mathematics Learning",
-      "authors": [
-        "Vera Rief",
-        "Mirella Hladký",
-        "Minju Yoo",
-        "Stephanie Heel",
-        "Shintaro Sato",
-        "Tomohiro Nagashima"
-      ],
-      "published": "2026-09-02",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2609.02611v1",
-      "pdf": "https://arxiv.org/pdf/2609.02611v1",
-      "categories": [
-        "cs.HC"
-      ],
-      "abstract": "Intelligent Tutoring Systems (ITSs) traditionally focus their adaptive support on cognitive aspects of learning. Although effective, little is known about how such systems can be enhanced by addressing students' emotional states. In particular, the role of mindful interventions for supporting student learning and experiences in adaptive math learning remains underexplored. We developed \"Math with Matt\", an ITS that leverages Large Language Models (LLMs) to provide both cognitive and emotional support in algebra learning. The system offers 1) an LLM-based mindful chat that delivers context-sensitive emotional support through a pedagogical agent Matt, and 2) mindful feedback and hint messages (not just evaluative) to enhance learning experiences and reduce math anxiety. We conducted a classroom study with 7th graders, comparing a Mindful version against a version with cognitive support only. Overall, the ITS reduced executive state-math anxiety and improved students' math learning, though no significant differences emerged between the conditions. However, students with the mindfulness interventions showed higher learning efficiency and well-balanced problem-solving behavior, since they achieve a similar level of math learning with less learning time and fewer requested hints compared to the Cognitive version. Additionally, they reported that the pedagogical agent felt more supportive and caring than students in the cognitive condition. Our study demonstrates the feasibility and scalability of integrating mindfulness into ITSs through LLM-based interactions and positions LLMs as an adaptive, socio-emotional layer within cognitive math tutoring.",
-      "summary": "Intelligent Tutoring Systems (ITSs) traditionally focus their adaptive support on cognitive aspects of learning. Although effective, little is known about how such systems can be enhanced by addressing students' emotional states. In particular, the role of mindful interventions f…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2609.02149v2",
-      "title": "OmegaUse-SOP: SOP Engineering for Professional Computer Use from Human Demonstrations",
-      "authors": [
-        "Yixiong Xiao",
-        "Lang An",
-        "Hucheng Yang",
-        "Pinxue Ma",
-        "Yongquan Chen",
-        "Jingjia Cao",
-        "Yusai Zhao",
-        "Ting Wang"
-      ],
-      "published": "2026-09-02",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2609.02149v2",
-      "pdf": "https://arxiv.org/pdf/2609.02149v2",
-      "categories": [
-        "cs.HC",
-        "cs.AI"
-      ],
-      "abstract": "Large language models (LLMs) are increasingly evolving from conversational assistants into agents capable of operating external digital environments. Graphical user interface (GUI) agents play an important role in this transition, as many real-world workflows remain accessible only through user-facing software interfaces. However, despite recent progress on general computer-use benchmarks, domain-specific professional standard operating procedures (SOPs) remain challenging for GUI agents because they often involve implicit domain knowledge, software-specific conventions, and task-level verification requirements. We introduce OmegaUse-SOP, a human-in-the-loop SOP Engineering system for transforming human demonstrations of professional computer use into reusable SOP skills for GUI agents. Analogous to prompt engineering, SOP Engineering iteratively refines demonstrations, execution rules, and domain knowledge to convert professional SOPs into reusable GUI-agent skills. OmegaUse-SOP consists of four modules: Observe, Reason, Configure, and Execute. Together, these modules record expert operations as multimodal GUI traces, abstract low-level events into semantic step-level instructions, incorporate domain rules and task-specific parameters, and execute the resulting skills in live GUI environments through step-wise grounding, action generation, and verification. To demonstrate its effectiveness, we collaborate with a power-sector client and test OmegaUse-SOP on photovoltaic simulation workflows in PVsyst 7.2. The results suggest that OmegaUse-SOP can improve GUI-agent reliability on professional SOP tasks, highlighting a practical path toward deploying GUI agents in domain-specific professional software environments.",
-      "summary": "Large language models (LLMs) are increasingly evolving from conversational assistants into agents capable of operating external digital environments. Graphical user interface (GUI) agents play an important role in this transition, as many real-world workflows remain accessible on…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2609.00982v1",
-      "title": "Disclosure-Gated User Simulation for Companion-Agent Evaluation",
-      "authors": [
-        "Yao Liu",
-        "Yu He"
-      ],
-      "published": "2026-09-01",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2609.00982v1",
-      "pdf": "https://arxiv.org/pdf/2609.00982v1",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.HC"
-      ],
-      "abstract": "Using a large language model to play the user is now standard in scalable evaluation. It has a repeatedly diagnosed failure: the simulated user is excessively cooperative, so a system under test can score by the sheer number of questions it asks rather than by making the user willing to speak. We answer with a disclosure gate conditioning information release on the companion agent's behaviour: its state is a ladder of five ordered gates, merged onto three observable depth layers. We specify, ablate, and audit it, and train a user simulator against that specification. Gating behaviour is learned from the training corpus's synthetic branch, while the real branch supplies how people speak and react; after training, the simulator need not be told at runtime which gate each item sits behind. The gate is a load-bearing component of the environment: on the English corpus of a published companion-agent benchmark (CompanionBench), once training no longer states per example which gate each item sits behind, the largest rank displacement across 12 systems under test exceeds the noise band set by re-running that environment under a new seed, while per-system scores show no detectable change. We state two acceptance criteria: a ranking must be order-preserving, and absolute scores must be scale-stable. Of the candidates we examine, only one passes both -- the simulator we release -- and its leaderboard correlates at 0.993 with the benchmark's original simulator. By contrast, prompting a frontier model as the simulator barely moves the ranking while shifting every score upward -- a shift invisible to anyone checking the ranking alone. The environment we specify is the one that benchmark already used. That publication describes the mechanism in about four hundred words, and we supply what it lacked: specification, ablations, human studies, negative controls, and downstream sensitivity analysis.",
-      "summary": "Using a large language model to play the user is now standard in scalable evaluation. It has a repeatedly diagnosed failure: the simulated user is excessively cooperative, so a system under test can score by the sheer number of questions it asks rather than by making the user wil…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2609.00506v1",
-      "title": "RecalibrateGPT: AI Fatigue Resilient Conversational Interfaces",
-      "authors": [
-        "Nikhil Wani"
-      ],
-      "published": "2026-09-01",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2609.00506v1",
-      "pdf": "https://arxiv.org/pdf/2609.00506v1",
-      "categories": [
-        "cs.HC",
-        "cs.AI"
-      ],
-      "abstract": "Large language models are powerful, but their interfaces often devolve into a type $\\rightarrow$ read $\\rightarrow$ retype loop, creating conversational AI fatigue, cognitive load, and eventual task abandonment. To mitigate this, we present RecalibrateGPT, a system introducing five cross-turn operators (Anchor, Replay, Delta, Scope, and Steer) that each target a distinct fatigue type, recalibrating LLM responses through a structured panel by acting on the full conversation history with a single click. Users invoke these operators through the AssistiveButton in one of three operator palette layouts: Vertical, Arc, or Tablet. We conducted two pilot studies with the same 12 advanced LLM users. An initial formative qualitative study identifies a taxonomy of four fatigue types (retyping, scanning, decision paralysis, and context drift) and derives two design objectives for RecalibrateGPT. A follow-up quantitative evaluation finds it reduces perceived cognitive workload by half (NASA-TLX = 2.7) at high perceived usability (SUS = 86.5), suggesting AI fatigue is not just a model-quality issue but an interaction-flow cost that interfaces can remove.",
-      "summary": "Large language models are powerful, but their interfaces often devolve into a type $\\rightarrow$ read $\\rightarrow$ retype loop, creating conversational AI fatigue, cognitive load, and eventual task abandonment. To mitigate this, we present RecalibrateGPT, a system introducing fi…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2609.00491v1",
-      "title": "MemeBridge: A Dataset for Benchmarking and Mitigating the Bidirectional Cultural Gap in Meme Interpretation",
-      "authors": [
-        "Hangxiao Zhu",
-        "Suliu Qin",
-        "Zhuoyan Li",
-        "Ming Jiang",
-        "Yu Zhang",
-        "Meng Xia"
-      ],
-      "published": "2026-08-31",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2609.00491v1",
-      "pdf": "https://arxiv.org/pdf/2609.00491v1",
-      "categories": [
-        "cs.CL",
-        "cs.HC"
-      ],
-      "abstract": "Communicating across cultures is inherently challenging, especially through culturally dense and ambiguous formats like memes. While people expect large language models (LLMs) to hold promise for bridging such gaps, existing benchmark datasets often fail to capture the cultural context necessary for accurate interpretation. To address this, we introduce MemeBridge, a curated dataset centered on U.S.-originated memes, designed to capture two complementary perspectives: (1) how Chinese participants interpret these memes, and (2) how U.S. participants anticipate how people from other cultures might misunderstand them. Here, context refers to implicit cultural knowledge, including background beliefs, norms, and shared assumptions that shape meme comprehension. The dataset was constructed via a multi-stage crowdsourcing pipeline with rigorous validation, including human agreement checks and GPT-based classification verification. Each meme is annotated with sentiment, emotion, cultural significance, and knowledge type, providing rich supervision for downstream tasks. Notably, we observe that the anticipated misunderstandings from U.S. participants are often inaccurate, highlighting the asymmetries in cultural understanding and the challenges of adopting perspectives beyond one's own. This bidirectional framing, which focuses on both expression and perception, enables more nuanced benchmarking of cross-cultural comprehension. Our probing of multiple LLMs reveals that while models developed in different cultural contexts exhibit partial cross-cultural understanding, they often struggle with sophisticated interpretations. By contrast, fine-tuning with MemeBridge improves model performance, underscoring the value of culturally grounded resources for training and evaluating LLMs in globally diverse settings.",
-      "summary": "Communicating across cultures is inherently challenging, especially through culturally dense and ambiguous formats like memes. While people expect large language models (LLMs) to hold promise for bridging such gaps, existing benchmark datasets often fail to capture the cultural c…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2608.30856v1",
-      "title": "You Shouldn't Have Asked: A Pragmatics-Inspired Taxonomy for Evaluating LLM Refusals",
-      "authors": [
-        "Ruoxuan Li",
-        "Pinqiao Wang",
-        "Sheng Li",
-        "Cameron Robert Jones"
-      ],
-      "published": "2026-08-31",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2608.30856v1",
-      "pdf": "https://arxiv.org/pdf/2608.30856v1",
-      "categories": [
-        "cs.CL",
-        "cs.HC"
-      ],
-      "abstract": "Refusals are often treated as face-threatening acts in pragmatics because they can challenge the requester's socially claimed self-image. Large language models (LLMs) are increasingly trained to refuse unsafe and inappropriate requests, and these refusals may harm users when models fail to manage this interactional cost properly. While existing work has mainly approached LLM non-compliance as a safety-alignment outcome, it does not provide a way to evaluate whether LLMs refuse appropriately across different harmful contexts. To study this question, we propose (to our knowledge) the first taxonomy of LLM refusals that is grounded in pragmatic theory. Applying this taxonomy to responses from 16 modern LLMs across 14 harm categories, we find that although models differ in how they refuse, their refusals are overall explicit and strongly morally evaluative, with interactional repair occurring mainly through offering or providing safer alternatives instead of interpersonal facework. This pattern is especially consequential in sensitive harm contexts, where overuse of negative framing may make users feel shamed or provoked, undermining the purpose of safe non-compliance. We therefore call for alignment evaluation that considers not only whether models refuse harmful requests, but also whether they refuse in ways that are contextually adaptive and socially accountable for the interactional consequences of saying no.",
-      "summary": "Refusals are often treated as face-threatening acts in pragmatics because they can challenge the requester's socially claimed self-image. Large language models (LLMs) are increasingly trained to refuse unsafe and inappropriate requests, and these refusals may harm users when mode…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2608.30694v1",
-      "title": "Inferring Value Criteria from Ordinal Preferences: An Iterative In-Context Learning Framework for Music Generation",
-      "authors": [
-        "Futa Hidaka",
-        "Naomi Imasato",
-        "Kazuki Miyazawa",
-        "Takato Horii"
-      ],
-      "published": "2026-08-31",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2608.30694v1",
-      "pdf": "https://arxiv.org/pdf/2608.30694v1",
-      "categories": [
-        "cs.HC"
-      ],
-      "abstract": "Adapting a generative music system to an individual's taste requires learning what that listener values. Listeners can rank pieces, but their underlying criteria may be tacit and difficult to articulate. We ask whether and under what conditions a large language model (LLM) can adapt symbolic music generation from rankings alone and construct transferable natural-language descriptions of value criteria. In our iterative in-context learning framework, the LLM formulates hypotheses, generates candidate pieces in ABC notation, receives a ranking, and periodically infers and verbalizes value criteria from history to guide later generation. We evaluate the framework against 16 simulated raters in 480 adaptation runs using mixed-effects modeling, an ablation, and transfer tests on unseen music. Overall, the framework did not outperform a feedback-free diverse-generation baseline, but did so for two value functions with targets difficult to reach through simple sampling. How atypical the target was relative to the LLM's feedback-free generation tendencies predicted adaptation difficulty. Moreover, higher value during adaptation did not imply identification of the criterion as a general rule. On unseen music, acquired descriptions and histories improved generation for more value functions than they improved preference prediction, which remained near chance. Some gains were associated with acoustic proximity to music in the context, but others were not. These findings show that rankings alone can guide generation under limited conditions, while transferable criterion inference remains constrained by the foundation model's ability to recognize, reason about, and verbalize musical attributes.",
-      "summary": "Adapting a generative music system to an individual's taste requires learning what that listener values. Listeners can rank pieces, but their underlying criteria may be tacit and difficult to articulate. We ask whether and under what conditions a large language model (LLM) can ad…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2608.28819v1",
-      "title": "Visible but Not Yet Curatable: Characterizing the Curatability of Compact and Derived Open LLM Artifacts",
-      "authors": [
-        "Yiyi Lu",
-        "Yilai Qian",
-        "Yucheng Jin"
-      ],
-      "published": "2026-08-28",
-      "source": "arXiv",
-      "topic": "LLM User Simulation",
-      "url": "https://arxiv.org/abs/2608.28819v1",
-      "pdf": "https://arxiv.org/pdf/2608.28819v1",
-      "categories": [
-        "cs.HC",
-        "cs.DL"
-      ],
-      "abstract": "Open Large Language Model (LLM) research increasingly produces compact and derived artifacts, such as adapters, quantized checkpoints, merged models, and distilled variants, that are distributed across papers, model hubs, model cards, code repositories, and release statements. Although these artifacts are publicly visible, digital libraries often lack sufficient evidence to identify, preserve, and cite them as coherent scholarly objects. We introduce a framework that conceptualizes curatability as a record-level property of distributed scholarly records and operationalizes it through four evidence dimensions: artifact identity, scholarly linkage, upstream evidence, and release assets. Guided by this framework, we conduct the first collection-scale characterization of open LLM curatability using a May 2026 snapshot of 191,375 public Hugging Face repositories and a core corpus of 2,214 scholarly papers. Our results reveal a pronounced visibility-to-curatability funnel. While 90.7% of paper records contain at least one useful curation signal, only 18.1% combine usable upstream evidence with concrete release evidence, and only 6.1% provide sufficiently coordinated evidence to support high-curatability records. Based on these findings, we derive a minimal seven-field curatable record and complementary responsibilities for model hubs, scholarly indexes, and digital libraries, providing practical guidance for improving the preservation and bibliographic control of open LLM artifacts.",
-      "summary": "Open Large Language Model (LLM) research increasingly produces compact and derived artifacts, such as adapters, quantized checkpoints, merged models, and distilled variants, that are distributed across papers, model hubs, model cards, code repositories, and release statements. Al…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2608.27268v1",
-      "title": "BrailleBench: Investigating Multi-Criteria Braille Comprehension in Large Language Models",
-      "authors": [
-        "Jinghan Zhang",
-        "Fengran Mo",
-        "Zhiyu Chen",
-        "Xiaoyan Han",
-        "Kunpeng Liu",
-        "Chang-Tien Lu"
-      ],
-      "published": "2026-08-27",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2608.27268v1",
-      "pdf": "https://arxiv.org/pdf/2608.27268v1",
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.HC"
-      ],
-      "abstract": "Although Large language models (LLMs) mediate access to knowledge and computational assistance, their capabilities should benefit vulnerable groups in the same way. However, it is unclear whether existing AI systems are inclusive enough for blind and deafblind users to access the same functionality through Braille, whose indicators, contractions, and digital representations introduce distinct requirements for model comprehension. To this end, we introduce BrailleBench, a benchmark for evaluating LLMs in Braille comprehension from different Criteria. BrailleBench aligns 5,570 instances from five datasets, including mathematics, commonsense, and multi-hop question answering across English and Braille Grades 1 and 2. Different configurations are designed to understand whether the systems can comprehend Braille-authored content, express answers in Braille, and complete end-to-end Braille interaction. To ensure the quality and prevent evaluation bias, the benchmark is built through a deterministic, expert-reviewed pipeline via a self-created Braille Toolkit without using any data instances generated by LLMs. We evaluate six representative LLMs from various aspects. The results reveal a persistent gap between print-English capability and Braille accessibility. Braille understanding and expression are asymmetric, where Grade 2 is especially fragile on the input side compared to Grade 1, and fully Braille requests further reduce performance. The experimental observations provide valuable guidance for the development of future Braille AI systems. All related resources in BrailleBench are publicly available for future research.",
-      "summary": "Although Large language models (LLMs) mediate access to knowledge and computational assistance, their capabilities should benefit vulnerable groups in the same way. However, it is unclear whether existing AI systems are inclusive enough for blind and deafblind users to access the…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2608.25377v1",
-      "title": "CompanionHarm: A Multi-Turn Benchmark for Detecting Harms in Real-World AI Companion Conversations",
-      "authors": [
-        "Renwen Zhang",
-        "Han Meng",
-        "Jian Chai",
-        "Yuntao Lin",
-        "Yi-Chieh Lee"
-      ],
-      "published": "2026-08-26",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2608.25377v1",
-      "pdf": "https://arxiv.org/pdf/2608.25377v1",
+      "url": "https://arxiv.org/abs/2610.01158v1",
+      "pdf": "https://arxiv.org/pdf/2610.01158v1",
       "categories": [
         "cs.CY",
         "cs.HC"
       ],
-      "abstract": "As AI companions become increasingly embedded in everyday life, there is an urgent need to detect harms that emerge in social and emotional human-AI interactions. Yet research in this area is constrained by the lack of real-world, multi-turn conversational datasets for operationalizing and evaluating harms that are relational and contextual. In this work, we introduce CompanionHarm, a publicly available benchmark dataset comprising 2,111 real-world, multi-turn conversations (14,051 utterances) between users and the AI companion Replika. 7,016 AI utterances were annotated independently by three annotators across 13 harmful behavior categories grounded in a taxonomy of AI companion harms, and the dataset includes both aggregated labels and annotator-level labels to support model evaluation and systematic disagreement analysis. Evaluations of seven large language models (LLMs) show that harm detection using multi-turn conversational context outperforms detection based on isolated utterances, although current LLMs still struggle to consistently integrate contextual cues, calibrate harm severity, and interpret relational boundaries. We also find substantial annotator disagreement for context-dependent harmful behaviors, with disagreement varying according to annotators' political affiliation, conversation length, and the utterance's position. Together, CompanionHarm provides a foundation for detecting socio-emotional harms in multi-turn human-AI conversations and for rigorously examining how such harms are interpreted by both humans and LLMs. Our dataset is available at https://github.com/HanMeng2004/CompanionHarm.",
-      "summary": "As AI companions become increasingly embedded in everyday life, there is an urgent need to detect harms that emerge in social and emotional human-AI interactions. Yet research in this area is constrained by the lack of real-world, multi-turn conversational datasets for operationa…",
+      "abstract": "This research full paper examines how undergraduate students use large language models (LLMs) across computer science subfields. As LLMs become increasingly integrated into computing education, understanding how their use varies across technical and pedagogical contexts is essential for designing effective, subfield-aware instruction. This paper presents a cross-subfield analysis of LLM usage among 211 undergraduate students in a problem-solving course intentionally designed to support responsible and effective LLM use through structured instruction and reflection. Using post-assignment reflection data collected across seven instructional modules spanning multiple computer science subfields, we examine prompt counts, LLM role conceptualization, and verification behavior. Results show that LLM adoption varies substantially by assignment, with higher usage in algorithms and web development and lower usage in software engineering. Students predominantly treat LLMs as assistive tools rather than authoritative sources, and verification is common across all subfields, with most students using multiple strategies. Verification behavior also varies by assignment context, with testing more common in structured tasks and web search more common in open-ended tasks. These findings suggest that assignment characteristics play a central role in shaping how students interact with and evaluate LLM outputs, even under a single, consistently applied instructional design. This work contributes empirical evidence on how LLM adoption, role conceptualization, and verification behavior vary across computer science subfields, extending our prior work on structured, reflective LLM instruction to show how its effects differ by task rather than only in aggregate.",
+      "summary": "This research full paper examines how undergraduate students use large language models (LLMs) across computer science subfields. As LLMs become increasingly integrated into computing education, understanding how their use varies across technical and pedagogical contexts is essent…",
       "summary_zh": ""
     },
     {
-      "id": "2608.24730v2",
-      "title": "Learning to Prefer Reliably: Error-Augmented Emotion Preference Optimization with Calibrated Fusion",
+      "id": "2610.00701v1",
+      "title": "From Images to Tasks: Characterizing Multimodal LLM Interactions in the Wild",
       "authors": [
-        "Zilong Huang",
-        "Junyi Peng",
-        "Junjie Li",
-        "Kai Li",
-        "Wenze Ren",
-        "Kong Aik Lee",
-        "Man-Wai Mak",
-        "Tatsuya Kawahara"
+        "Jinyi Ye",
+        "Scott Counts",
+        "Gaurav Verma",
+        "Kate Lytvynets",
+        "Weiwei Yang"
       ],
-      "published": "2026-08-25",
+      "published": "2026-09-30",
       "source": "arXiv",
       "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2608.24730v2",
-      "pdf": "https://arxiv.org/pdf/2608.24730v2",
-      "categories": [
-        "cs.MM",
-        "cs.HC"
-      ],
-      "abstract": "Emotion preference learning uses pairwise comparisons between candidate descriptions to align multimodal large language models (MLLMs) with human judgments of open-ended emotion descriptions and to train reward models that capture human emotional preferences. However, conventional pairwise supervision is often sparse, typically providing only a single negative description for each positive description, and therefore offers limited coverage of the diverse ways in which an emotion description can be incorrect. In particular, models may be insufficiently exposed to semantically fluent but emotionally inconsistent descriptions. Beyond this data-level limitation, relying on a single MLLM judge introduces a distinct model-level concern: its judgments can be affected by model-specific biases when interpreting fine-grained or ambiguous multimodal emotional cues. To address these limitations, we propose Error-Augmented Preference Optimization (EAPO), a framework for improving the reliability of MLLM-based emotion preference judgment at both the data and model levels. First, we construct an error-augmented dataset by generating multiple controlled and emotion-aware negative descriptions from each preferred description. We then adapt multiple independent MLLM judges to this richer supervision and aggregate their preference margins using margin-calibrated soft fusion, which maps heterogeneous margins to a common scale before aggregation. Experiments on the MER2026-EmoPrefer Challenge dataset and our error-augmented dataset demonstrate that EAPO improves emotion preference prediction and enhances the robustness of MLLM judges when evaluating fluent descriptions that conflict with the video's multimodal emotional evidence. Our code is available at https://github.com/slash1028/EAPO-EmoPrefer.",
-      "summary": "Emotion preference learning uses pairwise comparisons between candidate descriptions to align multimodal large language models (MLLMs) with human judgments of open-ended emotion descriptions and to train reward models that capture human emotional preferences. However, conventiona…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2608.24224v1",
-      "title": "Aura: Dynamic Intra-Turn Emotion-Aware Adaptation of Large Language Model Responses",
-      "authors": [
-        "Rachel Schuchert",
-        "Christian Holz"
-      ],
-      "published": "2026-08-25",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2608.24224v1",
-      "pdf": "https://arxiv.org/pdf/2608.24224v1",
+      "url": "https://arxiv.org/abs/2610.00701v1",
+      "pdf": "https://arxiv.org/pdf/2610.00701v1",
       "categories": [
         "cs.HC"
       ],
-      "abstract": "Effective human-AI interaction requires systems that dynamically adapt to a user's behavior and evolving understanding. When users interact with Large Language Models (LLMs), these models typically respond to prompts without sensing the user's immediate reactions. This lack of communicative synchrony can lead to information overload or leave confusion unresolved in real time. In this paper, we introduce Aura, a framework that enables LLM systems to dynamically modulate output based on a user's evolving emotions. Aura's Perception Module continuously estimates the user's emotional state from facial expressions. Our Policy Module then selects interventions through a probabilistic belief model. Finally, Aura's Generation Module uses parameter-efficient Low-Rank Adaptation (LoRA) adapters to produce contextually tailored responses mid-turn during response generation. We evaluated Aura in a within-subjects user study (N=20) on information-seeking tasks, where it achieved statistically significantly higher normalized perceived learning gains than a Llama-3 baseline and reduced interaction time by 21% relative to existing LLM baselines (GPT-4o, Llama-3). Our results indicate that real-time, context-sensitive interventions can improve learning efficiency and user satisfaction without observable degradation in factual accuracy. Aura thus supports the potential for more responsive and effective human-AI interaction.",
-      "summary": "Effective human-AI interaction requires systems that dynamically adapt to a user's behavior and evolving understanding. When users interact with Large Language Models (LLMs), these models typically respond to prompts without sensing the user's immediate reactions. This lack of co…",
+      "abstract": "Multimodal large language models (LLMs) increasingly integrate vision and text, yet how people use them in natural settings remains underexplored. We seek to answer the question: when users upload images, what tasks are they trying to accomplish? Analyzing over 40,000 de-identified image-upload conversations from Microsoft Copilot, we characterize real-world multimodal use through a hierarchical framework of ten capabilities, spanning perception, cognition, and generation. First, we characterize the distribution and composition of these capabilities, finding that the majority of image-upload tasks involve multiple capabilities. Second, we find that multimodal use spans a broader and more diverse task space than text-only interactions, with asymmetric coverage and task classes that rely on cross-modal grounding. Third, mapping observed capability demand onto 253 existing benchmarks reveals uneven alignment between benchmark coverage and real-world use: benchmarks concentrate on perception and reasoning toward fixed answers, while common workflows involving text, code, and data generation remain comparatively undertested. We validate our taxonomy and findings on an independent ChatGPT dataset. Our results provide a large-scale empirical characterization of what users seek to accomplish with multimodal LLMs and highlight opportunities for benchmark design grounded in observed user demand.",
+      "summary": "Multimodal large language models (LLMs) increasingly integrate vision and text, yet how people use them in natural settings remains underexplored. We seek to answer the question: when users upload images, what tasks are they trying to accomplish? Analyzing over 40,000 de-identifi…",
       "summary_zh": ""
     },
     {
-      "id": "2608.24133v1",
-      "title": "PlaceSeek: Human-Centered Geospatial Retrieval of Urban Outdoor Places via Semantic Grounding and Affective Alignment",
+      "id": "2609.40103v1",
+      "title": "JuryFlow: Disagreement-Guided Human-in-the-Loop Multi-Agent Evaluation",
       "authors": [
-        "Ziqi Cui",
-        "Shangyu Lou"
+        "Mufeng Yang",
+        "Junwei Yu",
+        "Yepeng Ding"
       ],
-      "published": "2026-08-25",
+      "published": "2026-09-30",
       "source": "arXiv",
-      "topic": "Human-Centered AI",
-      "url": "https://arxiv.org/abs/2608.24133v1",
-      "pdf": "https://arxiv.org/pdf/2608.24133v1",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2609.40103v1",
+      "pdf": "https://arxiv.org/pdf/2609.40103v1",
       "categories": [
-        "cs.CV",
-        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly deployed as automated judges for AI-generated content, yet a single judge is unreliable and even a panel of judges leaves a hard residue: when judges disagree, majority voting discards the conflict instead of resolving it. We present JuryFlow, a disagreement-guided, human-in-the-loop multi-agent evaluation framework that treats inter-judge disagreement not as noise to be averaged away, but as a precise, claim-level signal indicating where an evaluation is uncertain. JuryFlow decomposes each candidate response into atomic claims, has a panel of heterogeneous judges assign per-claim verdicts, and builds a disagreement graph whose nodes are scored by verdict entropy and whose edges encode structural similarity between claims. A human acts as a structural guide, selecting which disagreement to resolve through a single, minimal intervention rather than re-labeling the response, after which the focal claim is re-evaluated, the correction propagates along graph edges and to historically similar cases, and is crystallized into reusable rubric entries that all judges inherit, making the evaluator progressively self-refining. To enable large-scale, reproducible benchmarking without human studies, we evaluate JuryFlow in an automatic configuration in which focal selection is made by entropy ranking. On MT-Bench and LLMBar, JuryFlow improves agreement with gold labels over single-judge and majority-vote panel baselines, and ablations isolate the contributions of disagreement-targeted re-evaluation, propagation, and rubric induction. We contribute (1) a human-in-the-loop paradigm that recasts the human from labeler to structural guide, (2) the JuryFlow framework operationalizing it through a disagreement graph, focal re-evaluation, and closed-loop rubric induction, and (3) an evaluation protocol with ablations that isolate where the gains originate.",
+      "summary": "Large language models (LLMs) are increasingly deployed as automated judges for AI-generated content, yet a single judge is unreliable and even a panel of judges leaves a hard residue: when judges disagree, majority voting discards the conflict instead of resolving it. We present…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2609.40069v1",
+      "title": "Conversational Capture: A Trajectory-Level Framework for Evaluating Generative Engine Optimization in Multi-turn Human-Agent Interaction",
+      "authors": [
+        "Junwei Yu",
+        "Jieyu Zhou",
+        "Mufeng Yang",
+        "Yepeng Ding",
+        "Hiroyuki Sato"
+      ],
+      "published": "2026-09-30",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2609.40069v1",
+      "pdf": "https://arxiv.org/pdf/2609.40069v1",
+      "categories": [
+        "cs.HC",
         "cs.IR"
       ],
-      "abstract": "People search for urban outdoor places not only by category or function, but also by what activities a place can support and how it is perceived. Existing geospatial retrieval remains largely POIcentric and metadata-driven, making it difficult to satisfy openended, affective, or activity-oriented needs. We present PlaceSeek, a human-centered outdoor place retrieval framework that maps natural-language queries to geolocated street-view imagery. PlaceSeek introduces an intent-aware retrieval mechanism that decomposes user queries into functional and affective sub-intents. A Semantic Grounding Module verifies whether candidate street-view results contain the physical evidence needed to support the intended activity, while an Affective Alignment Module re-ranks physically valid candidates using a LoRA-adapted vision-language model trained on human urban perception judgments. We evaluate PlaceSeek on 31,956 street-view locations in Milan across 10 naturallanguage queries annotated by five human evaluators. PlaceSeek achieves 88.0% Precision@5, a mean match score of 3.39/4.0, and 0.920 nDCG@5, outperforming CLIP, fine-tuned CLIP, SigLIP, and a VQA-based baseline. Ablation results show that physical grounding is essential for retrieval validity, while affective alignment improves ranking quality among physically valid candidates. These findings highlight that complex urban spatial queries require modeling both verifiable visual evidence and human perceptual preferences. PlaceSeek provides a potential framework for human-centered nextgeneration geospatial retrieval systems.",
-      "summary": "People search for urban outdoor places not only by category or function, but also by what activities a place can support and how it is perceived. Existing geospatial retrieval remains largely POIcentric and metadata-driven, making it difficult to satisfy openended, affective, or…",
+      "abstract": "Generative Engine Optimization (GEO) shapes content to increase its likelihood of being cited by answer engines built on retrieval-augmented large language models. GEO is typically evaluated as a single-turn property: for a fixed query, an evaluator measures a source's visibility in one answer. We argue that the single answer is an inadequate unit of analysis. Human-agent information seeking forms a closed loop: the agent's answer changes the user's beliefs and therefore the next question, which in turn determines what the agent retrieves. We introduce conversational capture, a phenomenon in which a source cited early becomes substantially more likely to be cited again. Capture operates through a machine-side channel, history-conditioned retrieval, and a human-side channel, follow-up questions directed toward the captured source. We formalize the interaction as a two-layer closed-loop system and derive trajectory-level constructs: cumulative conversational visibility; a direct/feedback decomposition of trajectory gain; a nested split of the feedback term into machine-side and human-side channels; a capture coefficient; a compounding ratio; and a misranking diagnostic. Using reinforcement-process (Pólya-urn) theory, we prove that the feedback term is zero under single-turn evaluation and that GEO's cumulative payoff grows superlinearly with conversation length while capture develops. A model-derived illustration shows that the feedback term can exceed the direct term, the compounding ratio exceeds two within ten turns, and single-turn and trajectory rankings agree only weakly (Kendall's $τ= 0.4$). We connect the human channel to information foraging, trust calibration, and Bayesian persuasion, and discuss design implications for answer engines.",
+      "summary": "Generative Engine Optimization (GEO) shapes content to increase its likelihood of being cited by answer engines built on retrieval-augmented large language models. GEO is typically evaluated as a single-turn property: for a fixed query, an evaluator measures a source's visibility…",
       "summary_zh": ""
     },
     {
-      "id": "2608.24169v1",
-      "title": "ViSculpt: Visual-Centric Agentic Geometry Editing",
+      "id": "2610.00760v1",
+      "title": "LeanSide: A Formally Verified Co-Reasoning System for Natural-language Proofs",
       "authors": [
-        "Bo Pang",
-        "Jiaqi Pan",
-        "Xiaocheng Zhang",
-        "Jiacheng Xu",
-        "Guoping Wang",
-        "Peng-Shuai Wang"
+        "Chenjun Guo",
+        "Manooshree Patel",
+        "Arnav Mehta",
+        "Krishiv Kothari",
+        "Thomas Lu",
+        "Niels Voss",
+        "Rayna Bhattacharyya",
+        "Peter Donovan"
       ],
-      "published": "2026-08-25",
-      "source": "arXiv",
-      "topic": "LLM User Simulation",
-      "url": "https://arxiv.org/abs/2608.24169v1",
-      "pdf": "https://arxiv.org/pdf/2608.24169v1",
-      "categories": [
-        "cs.CV",
-        "cs.GR",
-        "cs.HC"
-      ],
-      "abstract": "3D geometry editing is a critical yet labor-intensive part of the graphics pipeline, requiring artists to translate creative intent into precise operations in complex professional software. Large language models (LLMs) have shown promise for script-based 3D creation, but script generation is less suited to perception-driven editing of arbitrary existing meshes, where execution must remain visually grounded and untouched regions should be preserved. We present a \\emph{visual-centric}, training-free multi-agent system that edits existing 3D meshes directly in Blender by emulating the iterative workflow of human artists. Rather than generating scripts or regenerating geometry, our system operates through the Blender GUI: multimodal LLM agents observe the viewport, reason about the current mesh state, and execute localized edits through simulated user interactions. Experiments on a curated benchmark provide initial evidence that this agentic approach can follow natural language instructions, perform representative localized mesh edits, and preserve the overall identity of the input asset. Our results highlight a complementary regime for language-driven 3D editing: direct in-place modification of existing meshes within the native 3D editing workflow. We view this work as an exploratory step toward visual-centric agentic geometry editing in professional graphics software.",
-      "summary": "3D geometry editing is a critical yet labor-intensive part of the graphics pipeline, requiring artists to translate creative intent into precise operations in complex professional software. Large language models (LLMs) have shown promise for script-based 3D creation, but script g…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2608.20896v1",
-      "title": "Beyond the Traceback: Using LLMs for Adaptive Explanations of Programming Errors",
-      "authors": [
-        "Alexandru-Radu Moraru",
-        "Shreyan Biswas",
-        "Ujwal Gadiraju"
-      ],
-      "published": "2026-08-21",
+      "published": "2026-09-30",
       "source": "arXiv",
       "topic": "AI-Assisted Creativity",
-      "url": "https://arxiv.org/abs/2608.20896v1",
-      "pdf": "https://arxiv.org/pdf/2608.20896v1",
+      "url": "https://arxiv.org/abs/2610.00760v1",
+      "pdf": "https://arxiv.org/pdf/2610.00760v1",
       "categories": [
-        "cs.SE",
         "cs.HC"
       ],
-      "abstract": "Programming error messages are critical for software development, yet they remain difficult for novice programmers to interpret. While Large Language Models (LLMs) can rewrite these errors into clearer explanations, it remains unclear whether increased readability improves objective debugging performance or how explanation styles should align with programmer skill. We present a multi-stage crowdsourced study N=103 evaluating skill-targeted, LLM-generated Python error messages. Using a custom proficiency assessment, we categorized participants by skill level and tested standard interpreter messages against two LLM-generated styles: pragmatic (action-oriented) and contingent (scaffolded explanations). We measured both objective debugging metrics (fix rate, attempts, time-to-fix) and subjective perceptions (readability, cognitive load, tone). Our results show that while LLM-rewritten messages significantly improved subjective evaluations, with pragmatic messages rated as clearer and less cognitively demanding, these perceived gains did not translate into statistically significant improvements in objective debugging performance. This highlights a critical human-AI complementarity gap: explanations that feel better to users do not necessarily make them more effective debuggers. We discuss design implications for adaptive AI feedback systems, arguing that future tools should pivot from static skill-targeted rewriting toward dynamic adjustments based on a user's real-time repair trajectory.",
-      "summary": "Programming error messages are critical for software development, yet they remain difficult for novice programmers to interpret. While Large Language Models (LLMs) can rewrite these errors into clearer explanations, it remains unclear whether increased readability improves object…",
+      "abstract": "Large language models are increasingly used as collaborators on deductive-reasoning tasks, but their outputs can hallucinate or pull users away from intended reasoning. Formal proof assistants provide machine-checked verification, but have a steep learning curve and require more granular reasoning than human written proofs. We explore an interface that combines these strengths, allowing users to write and revise free-form natural-language proofs while a verified backend checks their reasoning and returns feedback at the user's granularity. We study this interface in the context of undergraduate mathematics education by developing LeanSide, a formally verified co-reasoning system, which auto-formalizes student reasoning into Lean and informalizes verifier output into understandable feedback. We conducted user studies through classroom deployment and analyzed which system properties helped students make progress and which caused them to get stuck. We use these findings to derive design implications for using a formally verified backend in human-AI co-reasoning systems.",
+      "summary": "Large language models are increasingly used as collaborators on deductive-reasoning tasks, but their outputs can hallucinate or pull users away from intended reasoning. Formal proof assistants provide machine-checked verification, but have a steep learning curve and require more…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2609.36736v1",
+      "title": "From Neurons to Conversation: Speech Brain-Computer Interfaces",
+      "authors": [
+        "Moein Khajehnejad",
+        "Forough Habibollahi",
+        "Tommaso Boccato",
+        "Margarida Sousa",
+        "Michal Olak",
+        "Francesco Jamal Sheiban",
+        "Matteo Ferrante"
+      ],
+      "published": "2026-09-29",
+      "source": "arXiv",
+      "topic": "LLM User Simulation",
+      "url": "https://arxiv.org/abs/2609.36736v1",
+      "pdf": "https://arxiv.org/pdf/2609.36736v1",
+      "categories": [
+        "cs.HC",
+        "cs.CL",
+        "q-bio.NC"
+      ],
+      "abstract": "Speech brain-computer interfaces (BCIs) aim to restore communication by transforming neural activity related to speech, language, or communicative intent into external outputs such as text, synthesized voice, or avatar control. Recent advances in intracortical and electrocorticographic recording, deep sequence models, and language-model-assisted decoding have enabled rapid progress, including high-performance attempted-speech decoding and increasingly naturalistic speech synthesis. Yet these achievements also reveal that speech BCIs are not simply neural-to-text decoders. They are adaptive clinical systems in which neural representations, recording hardware, decoding architectures, language priors, feedback, and user learning interact over time. Here, we synthesize speech BCI research from a system-level perspective. We first examine the neural substrates of speech and language, emphasizing their hierarchical, distributed, temporally structured, and non-stationary organization. We then examine recording and decoding choices, closed-loop adaptation, evaluation, clinical translation, and ethics. Across these domains, we highlight recurring trade-offs between signal resolution and invasiveness, low-level motor and high-level semantic targets, decoder accuracy and user agency, and language-model fluency and faithful neural evidence. We argue the next generation of speech BCIs should be evaluated not only by offline accuracy, but also by robustness across sessions, calibration burden, latency, uncertainty, usability, and safeguards against unintended decoding. By reframing speech BCIs as adaptive, user-centred systems, we outline the interdisciplinary priorities spanning speech neuroscience, neural engineering, machine learning, clinical practice, and neuroethics needed to move from proof-of-concept decoding toward reliable, expressive, and controllable communication neuroprostheses.",
+      "summary": "Speech brain-computer interfaces (BCIs) aim to restore communication by transforming neural activity related to speech, language, or communicative intent into external outputs such as text, synthesized voice, or avatar control. Recent advances in intracortical and electrocorticog…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2609.32336v1",
+      "title": "WSM-Aware HRI: An IoT-Enhanced Framework for Early Detection and Norm-Guided Repair of Failures with LLM Guidance",
+      "authors": [
+        "Hanlin Zhang",
+        "Yuquan Wang",
+        "Tianwei Zhang",
+        "Zhenglong Sun"
+      ],
+      "published": "2026-09-26",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2609.32336v1",
+      "pdf": "https://arxiv.org/pdf/2609.32336v1",
+      "categories": [
+        "cs.RO",
+        "cs.HC"
+      ],
+      "abstract": "Human-robot interaction (HRI) failures remain a major barrier to deploying robots in real-world environments. Prior work often treats failures as isolated technical faults or focuses on post-hoc recovery behaviors. In practice, many breakdowns arise because humans and robots operate under inconsistent assumptions about the current world state. We propose WSM-Aware HRI, an IoT-enhanced modular framework that unifies diverse HRI breakdowns as World-State Mismatches (WSMs) between a human's instruction-implied assumptions and a robot's grounded world model built from multimodal perception and digital augmentation. A Large Language Model (LLM) is used to make implicit assumptions explicit, map them to a small set of mismatch types, and specify the evidence needed for verification against the robot's world state. WSM-Aware HRI shifts failure handling from execution-time recovery to proactive mismatch detection during intention formation, enabling interventions guided by safety, norm compliance, and multi-user coordination with transparent explanations. We evaluate mismatch identification in ten everyday cases spanning both visual and latent-state mismatches. The system can accurately produce the expected output results, and ablations show that reliable identification depends on appropriate grounding representations and verification-oriented refinement. These results indicate that treating interaction breakdowns as explicit world-state mismatches enables earlier detection of impending failures and offers a principled mechanism for integrating external evidence and social constraints into human-robot interaction.",
+      "summary": "Human-robot interaction (HRI) failures remain a major barrier to deploying robots in real-world environments. Prior work often treats failures as isolated technical faults or focuses on post-hoc recovery behaviors. In practice, many breakdowns arise because humans and robots oper…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2609.32020v1",
+      "title": "A Benchmark for LLM's Understanding of Middle School and High School Science Topics",
+      "authors": [
+        "Noah L. Schroeder",
+        "Yessy Eka Ambarwati",
+        "Yuji Zhang",
+        "ChengXiang Zhai"
+      ],
+      "published": "2026-09-25",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2609.32020v1",
+      "pdf": "https://arxiv.org/pdf/2609.32020v1",
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly integrated into educational settings, yet educators lack robust, standards-aligned tools to evaluate their effectiveness in K-12 science contexts. Existing benchmarks predominantly assess general language or advanced scientific reasoning, leaving a critical gap in understanding LLMs' performance on content directly relevant to secondary science curricula. To address this gap, we developed a comprehensive NGSS-aligned benchmark for both middle and high school science using a rigorous synthetic data pipeline, multi-judge validation, and item-level psychometric analysis. Nine open-weight LLMs were systematically evaluated using this benchmark, indicating that several smaller, locally deployable models achieved high accuracy across diverse science domains and question types. Our findings indicate that model size did not consistently predict performance, emphasizing the importance of intentional model selection for educational deployment. We then incorporated a human reviewer into the loop, reviewing the items generated by the LLMs for alignment with NGSS standards. The human review indicated that synthetically generated items were not in perfect alignment with the NGSS standards, indicating the benefits of human-in-the-loop item development, the need to explore the intersection of content and pedagogical knowledge, and the need to extend benchmarks to evaluate LLMs' capacity for interactive, evidence-based feedback in educational scenarios.",
+      "summary": "Large language models (LLMs) are increasingly integrated into educational settings, yet educators lack robust, standards-aligned tools to evaluate their effectiveness in K-12 science contexts. Existing benchmarks predominantly assess general language or advanced scientific reason…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2609.29075v1",
+      "title": "CRISS: A Retrieval-Augmented AI Chatbot for Assisting Cancer Registrars",
+      "authors": [
+        "Vani Seth",
+        "Mohammad Beheshti",
+        "Anirudh Kambhampati",
+        "Vishwa Bhayani",
+        "Lucinda Ham",
+        "Prasad Calyam",
+        "Iris Zachary"
+      ],
+      "published": "2026-09-24",
+      "source": "arXiv",
+      "topic": "Human-Centered AI",
+      "url": "https://arxiv.org/abs/2609.29075v1",
+      "pdf": "https://arxiv.org/pdf/2609.29075v1",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "Cancer registrars, including Oncology Data Specialists (ODSs), must interpret complex and frequently updated coding and staging standards. We developed CRISS (Cancer Registry Intelligent Support System), a retrieval-augmented generation (RAG) conversational assistant that provides rapid, citation-supported access to registry guidance. This study evaluated whether CRISS could (1) support accurate and citation-supported responses, (2) improve access to and interpretation of relevant guidance, and (3) support training/helpdesk use while preserving human oversight of final abstraction decisions. We built a domain-specific knowledge base from national cancer registry standards, segmented into metadata-tagged passages and indexed as dense embeddings. Retrieved passages were used to generate citation-grounded responses through a large language model (LLM). Open-weight, proprietary, and non-RAG baseline models across Gemini and GPT families were evaluated on easy, medium, and hard registry questions using an LLM-as-a-Judge protocols. RAG configurations consistently outperformed non-RAG approaches, especially as question difficulty increased. Mean grounding scores for RAG were 0.62/0.56/0.59 across easy/medium/hard tiers versus 0.29/0.26/0.29 for non-RAG. RAG models also achieved higher semantic-similarity scores overall. Proprietary RAG models performed strongest on easy and medium questions, while local RAG models ranked highest on hard questions and proprietary models were generally more cautious. Domain-specific RAG improved evidence grounding and response quality for cancer registry questions while enabling citation-supported assistance across complexity levels. CRISS demonstrates the potential of human-centered, citation-grounded AI to support cancer registrars while preserving human oversight for final coding decisions.",
+      "summary": "Cancer registrars, including Oncology Data Specialists (ODSs), must interpret complex and frequently updated coding and staging standards. We developed CRISS (Cancer Registry Intelligent Support System), a retrieval-augmented generation (RAG) conversational assistant that provide…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2609.30563v1",
+      "title": "Thinking Less to Simulate Better: Intuitive Prompting Improves LLM Agents Simulating Individual Social Media Reactions, Including Unfamiliar Content",
+      "authors": [
+        "Ljubisa Bojic",
+        "Tijana Stanic",
+        "Joerg Matthes",
+        "Agariadne Dwinggo Samala",
+        "Bojana Dinic",
+        "Jue Wang"
+      ],
+      "published": "2026-09-24",
+      "source": "arXiv",
+      "topic": "LLM User Simulation",
+      "url": "https://arxiv.org/abs/2609.30563v1",
+      "pdf": "https://arxiv.org/pdf/2609.30563v1",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC",
+        "cs.MA"
+      ],
+      "abstract": "Platform policies are increasingly tested on artificial users, making agent fidelity important. Yet convincing fake profiles could also manipulate perceived public opinion before elections. Validation has concentrated on agreement with human behaviour and has paid little attention to whether an agent behaves in line with the profile it was given. The present study profiled eight Serbian participants through a questionnaire, a deep interview, and a written self-presentation, recorded their reactions to sixty-eight social media posts, and asked four language models to predict those reactions under five prompt conditions varying profile content and instruction style. Attitudinal content improved prediction over demographic backstories by a wide margin. Agents matched their stated profiles more closely than participants matched their own survey answers, and consistency proved unrelated to fidelity once profile information was present. Instructing models to respond intuitively and immediately rather than analytically gave the highest fidelity of any condition and cut the compression of individual differences from seven times the human level to three. The advantage held on posts about topics the questionnaire never raised, where that condition reached the highest fidelity of any setup and beat a crowd baseline by a wide margin, which suggests that agents prompted this way could serve as general-purpose simulated users rather than specialists on the topics they were profiled for. Results may bear implications for the development of language models, because intuition-based setups appear better suited to some tasks than reasoning-based ones.",
+      "summary": "Platform policies are increasingly tested on artificial users, making agent fidelity important. Yet convincing fake profiles could also manipulate perceived public opinion before elections. Validation has concentrated on agreement with human behaviour and has paid little attentio…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2609.27327v1",
+      "title": "Can Vision-Language Models Analyze Human-Centered Video? Mapping Model Capabilities and Human-AI Collaborative Workflows",
+      "authors": [
+        "Xiyuan Shen",
+        "Jiuyang Lyu",
+        "Seokhyun Hwang",
+        "Huanfen Yao",
+        "Shwetak Patel",
+        "Zhihan Zhang",
+        "Jacob O. Wobbrock"
+      ],
+      "published": "2026-09-23",
+      "source": "arXiv",
+      "topic": "Human-Centered AI",
+      "url": "https://arxiv.org/abs/2609.27327v1",
+      "pdf": "https://arxiv.org/pdf/2609.27327v1",
+      "categories": [
+        "cs.CV",
+        "cs.HC"
+      ],
+      "abstract": "Video provides a rich record of human behavior, interaction, and situated contexts, offering important evidence for understanding people and conducting human-centered research. As vision-language models (VLMs) become increasingly capable of analyzing video, they offer opportunities to automate this traditionally human-intensive process. Yet a central question remains: when can VLMs analyze human-centered video independently, and when does reliable analysis still require human involvement? To address this question, we first characterize video analysis practices in human-centered research. We systematically analyze all 1,702 CHI 2026 full papers and identify 125 that annotate videos. Through iterative coding, we derive a five-dimensional taxonomy spanning analytic purpose, viewpoint, phenomenon, reasoning requirement, and annotation authority. Grounded in recurring annotation tasks captured by this taxonomy, we construct a benchmark of 15 representative tasks from open datasets to map the capabilities and limitations of a general-purpose VLM. We examine the division of labor between humans and VLMs by comparing three annotation workflows: VLM alone, human alone, and human verification of VLM outputs. Across tasks, VLM-alone annotation approaches human accuracy on average (HNS = 97.0, where 100 denotes human-alone performance), demonstrating substantial potential to automate human-centered video analysis. Human verification achieves the highest accuracy (HNS = 121.5) while reducing human annotation time by 48.9% and monetary cost by 31.3%-44.5% relative to human-alone annotation. Our findings connect real-world human-centered video analysis tasks and current VLM capabilities, and clarify how human-AI collaboration can make VLM-assisted analysis reliable and efficient.",
+      "summary": "Video provides a rich record of human behavior, interaction, and situated contexts, offering important evidence for understanding people and conducting human-centered research. As vision-language models (VLMs) become increasingly capable of analyzing video, they offer opportuniti…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2609.27146v1",
+      "title": "ChartRevive: Reconstructing Data Visualizations from Chart Images Using MLLM",
+      "authors": [
+        "Yuki Ueno",
+        "Aditeya Pandey"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2609.27146v1",
+      "pdf": "https://arxiv.org/pdf/2609.27146v1",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "Static chart images are widely used in scientific publications, business reports, and presentations, yet recovering both the underlying data and visual design from chart images remains a labor-intensive manual process, making them difficult to reuse. While prior work has primarily focused on data extraction, the extraction of visual design specifications, including colors, marker shapes, and axis configurations, remains underexplored. To identify a suitable model for chart reconstruction, we systematically benchmark five multimodal large language models (MLLMs) across five basic chart types on both data and design extraction tasks. Our evaluation shows that textual and categorical information can generally be extracted reliably, whereas numeric and spatial information remain challenging. Among the evaluated models, GPT-5.4 achieves the best overall performance and is adopted as the backbone of our system. Guided by these findings, we present ChartRevive, a mixed-initiative system that combines MLLM-based extraction with an interactive verification interface, supporting users to efficiently inspect, correct, and refine reconstructed charts through overlay-based verification and real-time rebuilding.",
+      "summary": "Static chart images are widely used in scientific publications, business reports, and presentations, yet recovering both the underlying data and visual design from chart images remains a labor-intensive manual process, making them difficult to reuse. While prior work has primaril…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2609.26725v1",
+      "title": "Does AI Save Time on Product Design? A Randomized Controlled Experiment of AI Prompt-to-Design Workflows",
+      "authors": [
+        "Remy Stewart",
+        "Olabode Anise",
+        "Andrew Hogan",
+        "Augustus Griffin"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2609.26725v1",
+      "pdf": "https://arxiv.org/pdf/2609.26725v1",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "abstract": "AI tools for digital product design now offer prompt-to-design capabilities, allowing designers and their non-designer colleagues to create prototypes through conversational workflows with large language models (LLMs). While these tools promise time savings, experimental evidence in product design remains limited compared with evidence from software engineering. We conducted a randomized controlled trial with 50 product designers and 50 product managers to evaluate prospective time savings from leveraging Figma Make in design work. Participants attempted three standardized design tasks with or without access to Figma Make. Among participants who completed the study tasks, access to Figma Make was associated with approximately 20% shorter completion times, with larger gains among product managers. Our findings suggest that prompt-to-design tools may enable product managers to further contribute to design work, while the benefits for professional designers may be task dependent.",
+      "summary": "AI tools for digital product design now offer prompt-to-design capabilities, allowing designers and their non-designer colleagues to create prototypes through conversational workflows with large language models (LLMs). While these tools promise time savings, experimental evidence…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2609.27014v1",
+      "title": "ContraVis: Evidence-Grounded Visual Analytics for Contradiction Review in Legal Contracts",
+      "authors": [
+        "Luis Sante",
+        "Paula Lima",
+        "Mariana Rocha",
+        "Jorge Poco"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "topic": "Human-Centered AI",
+      "url": "https://arxiv.org/abs/2609.27014v1",
+      "pdf": "https://arxiv.org/pdf/2609.27014v1",
+      "categories": [
+        "cs.HC",
+        "cs.CL"
+      ],
+      "abstract": "Legal contracts are structurally complex documents in which contradictions may emerge across distant and interconnected provisions. Although large language models (LLMs) improve legal language understanding, contradiction analysis remains a human-centered and evidence-grounded review task. We present ContraVis, a visual analytics system for human-in-the-loop contradiction analysis in legal contracts. The system models contracts as typed paragraph graphs that combine explicit contractual references with semantic relationships between paragraphs. This graph plays a dual role: it conditions LLM reasoning and serves as the interactive representation the analyst explores, keeping model context and human inspection aligned across coordinated views. In a controlled comparison, graph-conditioned reasoning recovered more injected contradictions than standalone LLM analysis as contract length grew, while surfacing additional candidates for analyst validation. A formative study with contract-domain lawyers indicated that in-context evidence comparison supported contradiction validation, and we distill design implications for evidence-grounded, LLM-assisted document review.",
+      "summary": "Legal contracts are structurally complex documents in which contradictions may emerge across distant and interconnected provisions. Although large language models (LLMs) improve legal language understanding, contradiction analysis remains a human-centered and evidence-grounded re…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2609.25700v1",
+      "title": "Harnessing LLMs Without Surrendering Control: Delegation Boundaries in Visual Data Storytelling Authoring",
+      "authors": [
+        "Zhuojun Jiang",
+        "Yuki Ueno",
+        "Chris Bryan"
+      ],
+      "published": "2026-09-22",
+      "source": "arXiv",
+      "topic": "AI-Assisted Creativity",
+      "url": "https://arxiv.org/abs/2609.25700v1",
+      "pdf": "https://arxiv.org/pdf/2609.25700v1",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "Despite the emergence of large language models (LLMs) for visual data storytelling workflows, there are open questions about how authors decide what activities or tasks to entrust to them and what should be \"protected\" or maintained under human control. To investigate this, we interviewed a cohort of 12 expert visual data storytellers. Our analysis shows that participants rarely treated LLMs as autonomous storytellers. Instead, they tend to selectively delegate execution-oriented tasks to LLMs while retaining control over activities that shape narrative intent and story meaning. Our findings show that LLM assistance is most productive after human seeding and constraint-setting, and that it shifts labor from production to verification. We discuss design implications for boundary-aware authoring tools, data-grounded generation, low-fidelity ideation, and reporting practices for LLM-based visualization research. Supplemental materials for this paper are available at https://osf.io/hcnp6.",
+      "summary": "Despite the emergence of large language models (LLMs) for visual data storytelling workflows, there are open questions about how authors decide what activities or tasks to entrust to them and what should be \"protected\" or maintained under human control. To investigate this, we in…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2609.24532v1",
+      "title": "Prompting Against Persona Drift: Comparing Intervention Timing and Content in LLM-Simulated Conversations",
+      "authors": [
+        "Nicolas Leins",
+        "Jennifer Haase",
+        "Varvara Geronimus",
+        "Jana Gonnermann-Müller",
+        "Sebastian Pokutta"
+      ],
+      "published": "2026-09-21",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2609.24532v1",
+      "pdf": "https://arxiv.org/pdf/2609.24532v1",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "Simulating student personas with large language models (LLMs) enables scalable evaluation of educational systems. However, behavioral drift, a progressive decline in persona consistency, can emerge over extended conversations, limiting the validity of such simulations. We evaluate five prompt-level mechanisms using separate monitoring and intervention pipelines. Across 1,200 28-turn conversations spanning four LLMs and two ADHD persona intensities, we varied when to intervene (static vs. adaptive) and what to inject (reinjection vs. reflective reminder), plus a novel adaptive condition in which a monitor generates behavior-specific instructions. Relative to no intervention, reinjection reduced the modeled rate of LLM-rated drift by 35--38\\%, reflective reminders by 22--27\\%, and behavior-specific instruction by 87\\%. None eliminated drift. We found no evidence that adaptive timing outperformed static scheduling. Monitoring therefore appears more useful for deciding \\textit{what} to correct than \\textit{when} to intervene, although behavior-specific instruction requires component-level testing.",
+      "summary": "Simulating student personas with large language models (LLMs) enables scalable evaluation of educational systems. However, behavioral drift, a progressive decline in persona consistency, can emerge over extended conversations, limiting the validity of such simulations. We evaluat…",
       "summary_zh": ""
     }
   ]
