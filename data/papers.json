@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T06:31:51Z",
+  "updated": "2026-10-12T06:56:24Z",
   "source": "arXiv",
   "generated_by": "ai",
   "topics": [
@@ -10,6 +10,166 @@
   ],
   "count": 16,
   "papers": [
+    {
+      "id": "2610.11918v1",
+      "title": "From Surface to Depth: Towards Cognitive Appraisal Reasoning in Multimodal Emotion Understanding",
+      "authors": [
+        "Jia Li",
+        "Yichao He",
+        "Yangchen Yu",
+        "Qiankun Li",
+        "Xinyi Li",
+        "Baiyi Ye",
+        "Zhenzhen Hu",
+        "Richang Hong"
+      ],
+      "published": "2026-10-08",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2610.11918v1",
+      "pdf": "https://arxiv.org/pdf/2610.11918v1",
+      "categories": [
+        "cs.MM",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "abstract": "Recent multimodal large language models (MLLMs) increasingly incorporate explainable reasoning for emotion understanding. However, reasoning based mainly on observable affective cues can reduce emotion understanding to superficial cue-label associations, giving rise to the Clever Hans effect. Such shortcuts become unreliable when affective cues are implicit, conflicting across modalities, linguistically misleading, or obscured by redundant details. In contrast, human emotions are shaped by how individuals interpret and evaluate surrounding events beyond observable cues. Inspired by appraisal theories of emotion, we formulate multimodal emotion understanding as a progression from perception to cognitive appraisal, and introduce a dataset, a model, and a benchmark to support this novel paradigm. CogEmo-40K is a large-scale instruction-tuning dataset constructed through a perception-to-appraisal pipeline to elicit evidence-grounded reasoning across six cognitive appraisal dimensions underlying emotion. CogEmo-MoE is a compact sparse MLLM that introduces interleaved MoE blocks for appraisal-specific adaptation, enabling effective appraisal reasoning at a substantially smaller scale than typical emotion MLLMs. CogEmo-Bench introduces an Appraisal Evidence Quality Score (AEQS) to assess cognitive-affective understanding across six complementary appraisal dimensions, addressing the limitation of conventional emotion metrics that evaluate what emotion is predicted but not why it arises. Extensive experiments show that our paradigm not only leads CogEmo-Bench, but also exhibits strong cross-domain generalization. Our findings suggest that perception-to-appraisal reasoning can move beyond surface-level cue-label associations toward more reliable multimodal emotion understanding and closer cognitive alignment between MLLMs and humans.",
+      "summary": "Recent multimodal large language models (MLLMs) increasingly incorporate explainable reasoning for emotion understanding. However, reasoning based mainly on observable affective cues can reduce emotion understanding to superficial cue-label associations, giving rise to the Clever…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2610.09400v1",
+      "title": "TutorLoop: Regulating Student Learning Behaviors via Sensor-in-the-Loop Generative Feedback",
+      "authors": [
+        "Songlin Xu",
+        "Xinyu Zhang"
+      ],
+      "published": "2026-10-07",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2610.09400v1",
+      "pdf": "https://arxiv.org/pdf/2610.09400v1",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "abstract": "We present TutorLoop, a sensor-in-the-loop system that regulates student learning behaviors by delivering adaptive feedback based on real-time cognitive states. Unlike prior large language model (LLM) tutors that directly depend on scenario-specific content, TutorLoop operates on sensor-derived signals captured via webcams. Moreover, unlike direct cognitive-to-feedback mappings that are short-sighted, the system employs a deep reinforcement learning (DRL) agent to optimize the feedback type across the entire learning process. Finally, another LLM tutor refines feedback into human-like, context-aware messages. We evaluate TutorLoop in a large-scale user study (N=187), where a model trained offline is directly applied to a new learning task without retraining. Results show that TutorLoop provides less frequent yet more effective interventions, improving attention, reducing workload, increasing engagement, and ultimately enhancing learning outcomes. These findings highlight the potential of closed-loop, sensor-driven feedback for scalable human-AI integrated systems to support learning.",
+      "summary": "We present TutorLoop, a sensor-in-the-loop system that regulates student learning behaviors by delivering adaptive feedback based on real-time cognitive states. Unlike prior large language model (LLM) tutors that directly depend on scenario-specific content, TutorLoop operates on…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2610.06506v1",
+      "title": "AISSA Demo: AI-based Student Slides Analysis Tool for Automated Grading and Feedback",
+      "authors": [
+        "Alvaro Becerra",
+        "Diego Gomez",
+        "Ruth Cobos",
+        "Julian Fierrez"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2610.06506v1",
+      "pdf": "https://arxiv.org/pdf/2610.06506v1",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "We present an AI-based web-oriented tool designed to support formative feedback for oral presentation slides in higher education: AISSA. It allows students to upload their slides before presentation and automatically receive rubric-based quantitative scores and qualitative feedback generated by large language models (LLMs). The tool analyses slide-level features and content using a teacher-defined rubric and delivers feedback through interactive Learning Analytics dashboards. These dashboards enable students to visualize performance indicators, inspect feedback in context, and reflect on strengths and areas for improvement, while teachers can review automated assessments, provide their own evaluations, and monitor student engagement with feedback.",
+      "summary": "We present an AI-based web-oriented tool designed to support formative feedback for oral presentation slides in higher education: AISSA. It allows students to upload their slides before presentation and automatically receive rubric-based quantitative scores and qualitative feedba…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2610.07477v1",
+      "title": "MRPilot: Supervising and Intervening LLM-Based Multi-Robot Teams through Mixed Reality",
+      "authors": [
+        "Xiaoran Yang",
+        "Xun Qian",
+        "Yang Zhan",
+        "Nathan Tran",
+        "Ziyi Liu",
+        "Qiao Jin"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "topic": "AI-Assisted Creativity",
+      "url": "https://arxiv.org/abs/2610.07477v1",
+      "pdf": "https://arxiv.org/pdf/2610.07477v1",
+      "categories": [
+        "cs.HC",
+        "cs.RO"
+      ],
+      "abstract": "Large language models (LLMs) let users direct heterogeneous multi-robot systems (MRS) through natural language, but make task interpretation, robot assignment, and coordination difficult to inspect and change. Based on a formative study with 12 non-expert users, we developed MRPilot, a mixed reality system organized around four stages of supervision and intervention. MRPilot represents robot-team plans and execution states as structured commitments shared across synchronized situated and overview views. Across four stages, it helps users resolve ambiguous references (Forming), review plans before execution (Reviewing), monitor distributed execution (Following), and make robot-level or team-level changes when problems arise (Repairing). In a within-subjects study with 20 participants in a virtual reality-simulated home, MRPilot reduced workload, increased situational awareness, transparency, trust, and perceived control compared with a conventional LLM-based conversational interface using the same LLM planner and robot capabilities. We provide design implications for multi-scale intervention, adaptive supervision, and calibrated reliance in LLM-based MRS.",
+      "summary": "Large language models (LLMs) let users direct heterogeneous multi-robot systems (MRS) through natural language, but make task interpretation, robot assignment, and coordination difficult to inspect and change. Based on a formative study with 12 non-expert users, we developed MRPi…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2610.06328v1",
+      "title": "What Did the AI Take On? Characterizing Cognitive Delegation in LLM Reasoning",
+      "authors": [
+        "Yoonsu Kim",
+        "Sean Kim",
+        "Kihoon Son",
+        "Saelyne Yang",
+        "Juho Kim"
+      ],
+      "published": "2026-10-05",
+      "source": "arXiv",
+      "topic": "AI-Assisted Creativity",
+      "url": "https://arxiv.org/abs/2610.06328v1",
+      "pdf": "https://arxiv.org/pdf/2610.06328v1",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "Large language models (LLMs) often perform intermediate cognitive work while carrying out users' requests, yet it remains unclear which parts users intended to delegate and how they wanted to remain involved. This matters because consequential choices may go unnoticed, limiting users' ability to steer the process, while reviewing every step would make delegation burdensome. We examined this with 24 LLM users across three knowledge-work tasks, collecting 992 retrospective annotations of reasoning steps. From this, we developed taxonomies of LLM cognitive work, delegation enactment, and desired delegation protocols at the reasoning-step level. Our analysis revealed that participants viewed about half of all steps (48.6%) as AI-initiated, meaning the AI took on work they had not requested. Desired involvement varied with cognitive work and delegation enactment, even when contributions matched participants' intent. We propose design implications and sketches for supporting more deliberate cognitive delegation through flexible protocols and inspectable, revisable AI-initiated decisions.",
+      "summary": "Large language models (LLMs) often perform intermediate cognitive work while carrying out users' requests, yet it remains unclear which parts users intended to delegate and how they wanted to remain involved. This matters because consequential choices may go unnoticed, limiting u…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2610.05274v1",
+      "title": "Answer with Evidence: Consistency-Aware Grounded Visual Question Answering for Roadside Traffic Scenes",
+      "authors": [
+        "Runwei Guan",
+        "Rongsheng Hu",
+        "Shangshu Chen",
+        "Ningwei Ouyang",
+        "Shaofeng Liang",
+        "Heyi Lin",
+        "Jinjing Zhu",
+        "Yang Shi"
+      ],
+      "published": "2026-10-04",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2610.05274v1",
+      "pdf": "https://arxiv.org/pdf/2610.05274v1",
+      "categories": [
+        "cs.CV",
+        "cs.HC"
+      ],
+      "abstract": "Roadside traffic reasoning requires every free-form textual claim to be backed by visual evidence. Existing grounded multimodal large language models (MLLMs) frequently exhibit say-point mismatch, in which the textual answer contradicts the bounding boxes the model localizes. Evaluation metrics that score answers and boxes separately leave this failure unpenalized. We trace the mismatch to the conventional answer-then-ground factorization, which commits to a numerical claim before any object is enumerated. To measure it, we build RoadSceneVQA-G, a benchmark of 34.7K question-answer pairs in which every free-form answer is linked to the set of boxes that witnesses it, and we propose the Answer-Grounding Consistency (AGC) evaluation suite. To address it, we introduce Enumerate-then-Answer (EtA), which reverses the generation order so that answer-evidence agreement becomes a property of the output structure, and Enumeration-Consistent Policy Optimization (ECPO), a reinforcement learning stage that uses the union of multiple rollouts as a recall teacher without ground-truth boxes. EtA raises say-point consistency from 26.6\\% to 93.7\\% and grounding F1 from 52.2\\% to 73.0\\%, and ECPO further increases F1 to 75.6\\% without per-box supervision. On gRefCOCO, the same framework outperforms the strongest compared method, indicating that it transfers beyond traffic scenes. The project is available at \\url{https://github.com/GuanRunwei/RoadSceneVQA-G}.",
+      "summary": "Roadside traffic reasoning requires every free-form textual claim to be backed by visual evidence. Existing grounded multimodal large language models (MLLMs) frequently exhibit say-point mismatch, in which the textual answer contradicts the bounding boxes the model localizes. Eva…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2610.04246v1",
+      "title": "Benchmarking Psychological Dynamics in Generative Agents",
+      "authors": [
+        "Sumer S. Vaid",
+        "Ashley V. Whillans"
+      ],
+      "published": "2026-10-03",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2610.04246v1",
+      "pdf": "https://arxiv.org/pdf/2610.04246v1",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly deployed to simulate human behavior, acting as computational replicas of human subjects. Yet the lived psychological experience of humans is difficult to benchmark, particularly as it unfolds over time. We introduce a psychometric benchmark for computational replicas: personas that carry a fixed identity through an evolving sequence of events. Built entirely from published norms and meta-analytic effects, the benchmark scores two dimensions of psychological realism. The first, internal validity, quantifies whether generated trajectories reproduce the internal structure of repeated human measurement: distributions, the between- versus within-person variance partition, temporal dependence, and range. The second, external validity, quantifies whether replicas recover established trait, state, and indicator relations. Across 36 open-weight and proprietary LLMs from nine developers (1B-671B parameters), most recover the direction of established relations (84.3% mean agreement) and the variance partition (26 of 34), yet the within-person correlation and distributional structure elude recovery. Internal validity is independent of scale and capability: a mid-size open LLM (Gemma-3-27B) strikes the best trade-off between the two dimensions. The benchmark is a precondition for using computational replicas in causal inference across domains (e.g., marketing, healthcare), and identifies within-person grounding as the central challenge ahead.",
+      "summary": "Large language models (LLMs) are increasingly deployed to simulate human behavior, acting as computational replicas of human subjects. Yet the lived psychological experience of humans is difficult to benchmark, particularly as it unfolds over time. We introduce a psychometric ben…",
+      "summary_zh": ""
+    },
     {
       "id": "2610.01158v1",
       "title": "Understanding Student Use of Large Language Models Across Computer Science Subfields",
@@ -100,7 +260,7 @@
       "summary_zh": ""
     },
     {
-      "id": "2610.00760v1",
+      "id": "2610.00760v2",
       "title": "LeanSide: A Formally Verified Co-Reasoning System for Natural-language Proofs",
       "authors": [
         "Chenjun Guo",
@@ -115,8 +275,8 @@
       "published": "2026-09-30",
       "source": "arXiv",
       "topic": "AI-Assisted Creativity",
-      "url": "https://arxiv.org/abs/2610.00760v1",
-      "pdf": "https://arxiv.org/pdf/2610.00760v1",
+      "url": "https://arxiv.org/abs/2610.00760v2",
+      "pdf": "https://arxiv.org/pdf/2610.00760v2",
       "categories": [
         "cs.HC"
       ],
@@ -151,7 +311,7 @@
       "summary_zh": ""
     },
     {
-      "id": "2609.32336v1",
+      "id": "2609.32336v2",
       "title": "WSM-Aware HRI: An IoT-Enhanced Framework for Early Detection and Norm-Guided Repair of Failures with LLM Guidance",
       "authors": [
         "Hanlin Zhang",
@@ -162,8 +322,8 @@
       "published": "2026-09-26",
       "source": "arXiv",
       "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2609.32336v1",
-      "pdf": "https://arxiv.org/pdf/2609.32336v1",
+      "url": "https://arxiv.org/abs/2609.32336v2",
+      "pdf": "https://arxiv.org/pdf/2609.32336v2",
       "categories": [
         "cs.RO",
         "cs.HC"
@@ -218,162 +378,6 @@
       ],
       "abstract": "Cancer registrars, including Oncology Data Specialists (ODSs), must interpret complex and frequently updated coding and staging standards. We developed CRISS (Cancer Registry Intelligent Support System), a retrieval-augmented generation (RAG) conversational assistant that provides rapid, citation-supported access to registry guidance. This study evaluated whether CRISS could (1) support accurate and citation-supported responses, (2) improve access to and interpretation of relevant guidance, and (3) support training/helpdesk use while preserving human oversight of final abstraction decisions. We built a domain-specific knowledge base from national cancer registry standards, segmented into metadata-tagged passages and indexed as dense embeddings. Retrieved passages were used to generate citation-grounded responses through a large language model (LLM). Open-weight, proprietary, and non-RAG baseline models across Gemini and GPT families were evaluated on easy, medium, and hard registry questions using an LLM-as-a-Judge protocols. RAG configurations consistently outperformed non-RAG approaches, especially as question difficulty increased. Mean grounding scores for RAG were 0.62/0.56/0.59 across easy/medium/hard tiers versus 0.29/0.26/0.29 for non-RAG. RAG models also achieved higher semantic-similarity scores overall. Proprietary RAG models performed strongest on easy and medium questions, while local RAG models ranked highest on hard questions and proprietary models were generally more cautious. Domain-specific RAG improved evidence grounding and response quality for cancer registry questions while enabling citation-supported assistance across complexity levels. CRISS demonstrates the potential of human-centered, citation-grounded AI to support cancer registrars while preserving human oversight for final coding decisions.",
       "summary": "Cancer registrars, including Oncology Data Specialists (ODSs), must interpret complex and frequently updated coding and staging standards. We developed CRISS (Cancer Registry Intelligent Support System), a retrieval-augmented generation (RAG) conversational assistant that provide…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2609.30563v1",
-      "title": "Thinking Less to Simulate Better: Intuitive Prompting Improves LLM Agents Simulating Individual Social Media Reactions, Including Unfamiliar Content",
-      "authors": [
-        "Ljubisa Bojic",
-        "Tijana Stanic",
-        "Joerg Matthes",
-        "Agariadne Dwinggo Samala",
-        "Bojana Dinic",
-        "Jue Wang"
-      ],
-      "published": "2026-09-24",
-      "source": "arXiv",
-      "topic": "LLM User Simulation",
-      "url": "https://arxiv.org/abs/2609.30563v1",
-      "pdf": "https://arxiv.org/pdf/2609.30563v1",
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.HC",
-        "cs.MA"
-      ],
-      "abstract": "Platform policies are increasingly tested on artificial users, making agent fidelity important. Yet convincing fake profiles could also manipulate perceived public opinion before elections. Validation has concentrated on agreement with human behaviour and has paid little attention to whether an agent behaves in line with the profile it was given. The present study profiled eight Serbian participants through a questionnaire, a deep interview, and a written self-presentation, recorded their reactions to sixty-eight social media posts, and asked four language models to predict those reactions under five prompt conditions varying profile content and instruction style. Attitudinal content improved prediction over demographic backstories by a wide margin. Agents matched their stated profiles more closely than participants matched their own survey answers, and consistency proved unrelated to fidelity once profile information was present. Instructing models to respond intuitively and immediately rather than analytically gave the highest fidelity of any condition and cut the compression of individual differences from seven times the human level to three. The advantage held on posts about topics the questionnaire never raised, where that condition reached the highest fidelity of any setup and beat a crowd baseline by a wide margin, which suggests that agents prompted this way could serve as general-purpose simulated users rather than specialists on the topics they were profiled for. Results may bear implications for the development of language models, because intuition-based setups appear better suited to some tasks than reasoning-based ones.",
-      "summary": "Platform policies are increasingly tested on artificial users, making agent fidelity important. Yet convincing fake profiles could also manipulate perceived public opinion before elections. Validation has concentrated on agreement with human behaviour and has paid little attentio…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2609.27327v1",
-      "title": "Can Vision-Language Models Analyze Human-Centered Video? Mapping Model Capabilities and Human-AI Collaborative Workflows",
-      "authors": [
-        "Xiyuan Shen",
-        "Jiuyang Lyu",
-        "Seokhyun Hwang",
-        "Huanfen Yao",
-        "Shwetak Patel",
-        "Zhihan Zhang",
-        "Jacob O. Wobbrock"
-      ],
-      "published": "2026-09-23",
-      "source": "arXiv",
-      "topic": "Human-Centered AI",
-      "url": "https://arxiv.org/abs/2609.27327v1",
-      "pdf": "https://arxiv.org/pdf/2609.27327v1",
-      "categories": [
-        "cs.CV",
-        "cs.HC"
-      ],
-      "abstract": "Video provides a rich record of human behavior, interaction, and situated contexts, offering important evidence for understanding people and conducting human-centered research. As vision-language models (VLMs) become increasingly capable of analyzing video, they offer opportunities to automate this traditionally human-intensive process. Yet a central question remains: when can VLMs analyze human-centered video independently, and when does reliable analysis still require human involvement? To address this question, we first characterize video analysis practices in human-centered research. We systematically analyze all 1,702 CHI 2026 full papers and identify 125 that annotate videos. Through iterative coding, we derive a five-dimensional taxonomy spanning analytic purpose, viewpoint, phenomenon, reasoning requirement, and annotation authority. Grounded in recurring annotation tasks captured by this taxonomy, we construct a benchmark of 15 representative tasks from open datasets to map the capabilities and limitations of a general-purpose VLM. We examine the division of labor between humans and VLMs by comparing three annotation workflows: VLM alone, human alone, and human verification of VLM outputs. Across tasks, VLM-alone annotation approaches human accuracy on average (HNS = 97.0, where 100 denotes human-alone performance), demonstrating substantial potential to automate human-centered video analysis. Human verification achieves the highest accuracy (HNS = 121.5) while reducing human annotation time by 48.9% and monetary cost by 31.3%-44.5% relative to human-alone annotation. Our findings connect real-world human-centered video analysis tasks and current VLM capabilities, and clarify how human-AI collaboration can make VLM-assisted analysis reliable and efficient.",
-      "summary": "Video provides a rich record of human behavior, interaction, and situated contexts, offering important evidence for understanding people and conducting human-centered research. As vision-language models (VLMs) become increasingly capable of analyzing video, they offer opportuniti…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2609.27146v1",
-      "title": "ChartRevive: Reconstructing Data Visualizations from Chart Images Using MLLM",
-      "authors": [
-        "Yuki Ueno",
-        "Aditeya Pandey"
-      ],
-      "published": "2026-09-22",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2609.27146v1",
-      "pdf": "https://arxiv.org/pdf/2609.27146v1",
-      "categories": [
-        "cs.HC"
-      ],
-      "abstract": "Static chart images are widely used in scientific publications, business reports, and presentations, yet recovering both the underlying data and visual design from chart images remains a labor-intensive manual process, making them difficult to reuse. While prior work has primarily focused on data extraction, the extraction of visual design specifications, including colors, marker shapes, and axis configurations, remains underexplored. To identify a suitable model for chart reconstruction, we systematically benchmark five multimodal large language models (MLLMs) across five basic chart types on both data and design extraction tasks. Our evaluation shows that textual and categorical information can generally be extracted reliably, whereas numeric and spatial information remain challenging. Among the evaluated models, GPT-5.4 achieves the best overall performance and is adopted as the backbone of our system. Guided by these findings, we present ChartRevive, a mixed-initiative system that combines MLLM-based extraction with an interactive verification interface, supporting users to efficiently inspect, correct, and refine reconstructed charts through overlay-based verification and real-time rebuilding.",
-      "summary": "Static chart images are widely used in scientific publications, business reports, and presentations, yet recovering both the underlying data and visual design from chart images remains a labor-intensive manual process, making them difficult to reuse. While prior work has primaril…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2609.26725v1",
-      "title": "Does AI Save Time on Product Design? A Randomized Controlled Experiment of AI Prompt-to-Design Workflows",
-      "authors": [
-        "Remy Stewart",
-        "Olabode Anise",
-        "Andrew Hogan",
-        "Augustus Griffin"
-      ],
-      "published": "2026-09-22",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2609.26725v1",
-      "pdf": "https://arxiv.org/pdf/2609.26725v1",
-      "categories": [
-        "cs.HC",
-        "cs.AI"
-      ],
-      "abstract": "AI tools for digital product design now offer prompt-to-design capabilities, allowing designers and their non-designer colleagues to create prototypes through conversational workflows with large language models (LLMs). While these tools promise time savings, experimental evidence in product design remains limited compared with evidence from software engineering. We conducted a randomized controlled trial with 50 product designers and 50 product managers to evaluate prospective time savings from leveraging Figma Make in design work. Participants attempted three standardized design tasks with or without access to Figma Make. Among participants who completed the study tasks, access to Figma Make was associated with approximately 20% shorter completion times, with larger gains among product managers. Our findings suggest that prompt-to-design tools may enable product managers to further contribute to design work, while the benefits for professional designers may be task dependent.",
-      "summary": "AI tools for digital product design now offer prompt-to-design capabilities, allowing designers and their non-designer colleagues to create prototypes through conversational workflows with large language models (LLMs). While these tools promise time savings, experimental evidence…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2609.27014v1",
-      "title": "ContraVis: Evidence-Grounded Visual Analytics for Contradiction Review in Legal Contracts",
-      "authors": [
-        "Luis Sante",
-        "Paula Lima",
-        "Mariana Rocha",
-        "Jorge Poco"
-      ],
-      "published": "2026-09-22",
-      "source": "arXiv",
-      "topic": "Human-Centered AI",
-      "url": "https://arxiv.org/abs/2609.27014v1",
-      "pdf": "https://arxiv.org/pdf/2609.27014v1",
-      "categories": [
-        "cs.HC",
-        "cs.CL"
-      ],
-      "abstract": "Legal contracts are structurally complex documents in which contradictions may emerge across distant and interconnected provisions. Although large language models (LLMs) improve legal language understanding, contradiction analysis remains a human-centered and evidence-grounded review task. We present ContraVis, a visual analytics system for human-in-the-loop contradiction analysis in legal contracts. The system models contracts as typed paragraph graphs that combine explicit contractual references with semantic relationships between paragraphs. This graph plays a dual role: it conditions LLM reasoning and serves as the interactive representation the analyst explores, keeping model context and human inspection aligned across coordinated views. In a controlled comparison, graph-conditioned reasoning recovered more injected contradictions than standalone LLM analysis as contract length grew, while surfacing additional candidates for analyst validation. A formative study with contract-domain lawyers indicated that in-context evidence comparison supported contradiction validation, and we distill design implications for evidence-grounded, LLM-assisted document review.",
-      "summary": "Legal contracts are structurally complex documents in which contradictions may emerge across distant and interconnected provisions. Although large language models (LLMs) improve legal language understanding, contradiction analysis remains a human-centered and evidence-grounded re…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2609.25700v1",
-      "title": "Harnessing LLMs Without Surrendering Control: Delegation Boundaries in Visual Data Storytelling Authoring",
-      "authors": [
-        "Zhuojun Jiang",
-        "Yuki Ueno",
-        "Chris Bryan"
-      ],
-      "published": "2026-09-22",
-      "source": "arXiv",
-      "topic": "AI-Assisted Creativity",
-      "url": "https://arxiv.org/abs/2609.25700v1",
-      "pdf": "https://arxiv.org/pdf/2609.25700v1",
-      "categories": [
-        "cs.HC"
-      ],
-      "abstract": "Despite the emergence of large language models (LLMs) for visual data storytelling workflows, there are open questions about how authors decide what activities or tasks to entrust to them and what should be \"protected\" or maintained under human control. To investigate this, we interviewed a cohort of 12 expert visual data storytellers. Our analysis shows that participants rarely treated LLMs as autonomous storytellers. Instead, they tend to selectively delegate execution-oriented tasks to LLMs while retaining control over activities that shape narrative intent and story meaning. Our findings show that LLM assistance is most productive after human seeding and constraint-setting, and that it shifts labor from production to verification. We discuss design implications for boundary-aware authoring tools, data-grounded generation, low-fidelity ideation, and reporting practices for LLM-based visualization research. Supplemental materials for this paper are available at https://osf.io/hcnp6.",
-      "summary": "Despite the emergence of large language models (LLMs) for visual data storytelling workflows, there are open questions about how authors decide what activities or tasks to entrust to them and what should be \"protected\" or maintained under human control. To investigate this, we in…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2609.24532v1",
-      "title": "Prompting Against Persona Drift: Comparing Intervention Timing and Content in LLM-Simulated Conversations",
-      "authors": [
-        "Nicolas Leins",
-        "Jennifer Haase",
-        "Varvara Geronimus",
-        "Jana Gonnermann-Müller",
-        "Sebastian Pokutta"
-      ],
-      "published": "2026-09-21",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2609.24532v1",
-      "pdf": "https://arxiv.org/pdf/2609.24532v1",
-      "categories": [
-        "cs.HC"
-      ],
-      "abstract": "Simulating student personas with large language models (LLMs) enables scalable evaluation of educational systems. However, behavioral drift, a progressive decline in persona consistency, can emerge over extended conversations, limiting the validity of such simulations. We evaluate five prompt-level mechanisms using separate monitoring and intervention pipelines. Across 1,200 28-turn conversations spanning four LLMs and two ADHD persona intensities, we varied when to intervene (static vs. adaptive) and what to inject (reinjection vs. reflective reminder), plus a novel adaptive condition in which a monitor generates behavior-specific instructions. Relative to no intervention, reinjection reduced the modeled rate of LLM-rated drift by 35--38\\%, reflective reminders by 22--27\\%, and behavior-specific instruction by 87\\%. None eliminated drift. We found no evidence that adaptive timing outperformed static scheduling. Monitoring therefore appears more useful for deciding \\textit{what} to correct than \\textit{when} to intervene, although behavior-specific instruction requires component-level testing.",
-      "summary": "Simulating student personas with large language models (LLMs) enables scalable evaluation of educational systems. However, behavioral drift, a progressive decline in persona consistency, can emerge over extended conversations, limiting the validity of such simulations. We evaluat…",
       "summary_zh": ""
     }
   ]
