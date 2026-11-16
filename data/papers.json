@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T07:37:47Z",
+  "updated": "2026-11-16T07:37:36Z",
   "source": "arXiv",
   "generated_by": "ai",
   "topics": [
@@ -10,6 +10,258 @@
   ],
   "count": 16,
   "papers": [
+    {
+      "id": "2611.18230v1",
+      "title": "Personalization of Basic and Moral Values Guiding LLM-Controlled Assistant Robots",
+      "authors": [
+        "Mateusz Wozniak",
+        "Qi Gao",
+        "Agnieszka Wykowska"
+      ],
+      "published": "2026-11-13",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2611.18230v1",
+      "pdf": "https://arxiv.org/pdf/2611.18230v1",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "abstract": "Personal assistant robots powered by large language models (LLMs) are likely to enter everyday life within the next decade, but the values that should guide their behaviour remain largely unspecified. Current alignment practice steers a single model toward an aggregate of human values, ignoring that individual users may prefer a robot whose value profile differs from their own. We administer parallel self- and robot-targeted versions of three established psycho-metric instruments - the simplified Schwartz Values Survey (SVS), the Portrait Values Questionnaire (PVQ-21), and the Moral Foundations Questionnaire (MFQ) - to potential future users (N=22), capturing both their personal values and the values they would want an assistant robot to embody. We compare the three instruments as personalization tools using the UEQ-S and benchmark fifteen contemporary LLMs against the resulting profiles. Participants wanted their robot to score markedly lower than themselves on personal-focus values and higher on social-focus values; moral profiles were nearly identical. LLMs prompted to act as robots shifted only weakly toward the desired profile, indicating that default model behaviour and prompt engineering are no substitute for explicit value personalization.",
+      "summary": "Personal assistant robots powered by large language models (LLMs) are likely to enter everyday life within the next decade, but the values that should guide their behaviour remain largely unspecified. Current alignment practice steers a single model toward an aggregate of human v…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2611.17856v1",
+      "title": "DECODE: Diagnosing Interpretability Failures in Automated Interpretation Process",
+      "authors": [
+        "Dohyun Kim",
+        "Jaeung Lee",
+        "Donghee Hong",
+        "Jaemin Jo"
+      ],
+      "published": "2026-11-13",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2611.17856v1",
+      "pdf": "https://arxiv.org/pdf/2611.17856v1",
+      "categories": [
+        "cs.AI",
+        "cs.HC"
+      ],
+      "abstract": "Tools for interpreting the internal representations of Large Language Models (LLMs) increasingly rely on LLMs themselves to both generate and evaluate explanations, creating a self-referential automated interpretation process with minimal human oversight. This automation raises significant reliability concerns, which are exacerbated by the absence of ground truth. In practice, it is difficult to validate explanations or to attribute interpretability failures to their source -- whether they originate from the tool's extracted representations or from the LLM used in the process. To address these challenges, we present DECODE, a visual analytics system that reintroduces human oversight into the automated interpretation process. Our approach decomposes the diagnostic workflow into three progressive stages, isolating failure sources ranging from structural defects to explanation-level misalignments. Drawing inspiration from inter-coder consensus in qualitative analysis, we utilize consensus among independently generated explanations and their evaluation metrics as a proxy for reliability. To further scale human inspection, we employ a three-phase active seeding protocol that strategically recommends high-priority instances for manual review. Finally, we demonstrate the effectiveness of our approach through a case study on 16,384 Sparse Autoencoder features, showing that it can efficiently identify and attribute interpretability failures at scale.",
+      "summary": "Tools for interpreting the internal representations of Large Language Models (LLMs) increasingly rely on LLMs themselves to both generate and evaluate explanations, creating a self-referential automated interpretation process with minimal human oversight. This automation raises s…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2611.14333v1",
+      "title": "AI Isn't Getting Dumber, We're Getting Pickier: Rising Standards in Human Evaluation of Large Language Models",
+      "authors": [
+        "Zihan Chen",
+        "Lei Nico Zheng",
+        "Di Zhu"
+      ],
+      "published": "2026-11-10",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2611.14333v1",
+      "pdf": "https://arxiv.org/pdf/2611.14333v1",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.CL",
+        "cs.CY"
+      ],
+      "abstract": "Users often complain that AI assistants such as ChatGPT are getting worse. Some versions do change, but human evaluation leaves a second possibility untested: the people judging may change. We separate the two on Chatbot Arena, a public platform where people compare answers from two anonymous large language models (LLMs) and pick the better one or say both are bad. We study 1,260,967 blind votes cast from May 2023 to August 2024 on pairs of models whose versions are fixed: dated vendor snapshots and models with fixed open weights. For the same pair of unchanged models, the share of votes saying \"both are bad\" rises by 1.71 percentage points a month on a mean of 17.1%, and by 1.91 points a month in 2024. In fourteen pairs observed often in both 2023 and 2024, it rose in every one, from 15.5% to 23.3%. The ranking does not trend: in 2024, the stronger model's share of decisive votes is flat. The rise holds within the same voter and on the same pair, and across arrival cohorts from their first recorded vote. It holds with prompt controls, in every major language, for dated vendor snapshots, open-weight models and models with stable answer length, and between interface changes. The drift is shared across models: month effects estimated from other models' pairs remove it from each model's own pairs. Platform-wide, the average model would be expected to score 78% against the 2023 average, yet the share of \"both are bad\" votes ended near where it began. The pattern fits a standard that follows the category's progress, so a product that stands still is judged as declining. Absolute verdicts on AI drifted while relative comparisons held steady, an evaluation drift that matters for LLM leaderboards and for the human feedback used to train models.",
+      "summary": "Users often complain that AI assistants such as ChatGPT are getting worse. Some versions do change, but human evaluation leaves a second possibility untested: the people judging may change. We separate the two on Chatbot Arena, a public platform where people compare answers from…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2611.13652v1",
+      "title": "How Well Do Benchmarks Evaluate LLMs' Use for Personal Health Informatics?",
+      "authors": [
+        "Fatemeh Mirhosseini",
+        "Yasaman S. Sefidgar"
+      ],
+      "published": "2026-11-10",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2611.13652v1",
+      "pdf": "https://arxiv.org/pdf/2611.13652v1",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "Benchmarking is a valuable technique for advancing the capabilities of Large Language Models (LLMs), including in personal health informatics. There are growing efforts on benchmark creation for personal health data activities. However, it is unclear whether and how well these efforts align with needs and considerations of personal health informatics process. Addressing this need, we first analyzed 53,587 tasks across eight benchmarks related to personal health informatics and characterized the space of benchmark design. We then contrasted our observations of design choices with personal informatics theories and empirical knowledge. We find significant mismatches between existing benchmark design and domain guidelines and understanding. This lack of alignment limits the utility of the evidence current benchmarks offer about LLM capabilities. We use domain knowledge to highlight capabilities benchmarks should include and discuss opportunities our work enables for taking a human-centered and domain-driven approach to benchmark design.",
+      "summary": "Benchmarking is a valuable technique for advancing the capabilities of Large Language Models (LLMs), including in personal health informatics. There are growing efforts on benchmark creation for personal health data activities. However, it is unclear whether and how well these ef…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2611.12750v1",
+      "title": "The Narrative Gap: Can LLMs Help Us Navigate Diverse Narratives Across Languages?",
+      "authors": [
+        "Nikhil Sharma",
+        "Kelly Marchisio",
+        "Kenton Murray",
+        "Ziang Xiao"
+      ],
+      "published": "2026-11-09",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2611.12750v1",
+      "pdf": "https://arxiv.org/pdf/2611.12750v1",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.HC",
+        "cs.IR"
+      ],
+      "abstract": "Large language models (LLMs) increasingly mediate how people seek and consume information, including accounts that differ across languages and regions, especially on contested topics. Supporting diverse information seeking requires models to help users navigate competing narratives across languages and information streams. We define six capabilities necessary for diverse multilingual information seeking: three foundational capabilities for narrative inclusion, narrative exclusion, and missing narrative identification; and three higher-level capabilities for presenting diverse narratives, preserving narrative coverage under confirmatory queries, and maintaining information parity across languages. To guide the development of those information seeking capabilities, we introduce \\textsc{NarrativeBench}, a benchmark comprising 1,333 news articles in 23 publication languages across 23 contested topics and 460 Reddit-grounded queries. Evaluating 14 LLMs across 24 query languages, we find that current models lack the capabilities needed to reliably navigate diverse narratives, limiting users' control over the perspectives they receive and leaving substantial gaps in exposure to competing accounts even when diversity is explicitly requested. Information access also differs across query framings and languages, risking echo chambers, linguistic filter bubbles, and information disparities that weaken the common ground needed for democratic discourse. \\textsc{NarrativeBench} provides a foundation for developing information systems that give users across languages and regions agency to navigate diverse narratives.",
+      "summary": "Large language models (LLMs) increasingly mediate how people seek and consume information, including accounts that differ across languages and regions, especially on contested topics. Supporting diverse information seeking requires models to help users navigate competing narrativ…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2611.12337v1",
+      "title": "From LLM Hallucinations to Inspiration in Creative Work",
+      "authors": [
+        "Xinrui Lin",
+        "Heyan Huang",
+        "Shuning Zhang",
+        "Qi Wang",
+        "Youchao Zhou",
+        "John Vines"
+      ],
+      "published": "2026-11-09",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2611.12337v1",
+      "pdf": "https://arxiv.org/pdf/2611.12337v1",
+      "categories": [
+        "cs.HC"
+      ],
+      "abstract": "Large language models (LLMs) can introduce unexpected ideas through hallucinations, yet little is known about when creative practitioners find these errors inspiring or how these judgments shape interactions. We conducted a retrospective qualitative study with 20 experienced practitioners in research, design, and social media content creation, thematically analyzing 41 hallucination cases and 20 semi-structured interviews. Our framework links inspiration judgments of hallucinations based on goal relevance, task stage, content adaptability, and type-specific factors to behaviors across not-inspired, inspired-by, and inspired-to states. We characterize downstream interaction consequences, showing how hallucination-inspired experiences vary across creative stages and reshape role-differentiated trust, and propose these consequences as a dimension of hallucination evaluation. Finally, we derive design recommendations for stage-sensitive control of divergence and adherence, user-defined constraint priorities, differentiated hallucination labels, and salvage support for preserving useful ideas while correcting errors. These contributions deepen HCI understanding of hallucinations and responsible LLM design in creative work.",
+      "summary": "Large language models (LLMs) can introduce unexpected ideas through hallucinations, yet little is known about when creative practitioners find these errors inspiring or how these judgments shape interactions. We conducted a retrospective qualitative study with 20 experienced prac…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2611.12202v1",
+      "title": "Co-Creating Neurorehabilitation Technology Alongside Lived Experience Experts: A Participatory Design Workshop",
+      "authors": [
+        "Irene L. Y. Beck",
+        "Salvatore L. Cucinella",
+        "Johannes B. J. Bussmann",
+        "Natacha Léon",
+        "José López-Sánchez",
+        "Francesca Lunardini",
+        "Katherine L. Poggensee",
+        "Cristina Vázquez-González"
+      ],
+      "published": "2026-11-09",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2611.12202v1",
+      "pdf": "https://arxiv.org/pdf/2611.12202v1",
+      "categories": [
+        "cs.HC",
+        "cs.RO"
+      ],
+      "abstract": "Involving patients' lived experience (LE) early in neurorehabilitation technology design can improve the relevance and effectiveness of solutions, yet LE experts are often involved only when finished prototypes are tested. We present and evaluate a participatory design (PD) workshop for early LE involvement, examine how LE contributions influence design processes and outcomes, and provide recommendations for similar approaches. We conducted a PD workshop at the 6th International Conference on NeuroRehabilitation. Five people who have had a stroke (LE experts) and 18 workshop attendees (including the LE experts' caregivers) were organized into five groups. Following the Discover, Define, and Develop phases of the Double Diamond model, each group used Journey Maps and Data Collection Notebooks to co-create a solution for an objective specified by an LE expert. Journey Maps were thematically analyzed, and group audio transcripts underwent structured extraction using a large language model. LE input shifted discussions from discipline-based assumptions toward priorities grounded in lived experience, including fear, confidence, sensory discomfort, fatigue, aesthetics, and independence. Narrow objectives, such as opening a blister pack, produced task-specific solutions, whereas broader objectives generated device concepts, including sensory feedback for cycling and a stimulation-equipped cooking splint. Satisfaction was high among attendees and LE experts. All workshop tools and protocols are shared to support adoption. The workshop offers a practical foundation for involving LE experts early in neurorehabilitation technology development. Future iterations should better capture psychological and social dimensions, allow more reflection, and include the full range of relevant stakeholders through sustained transdisciplinary engagement between researchers and the LE community.",
+      "summary": "Involving patients' lived experience (LE) early in neurorehabilitation technology design can improve the relevance and effectiveness of solutions, yet LE experts are often involved only when finished prototypes are tested. We present and evaluate a participatory design (PD) works…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2611.13178v1",
+      "title": "Multimodal Judges Flag, Humans Decide: A Review-and-Edit Framework for AI-Generated Product Video Ads",
+      "authors": [
+        "Anoubhav Agarwaal",
+        "Sukesh Perla",
+        "Karthikeyan Mohanraj",
+        "Susmita Ghose"
+      ],
+      "published": "2026-11-09",
+      "source": "arXiv",
+      "topic": "LLM User Simulation",
+      "url": "https://arxiv.org/abs/2611.13178v1",
+      "pdf": "https://arxiv.org/pdf/2611.13178v1",
+      "categories": [
+        "cs.CV",
+        "cs.HC",
+        "cs.MM"
+      ],
+      "abstract": "Generative pipelines can now turn every product page of an e-commerce catalog into a short video ad, but deciding whether such an ad is usable is not one good-or-bad call. We describe how we operationalized the review and editing of these ads so that both can keep pace with generation: reviewers go through each ad scene by scene and answer six questions, on the product, scene quality, pronunciation, script, sound and captions; judges built from vision-language, speech and language models file each finding under the matching question, and reviewers accept or reject each finding and add what the judges missed. Each confirmed issue then opens an edit tool matched to it. The questions and the routing from a finding to its fix do not depend on the models that generate the ad. Across 120 ads from our pipeline, reviewed with judge findings on screen, reviewers marked the product wrong on 60% of scenes, and script, caption or sound problems on under 10% each. On 60 of these ads, they marked the product wrong on 58% of scenes, far more than the 26% marked by two reviewers who later saw the ads with the judges hidden; one reviewer who saw the ads both ways marked 57% with judge findings and 19% without. On 120 blind-labeled scenes, a product judge that watches the clip with the catalog photos reached AUC 0.84, while video-quality and photo-similarity scores were close to chance. We tune the judges for recall: the product judge catches nearly all defects but also flags many clean scenes, so reviewers decide; together, the judges widen what reviewers mark and reviewers add what the judges miss. Without judge findings, one reviewer's marking faded over a session. We release a review-portal template and our review data (120 ads and 562 scenes with judge findings and human marks, plus 120 blind-labeled scenes with baseline scores) at https://github.com/anoubhav/ad-review-and-edit.",
+      "summary": "Generative pipelines can now turn every product page of an e-commerce catalog into a short video ad, but deciding whether such an ad is usable is not one good-or-bad call. We describe how we operationalized the review and editing of these ads so that both can keep pace with gener…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2611.13041v1",
+      "title": "Code-Grounded Agentic Explanations for Static Analysis Vulnerability Findings",
+      "authors": [
+        "Oshando Johnson",
+        "Ranjith Krishnamurthy",
+        "Rohith Kumar Shanmuganathan",
+        "Goran Piskachev",
+        "Eric Bodden"
+      ],
+      "published": "2026-11-09",
+      "source": "arXiv",
+      "topic": "LLM User Simulation",
+      "url": "https://arxiv.org/abs/2611.13041v1",
+      "pdf": "https://arxiv.org/pdf/2611.13041v1",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "abstract": "Static application security testing (SAST) tools surface vulnerabilities early and their verdicts are rule-based and auditable. Yet developers routinely dismiss findings they cannot interpret. Large language models can supply the missing explanation, but designs that also hand the model the detection give up the auditability that makes static analysis defensible. We keep detection with the analyser and give the model only the explaining. A preliminary user study with 20 participants and a workshop with 19 practitioners yielded five requirements. Guided by these we redesigned SAFE, an open-source IntelliJ IDEA plugin that explains findings from any analyser reporting in the Static Analysis Results Interchange Format. It tiers explanations by demand, ties them to the reported data flow, and replaces the single-prompt backend with an agent that must consult the repository and the rule that fired before answering. A within-subjects crossover experiment with 24 participants compared the redesign against its predecessor. Perceived usability rose from 77.3 to 85.0 on the System Usability Scale. Actionability gained most among the explanation-quality items, the aspect both earlier studies flagged as weakest, and the odds of a correct remediation were 2.6 times higher. Triage accuracy and time per finding were indistinguishable, which we read as uninformative rather than as equivalence. Trust was the one measure that did not move, and the closing interviews indicate that grounding made findings easier to understand rather than easier to believe. Participants also drew a boundary no requirement anticipated, wanting the tool to find and explain while they judge and apply.",
+      "summary": "Static application security testing (SAST) tools surface vulnerabilities early and their verdicts are rule-based and auditable. Yet developers routinely dismiss findings they cannot interpret. Large language models can supply the missing explanation, but designs that also hand th…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2611.11064v1",
+      "title": "GARP: Real-Time Generative Agents on Local Hardware in a Game Engine",
+      "authors": [
+        "Piero Molino",
+        "Patrick John Chia",
+        "Federico Bianchi",
+        "Jonathan P. Chen",
+        "Paul Szerlip"
+      ],
+      "published": "2026-11-08",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2611.11064v1",
+      "pdf": "https://arxiv.org/pdf/2611.11064v1",
+      "categories": [
+        "cs.AI",
+        "cs.HC",
+        "cs.MA"
+      ],
+      "abstract": "Generative agents are game characters whose plans, conversations, and memories are written on the fly by a large language model (LLM). The original Generative Agents demonstration used cloud inference in a custom simulation. We present GARP, a platform for real-time generative agents inside Godot, and describe the Character Behavior System used in GARP 2. The complete loop runs on local hardware using a 3B-parameter open-weight model and no cloud service. Alongside the original planning, memory, and reflection, GARP gives each agent an emotion system driven by LLM appraisal, four graded personality axes drawn from the Big Five that set simulation parameters as well as prompt text, six needs whose urgency grows over time, and pairwise relationships updated after every conversation. The system narrows 50+ candidate actions to typically 3-8, constrains model responses with JSON schemas, and surfaces important memories in decision prompts. A layered optimization strategy (an adjustable game clock, decisions taken ahead of need, multi-tier caching, prompt compression, and fully asynchronous execution) keeps the game responsive while the model thinks. In a nine-scenario evaluation, 25 of 27 runs passed log-based checks. Both failures occurred in the birthday party scenario, where one guest omitted the event from their daily plan.",
+      "summary": "Generative agents are game characters whose plans, conversations, and memories are written on the fly by a large language model (LLM). The original Generative Agents demonstration used cloud inference in a custom simulation. We present GARP, a platform for real-time generative ag…",
+      "summary_zh": ""
+    },
+    {
+      "id": "2611.10488v1",
+      "title": "Safer for Whom? A Systematic Exploration of AI Safety in Eating Disorder Interactions",
+      "authors": [
+        "Jinyuan Wang",
+        "Minh Duc Chu",
+        "Frances Ross",
+        "Ellen Fitzsimmons-Craft",
+        "Kristina Lerman"
+      ],
+      "published": "2026-11-07",
+      "source": "arXiv",
+      "topic": "LLM Evaluation",
+      "url": "https://arxiv.org/abs/2611.10488v1",
+      "pdf": "https://arxiv.org/pdf/2611.10488v1",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "abstract": "AI assistants advise users about diet, exercise, and weight loss---areas in which unsafe guidance can worsen body dissatisfaction, dietary restriction, compulsive exercise, and other behaviors associated with eating disorders (EDs). Existing evaluations emphasize diagnostic accuracy, overtly harmful prompts, or synthetic scenarios, providing limited insight into whether models recognize implicit vulnerability in natural interactions or protect users consistently. We evaluate responses from three open-weight large language models to 100 questions sourced from an online pro-anorexia community. We grade responses using clinically informed criteria that extend a seven-dimensional taxonomy of ED-related harms. We also construct matched conditions in which questions are accompanied by information about the user varying race, gender, body mass index (BMI), and explicit ED vulnerability. Safety varies substantially across models and harm dimensions. High-risk responses are approximately twice as frequent without bios, suggesting that models do not consistently recognize vulnerability from language alone. Explicit signals of ED vulnerability improve safety by 10--14 points across models. Responses also differ significantly by race, gender, and BMI, with body size producing the largest disparities. These patterns are consistent with reliance on the stereotype that EDs primarily affect thin, White women, potentially leaving users outside this profile with less protective responses.",
+      "summary": "AI assistants advise users about diet, exercise, and weight loss---areas in which unsafe guidance can worsen body dissatisfaction, dietary restriction, compulsive exercise, and other behaviors associated with eating disorders (EDs). Existing evaluations emphasize diagnostic accur…",
+      "summary_zh": ""
+    },
     {
       "id": "2611.09840v1",
       "title": "GroundWork: Bridging Human and LLM Reasoning Through a Structured Argumentation Model",
@@ -82,205 +334,6 @@
       "summary_zh": ""
     },
     {
-      "id": "2611.09043v1",
-      "title": "\"Despite her age, Margaret was eager to make a change\": Unpacking Aging Representations and Stereotypes in LLM-generated Stories",
-      "authors": [
-        "MD. Roqunuzzaman Sojib",
-        "Mohammad Sadat Hossain",
-        "Nafis Tahmid",
-        "Shattik Islam Rhythm",
-        "Novia Nurain"
-      ],
-      "published": "2026-11-06",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2611.09043v1",
-      "pdf": "https://arxiv.org/pdf/2611.09043v1",
-      "categories": [
-        "cs.HC"
-      ],
-      "abstract": "As large language models (LLMs) increasingly generate everyday stories, their portrayals can shape expectations about aging. Prior work has largely examined age stereotypes in short responses, leaving unanswered whose lives models default to imagining and how age shapes characters' roles in complete narratives. We analyze 594 stories generated by Gemini, GPT, and Llama using text embeddings, LLM-assisted coding, and qualitative analysis. When age was unspecified, stories typically featured younger adults, with middle-aged protagonists largely absent. Older adults were often portrayed through loss, familiar routines, and help from younger characters. Even positive stories sometimes treated older adults' achievements as surprising or portrayed others making decisions on their behalf. We suggest evaluating not only the tone of generated stories, but also who appears, what opportunities they receive, and who makes decisions. Involving older adults in these evaluations can guide writing tools toward more varied, less stereotyped portrayals of later life.",
-      "summary": "As large language models (LLMs) increasingly generate everyday stories, their portrayals can shape expectations about aging. Prior work has largely examined age stereotypes in short responses, leaving unanswered whose lives models default to imagining and how age shapes character…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2611.08795v1",
-      "title": "MotionDecipher: LLM-Assisted Clinical Interpretation of Human Motion Signals for Efficient Gait Analysis",
-      "authors": [
-        "Mingrui Ma",
-        "Tian Tan",
-        "Jinsi Guo",
-        "Jessica Rose",
-        "Yiwen Dong"
-      ],
-      "published": "2026-11-05",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2611.08795v1",
-      "pdf": "https://arxiv.org/pdf/2611.08795v1",
-      "categories": [
-        "cs.HC",
-        "cs.AI"
-      ],
-      "abstract": "Clinical gait and motion analysis is widely used to guide targeted interventions for patients with neurological disorders, the outcome of which is typically a report with descriptions of joint movements and forces. Current practices rely on experts' manual effort, which is labor-intensive and time-consuming. Recent advancements in Large Language Models (LLMs) provide opportunities to address this problem, but translating human motion into clinical gait descriptions remains challenging because the quality of the context directly affects LLMs' reasoning capability over continuous motion signals. To tackle this, we introduce MotionDecipher, a novel framework bridging the semantic gap between motion data and clinical interpretations. Specifically, we made 3 key advancements: 1) a Human Motion Tokenizer that converts motion signals into domain-specific tokens for time- and frequency-informed gait interpretation; 2) a Meta Feature Selector that transforms tokens into Structured Representations; and 3) a Hybrid Context Constructor to determine the optimal demonstration-based prompt for In-Context Learning. We evaluated MotionDecipher on data collected at an accredited gait lab from 122 patients and 46 controls. Results show that MotionDecipher achieves 0.91 BERTScore (13% over GPT-5), while expert evaluation ranks MotionDecipher highest in Correctness, Completeness, and Conciseness compared to baselines, highlighting its promise for efficient gait analysis.",
-      "summary": "Clinical gait and motion analysis is widely used to guide targeted interventions for patients with neurological disorders, the outcome of which is typically a report with descriptions of joint movements and forces. Current practices rely on experts' manual effort, which is labor-…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2611.08565v1",
-      "title": "Seeing Is Not Knowing: The Epistemic Limits of LLM-Based Mental Health Inference from Youth Social Media Conversations",
-      "authors": [
-        "Xiaohan Ding",
-        "Mengting Tu",
-        "Andrew H. Zhao",
-        "Jamie Zelazny",
-        "Candice L. Biernesser",
-        "Munmun De Choudhury"
-      ],
-      "published": "2026-11-05",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2611.08565v1",
-      "pdf": "https://arxiv.org/pdf/2611.08565v1",
-      "categories": [
-        "cs.HC",
-        "cs.CY"
-      ],
-      "abstract": "Adolescents increasingly use social media for private conversations, sharing experiences and seeking support. These interactions generate digital traces, prompting efforts to infer mental health and psychosocial states. As large language models become more capable of reasoning about conversations and interpersonal dynamics, a fundamental question remains nonetheless: what can models actually \"know\" about an individual's psychological experience from what they are able to \"see\"? We evaluated ten reasoning LLMs using donated Instagram Direct Messages from 80 adolescents with a history of depression or suicidal thoughts and behaviors, comparing predictions with self-reports and analyzing 204 reasoning traces. Models performed better when inferring more observable states than participants' subjective appraisals of social experience, such as perceived social support. Beyond prediction accuracy, our findings highlight the epistemic limits of digital traces for AI design and evaluation: what can be observed, what can reasonably be inferred, and what requires people's own accounts.",
-      "summary": "Adolescents increasingly use social media for private conversations, sharing experiences and seeking support. These interactions generate digital traces, prompting efforts to infer mental health and psychosocial states. As large language models become more capable of reasoning ab…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2611.08006v1",
-      "title": "Automatic keyphrase extraction and annotation: modern theoretical approaches and practical solutions for text and speech",
-      "authors": [
-        "Daria Guseva",
-        "Olga Mitrofanova"
-      ],
-      "published": "2026-11-05",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2611.08006v1",
-      "pdf": "https://arxiv.org/pdf/2611.08006v1",
-      "categories": [
-        "cs.CL",
-        "cs.HC"
-      ],
-      "abstract": "The exponential growth of textual and audiovisual information has made the task of automatic keyphrase extraction (KE) increasingly significant. This article provides a comprehensive analysis of contemporary theoretical approaches and practical solutions for KE across both text and speech modalities. The primary contribution of this work is its systematic synthesis of these often-disparate research strands into a unified analytical framework, highlighting the evolution of the field from statistical methods towards large language models (LLMs) and end-to-end speech processing. We examine the stages of KE, the characteristics of keyphrases in written and spoken language, and terminological nuances. Various methods for automatic KE are discussed and analyzed in detail: statistical, hybrid, machine learning-based, and structural. The review dedicates substantial attention to emerging paradigms, including keyphrase generation using LLMs, and provides a detailed overview of methodologies and challenges in automatic corpus annotation. Furthermore, we specifically analyze current directions and inherent difficulties in KE for spoken language, comparing transcript based and end-to-end acoustic approaches. This synthesis leads us to conclude that the field is moving towards a more integrated, context-aware paradigm. Future progress will depend on addressing key challenges such as data scarcity for low-resource languages, effective multimodal fusion, and the nuanced evaluation of generative KE systems.",
-      "summary": "The exponential growth of textual and audiovisual information has made the task of automatic keyphrase extraction (KE) increasingly significant. This article provides a comprehensive analysis of contemporary theoretical approaches and practical solutions for KE across both text a…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2611.06734v1",
-      "title": "Smartphone-Aided VR Exergames for HIIT: Gamifying Fitness with Real-Time Pose Estimation",
-      "authors": [
-        "Abhiram Kothagundu",
-        "Pheelip Pritipal Raipure",
-        "Abhijit Chandrakant Patil",
-        "Himangshu Sarma",
-        "Christian Eichhorn",
-        "David A. Plecher",
-        "Johanna Pirker"
-      ],
-      "published": "2026-11-04",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2611.06734v1",
-      "pdf": "https://arxiv.org/pdf/2611.06734v1",
-      "categories": [
-        "cs.HC",
-        "cs.AI"
-      ],
-      "abstract": "This paper introduces an innovative virtual reality (VR) exergame system designed to gamify High-Intensity Interval Training (HIIT) workouts through 11 predefined combo moves, including squat-punch combinations, bilateral arm strikes, and diagonal stretch combos. Unlike conventional tracking methods that often rely on wearable motion capture suits or limited headset-based sensors, our system uses a standard smartphone camera placed on a tripod to capture full-body movement. This approach offers a cost-effective and scalable alternative, particularly well-suited to the fast, dynamic motions typical of HIIT routines. The smartphone footage is processed in real time using a pose estimation algorithm, with extracted biomechanical data analyzed by a backend server built on the Model Context Protocol (MCP), Anthropic's open standard for connecting AI models to structured data sources and tools, and a GPT-4o large language model. The system generates personalized assessments of form accuracy, movement efficiency, exercise intensity, and potential injury risks, tailored specifically to high-impact, time-sensitive exercises. A within-subject study involving 20 participants (ages 18-25) compared experiences in VR and Non-VR HIIT sessions. Results indicated significantly higher enjoyment (Mean = 3.5 vs 2.8, p = 0.02), improved immersion/focus (Mean = 3.2 vs 2.8, p = 0.03), and increased likelihood to recommend (Mean = 3.2 vs 2.7, p = 0.04) under the VR condition. Confidence to continue did not differ significantly between conditions (p = 0.15), while perceived intensity remained comparable. The MCP system showed strong agreement with expert evaluation (87.5%, N = 10 sessions, one certified trainer), supporting its reliability as a feedback tool.",
-      "summary": "This paper introduces an innovative virtual reality (VR) exergame system designed to gamify High-Intensity Interval Training (HIIT) workouts through 11 predefined combo moves, including squat-punch combinations, bilateral arm strikes, and diagonal stretch combos. Unlike conventio…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2611.06272v1",
-      "title": "Evaluating Human-LLM Alignment on Visualization Preference",
-      "authors": [
-        "Tanmay Bakshi",
-        "Chenglong Wang",
-        "Simra Shahid"
-      ],
-      "published": "2026-11-04",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2611.06272v1",
-      "pdf": "https://arxiv.org/pdf/2611.06272v1",
-      "categories": [
-        "cs.HC"
-      ],
-      "abstract": "There are often multiple valid visualizations, spanning different chart types, visual encodings, and aesthetic choices, that can all support a user's goal of analyzing a dataset. Determining which of these candidate visualizations is most appropriate, however, remains challenging. Prior work has leveraged expert-curated taxonomies to guide visualization design and subsequent quality evaluation, a practical evaluation model must also account for human-centric factors. Latest visualization tools integrate Large Language Models (LLMs) to generate and refine visualizations, using LLM-as-a-judge to provide design feedback. Without a deeper understanding of whether, and in what ways, human and LLM perceptions of visualizations align, there is a real risk of deploying low-quality agents that do not reflect human judgment. We study this question through a pilot experiment - we formulate the problem as a preference task over curated chart pairs and compare the judgments of state-of-the-art vision models with those of a panel of human annotators. We establish a cautionary tale: such judges risk filtering out informative, compelling displays. We find that frontier models collapse human subjectivity, a rich signal that reveals contrasting design choices, into near-deterministic verdicts.",
-      "summary": "There are often multiple valid visualizations, spanning different chart types, visual encodings, and aesthetic choices, that can all support a user's goal of analyzing a dataset. Determining which of these candidate visualizations is most appropriate, however, remains challenging…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2611.05761v1",
-      "title": "BobFlow: Towards Human-Agent Collaborative Data Science Using Dataflows",
-      "authors": [
-        "Jiadong Bai",
-        "Yicong Huang",
-        "Chen Li"
-      ],
-      "published": "2026-11-04",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2611.05761v1",
-      "pdf": "https://arxiv.org/pdf/2611.05761v1",
-      "categories": [
-        "cs.DB",
-        "cs.AI",
-        "cs.HC"
-      ],
-      "abstract": "Recent advances in large language models (LLMs) have established human-agent collaboration as a promising paradigm for data science. Effective collaboration requires a shared computational abstraction that enables agents to reason about processing logic while allowing human analysts to understand, guide, and refine the analysis. Although scripts written in Python or SQL provide precise control, their syntax and execution details can be difficult for analysts to understand and modify. In this paper, we argue that dataflows are an effective abstraction for human-agent collaboration in data science. We introduce BobFlow, a system that combines the dataflow abstraction with the ReAct paradigm. It enables agents to iteratively construct and execute dataflows for data science tasks while allowing analysts to inspect the analysis and provide feedback. Our user study shows that BobFlow helps analysts understand, inspect, and verify agent-generated analyses. A thorough experimental evaluation across proprietary and open-weight LLMs shows accuracy score gains of up to 18.6 points at just over 1/3 of a script-based ReAct agent's inference cost.",
-      "summary": "Recent advances in large language models (LLMs) have established human-agent collaboration as a promising paradigm for data science. Effective collaboration requires a shared computational abstraction that enables agents to reason about processing logic while allowing human analy…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2611.05702v1",
-      "title": "TACT: A Pragmatic Approach to Qualitative Analysis with an AI Council",
-      "authors": [
-        "Rudrajit Choudhuri",
-        "Christian Bird",
-        "Carmen Badea",
-        "Anita Sarma"
-      ],
-      "published": "2026-11-03",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2611.05702v1",
-      "pdf": "https://arxiv.org/pdf/2611.05702v1",
-      "categories": [
-        "cs.SE",
-        "cs.AI",
-        "cs.HC"
-      ],
-      "abstract": "Qualitative data can tell software teams what their stakeholders need, yet rigorously analyzing thousands of qualitative responses takes expert time that few teams can afford or justify. Teams therefore often face a false choice: leave the responses unanalyzed, or hand them to a large language model and accept its interpretation and judgment. In this paper, we take a pragmatic approach to AI-assisted qualitative analysis and present TACT (Traceable AI Council for Thematic analysis), a procedure that enables such analysis at scale while keeping teams in control of interpretation and judgment. TACT comes in two variants: TACT-Lite, the core AI council procedure, and TACT-Full, which adds adversaries (models from other model families that critique each model's output) and a decision model that surfaces high-uncertainty code assignments. We evaluated TACT on an independent dataset of 256 Stack Overflow threads qualitatively coded by other researchers. Against their labels, TACT's candidate codebook achieved an F1 of 0.75-0.77 and its final coding an F1 of 0.71-0.72. On a held-out sample, agreement between our own manual coding and TACT's coding was Cohen's $κ$ of 0.79-0.85. TACT is also economical: model calls cost \\$13.77 (TACT-Lite) to \\$33.59 (TACT-Full) per 100 threads. Finally, drawing on our experience building and validating TACT, we identify pitfalls in AI-assisted qualitative analysis, describe safeguards to address them, and offer guidance for teams and researchers applying TACT in practice.",
-      "summary": "Qualitative data can tell software teams what their stakeholders need, yet rigorously analyzing thousands of qualitative responses takes expert time that few teams can afford or justify. Teams therefore often face a false choice: leave the responses unanalyzed, or hand them to a…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2611.04968v1",
-      "title": "Who is the Pronoun Pro? Comparing LLMs and Humans at Number-Disambiguation of 'they'",
-      "authors": [
-        "Carlos Hartmann"
-      ],
-      "published": "2026-11-03",
-      "source": "arXiv",
-      "topic": "LLM Evaluation",
-      "url": "https://arxiv.org/abs/2611.04968v1",
-      "pdf": "https://arxiv.org/pdf/2611.04968v1",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.HC"
-      ],
-      "abstract": "This study evaluates whether large language models (LLMs) can reliably replace or complement human research assistants in linguistically complex annotation. In a controlled annotation task, 73 human annotators (local students and crowdworkers with and without a background in linguistics) and more than 40 LLM configurations number-disambiguated 174 authentic uses of 'they' from Reddit, including innovative and context-sensitive cases. The best LLM, Kimi K3, reached 94.5% accuracy, above the human majority vote (86.2%) and the mean of the top half of human annotators (78.5%); only the single best human annotator scored higher (95.7%). LLMs also offer substantial practical advantages in cost and speed. However, qualitative error analysis reveals a crucial complementarity: human reasoning in low-agreement cases exposes inconsistencies in the annotation typology and thereby improves the methodological framework itself. The study contributes (i) a benchmark-style human-LLM comparison for a semantically demanding task, (ii) transparent cost and time evidence, and (iii) a methodological argument against a purely replacement-oriented view of automation. LLMs are viable for large-scale annotation support in linguistics, but their responsible use requires human critical oversight. The dataset with its gold-standard labels, all human and LLM annotations, and the fully reproducible code are openly available as a Quarto-based, public repository.",
-      "summary": "This study evaluates whether large language models (LLMs) can reliably replace or complement human research assistants in linguistically complex annotation. In a controlled annotation task, 73 human annotators (local students and crowdworkers with and without a background in ling…",
-      "summary_zh": ""
-    },
-    {
       "id": "2610.27516v1",
       "title": "HealBench: A Fine-Grained Benchmark for Evaluating Psychological Comfort in Text-to-Image Generation",
       "authors": [
@@ -327,53 +380,6 @@
       ],
       "abstract": "Large language models (LLMs) are increasingly used as user simulators, but can they faithfully reproduce an individual's behavior and decision logic over time? We investigate this question in a longitudinal paper-trading study with 80 participants. Using rolling next-day predictions, we evaluate trading activity, buy-sell structure, asset selection, and portfolio outcomes, complemented by controlled input ablations and participant-rated explanation alignment. No evaluated LLM reliably outperforms a simple recent-activity persistence baseline for predicting trade occurrence, while buy-sell structure and asset selection remain difficult to reproduce. Similar activity-level performance can also yield substantially different portfolio trajectories. Ablations show that activity predictions depend primarily on recent trades, whereas asset choices are sensitive to multiple evidence sources. Participants rate explanations as more aligned with their recurring strategies than with their decision-specific rationales. These findings reveal a gap between coarse behavioral agreement and individual-level fidelity, motivating separate evaluation of behavioral accuracy, explanation alignment, and evidence dependence in personalized user simulation.",
       "summary": "Large language models (LLMs) are increasingly used as user simulators, but can they faithfully reproduce an individual's behavior and decision logic over time? We investigate this question in a longitudinal paper-trading study with 80 participants. Using rolling next-day predicti…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2610.19864v1",
-      "title": "Euler: Towards Human-Centered Multi-Agent Mathematical Discovery",
-      "authors": [
-        "Qiuyu Chen",
-        "Qi Wang",
-        "Liang Xu",
-        "Xin Jin",
-        "Baao Xie",
-        "Wenjun Zeng"
-      ],
-      "published": "2026-10-14",
-      "source": "arXiv",
-      "topic": "Human-Centered AI",
-      "url": "https://arxiv.org/abs/2610.19864v1",
-      "pdf": "https://arxiv.org/pdf/2610.19864v1",
-      "categories": [
-        "cs.AI"
-      ],
-      "abstract": "Mathematical research drives scientific discovery, and recent advances in AI for mathematics have shown that language-model agents can solve challenging problems and develop substantial mathematical proofs. Yet much of today's AI-for-mathematics work centers on obtaining a final answer. This emphasis leaves the exploration behind a result difficult for researchers to understand, while long-running investigations face fragmented context and the risk of unsupported claims propagating across reasoning steps. We present Euler, a human-centered mathematical research system built around a shared, structured representation of the research process. Euler organizes mathematical statements, assumptions, proof dependencies, alternative approaches, failed attempts, and verification evidence into connected research graphs. This representation allows researchers to trace how results are developed and supplies agents with persistent, task-relevant knowledge for planning, collaboration, and verification across sessions. Researchers can also select a graph node linked to a saved team state, revisit the agents' earlier reasoning, and explore alternative directions through continued interaction. We illustrate Euler's capabilities through three mathematical research case studies and describe the implemented system and its software validation.",
-      "summary": "Mathematical research drives scientific discovery, and recent advances in AI for mathematics have shown that language-model agents can solve challenging problems and develop substantial mathematical proofs. Yet much of today's AI-for-mathematics work centers on obtaining a final…",
-      "summary_zh": ""
-    },
-    {
-      "id": "2610.19108v1",
-      "title": "Towards a Data-Centric Understanding of Spatial Reasoning in Multimodal Large Language Models",
-      "authors": [
-        "Mahdieh Mallahnezhad",
-        "Masoud Jafaripour",
-        "Mohamadali Tofigh",
-        "Sheila Schoepp",
-        "Osmar R. Zaiane"
-      ],
-      "published": "2026-10-13",
-      "source": "arXiv",
-      "topic": "Human-Centered AI",
-      "url": "https://arxiv.org/abs/2610.19108v1",
-      "pdf": "https://arxiv.org/pdf/2610.19108v1",
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.CL"
-      ],
-      "abstract": "Multimodal Large Language Models (MLLMs) have been widely applied in embodied agents and robotics for vision tasks. However, MLLMs suffer from limitations in spatial reasoning and perception. Post-training techniques have shown promise for improving these capabilities; yet, there are limited data-driven surveys of such approaches. In this survey, we consider approaches to fine-tuning pretrained MLLMs for spatial reasoning tasks, ranging from supervised to reinforcement learning, with an emphasis on the datasets used. We investigate themes of dataset construction, data modality and annotation, and evaluation of the resulting models. Based on these themes, we categorize research into three groups: dataset design, dataset construction and evaluation. We find four main methods for constructing fixed spatial annotations: rules and templates, LLM prompting, procedural generation, and human-in-the-loop. We also observe substantial variation in evaluation approaches, including different scoring methods, tolerance metrics, and benchmark types. Finally, we identify opportunities for future research in unified dynamic annotation, efficient spatial reasoning, standardization of evaluation, expanded spatial range, and human-centered spatial interactions.",
-      "summary": "Multimodal Large Language Models (MLLMs) have been widely applied in embodied agents and robotics for vision tasks. However, MLLMs suffer from limitations in spatial reasoning and perception. Post-training techniques have shown promise for improving these capabilities; yet, there…",
       "summary_zh": ""
     }
   ]
